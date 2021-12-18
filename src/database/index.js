@@ -44,6 +44,15 @@ export const getBubbles = () => {
   }));
 };
 
+
+// This method returns an JSON object for a specific audio,
+// with the following structure:
+// 
+// {
+//      title:string,
+//      src:string,
+//      transcript:string
+// }
 export const getAudio = (id) => {
   return {
     title: "The title of the audio #" + id,
@@ -52,33 +61,54 @@ export const getAudio = (id) => {
   };
 };
 
+
+// This method returns an array of comment, each comment is 
+// a JSON object with the following structure:
+// 
+//   {
+//     userId: string,
+//     comId: string,
+//     fullName: string,
+//     avatarUrl: string,
+//     text: string,
+//     replies: null | [
+//       {
+//         userId: string,
+//         comId: string,
+//         fullName: string,
+//         avatarUrl: string,
+//         text: string
+//       },
+//       ...
+//     ],
+//   },
 export const getComments = (id) => {
   return [
     {
-      userId: "01a",
-      comId: "012",
-      fullName: "Riya Negi",
-      avatarUrl: "https://ui-avatars.com/api/name=Riya&background=random",
-      text: "Hey, Loved your blog! ",
-      replies: [
-        {
-          userId: "02a",
-          comId: "013",
-
-          fullName: "Adam Scott",
-          avatarUrl: "https://ui-avatars.com/api/name=Adam&background=random",
-          text: "Thanks! It took me 1 month to finish this project but I am glad it helped out someone!🥰",
-        },
-        {
-          userId: "01a",
-          comId: "014",
-
-          fullName: "Riya Negi",
-          avatarUrl: "https://ui-avatars.com/api/name=Riya&background=random",
-          text: "thanks!😊",
-        },
-      ],
-    },
+        userId: "01a",
+        comId: "012",
+        fullName: "Riya Negi",
+        avatarUrl: "https://ui-avatars.com/api/name=Riya&background=random",
+        text: "Hey, Loved your blog! ",
+        replies: [
+          {
+            userId: "02a",
+            comId: "013",
+  
+            fullName: "Adam Scott",
+            avatarUrl: "https://ui-avatars.com/api/name=Adam&background=random",
+            text: "Thanks! It took me 1 month to finish this project but I am glad it helped out someone!🥰",
+          },
+          {
+            userId: "01a",
+            comId: "014",
+  
+            fullName: "Riya Negi",
+            avatarUrl: "https://ui-avatars.com/api/name=Riya&background=random",
+            text: "thanks!😊",
+          },
+        ],
+      },
     {
       userId: "02b",
       comId: "017",
