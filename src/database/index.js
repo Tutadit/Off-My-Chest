@@ -25,6 +25,17 @@ const colors = [
   },
 ];
 
+// This method returns an array of bubble information,
+// each bubble is a JSON object with the following structure:
+// 
+// {
+//      id:number,
+//      title:string,
+//      color: {
+//          background:hex string,
+//          foreground:hex string
+//      }
+// }
 export const getBubbles = () => {
   return [...Array(100).keys()].map((i) => ({
     id: i,
