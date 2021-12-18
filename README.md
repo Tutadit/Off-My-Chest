@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Off My Chest
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to run
 
-## Available Scripts
+First install dependencies:
 
-In the project directory, you can run:
+```
+npm install
+```
+Once dependencies are installed you can run the development server using:
+```
+npm run
+```
 
-### `yarn start`
+Note: You only need to install once
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Current structure
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+We will be devloping within the `src` folder, in it you find:
+- `components` - Directory containing all of our custom components
+- `database` - API for accessing data
+- `index.js` - Where our app is bootstrapped
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Each component has an `index.js` and an `index.css` file, the js file contains the js and html for the component, the css file containd styling for the component.
 
-### `yarn build`
+### Current components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I have made 4 components thus far:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `App`
+- `Audio`
+- `Bubble`
+- `Home`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### `App` Component
 
-### `yarn eject`
+The app component utilizes `react-router` to set up two pages for our app. The home page `/` and the audio detail page `/audio/:auidoID`. The home page is the `Home` component, the audio page is the `Audio` component.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+I have integrated the bubbles and comment section for our app as well. The home page
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## What to do
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Implement `database/index.js` methods to properly connect with the database and return appropiate data.
+- Style and complete the `Home` component, we should add an "Off your Chest" title and style it as well.
+- Style and complete the `Audio` component
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
