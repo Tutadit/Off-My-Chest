@@ -9,7 +9,8 @@ const App = () => {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="audio/:audioID" element={<Audio />} />
+        <Route path="audio_detail/:audioID" element={<Audio />} />
+        <Route path="/:category/*" element={<Home />} />
       </Routes>
     </div>
   );
