@@ -15,7 +15,7 @@ import "./index.css";
 
 const options = {
   size: 180,
-  minSize: 20,
+  minSize:30,
   gutter: 18,
   provideProps: true,
   numCols: 6,

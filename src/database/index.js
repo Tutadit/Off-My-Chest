@@ -5,7 +5,7 @@ const colors = [
   {
     // Yellow
     background: "#FFD275",
-    foreground: "rgb(7, 17, 46)",
+    foreground: "rgb(179, 24, 24)",
   },
   {
     // Red
@@ -15,17 +15,17 @@ const colors = [
   {
     //Green
     background: "#499F68",
-    foreground: "rgb(4, 6, 37)",
+    foreground: "rgb(25, 43, 187)",
   },
   {
     // Pink
     background: "#F26DF9",
-    foreground: "rgb(18, 36, 104)",
+    foreground: "rgb(25, 67, 77)",
   },
   {
     // Orange
     background: "#EE964B",
-    foreground: "rgb(68, 4, 4)",
+    foreground: "rgb(132, 25, 25)",
   },
   {
     //Blue
