@@ -250,8 +250,8 @@ export const categories = [
         subcategories: [
           {
             category: true,
-            title: "action ",
-            id: "action_",
+            title: "action",
+            id: "action",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -259,8 +259,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "animated ",
-            id: "animated_",
+            title: "animated",
+            id: "animated",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -268,8 +268,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "bollywood ",
-            id: "bollywood_",
+            title: "bollywood",
+            id: "bollywood",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -277,8 +277,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "children's ",
-            id: "children_s_",
+            title: "children's",
+            id: "children_s",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -306,8 +306,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "comedies ",
-            id: "comedies_",
+            title: "comedies",
+            id: "comedies",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -315,8 +315,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "cult classics ",
-            id: "cult_classics_",
+            title: "cult classics",
+            id: "cult_classics",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -324,8 +324,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "documentaries ",
-            id: "documentaries_",
+            title: "documentaries",
+            id: "documentaries",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -333,8 +333,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "dramas ",
-            id: "dramas_",
+            title: "dramas",
+            id: "dramas",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -351,8 +351,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "horror ",
-            id: "horror_",
+            title: "horror",
+            id: "horror",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -360,8 +360,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "independent ",
-            id: "independent_",
+            title: "independent",
+            id: "independent",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -387,8 +387,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "movies ",
-            id: "movies_",
+            title: "movies",
+            id: "movies",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -396,8 +396,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "reality ",
-            id: "reality_",
+            title: "reality",
+            id: "reality",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -405,8 +405,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "romantic comedies ",
-            id: "romantic_comedies_",
+            title: "romantic comedies",
+            id: "romantic_comedies",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -414,8 +414,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "talk shows ",
-            id: "talk_shows_",
+            title: "talk shows",
+            id: "talk_shows",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -4638,8 +4638,8 @@ export const categories = [
   },
   {
     category: true,
-    title: "education ",
-    id: "education_",
+    title: "education",
+    id: "education",
     color: {
       background: "#FFD275",
       foreground: "#000000",
@@ -5831,8 +5831,8 @@ export const categories = [
   },
   {
     category: true,
-    title: "health and fitness ",
-    id: "health_and_fitness_",
+    title: "health and fitness",
+    id: "health_and_fitness",
     color: {
       background: "#DB5A42",
       foreground: "#FFFFFF",
@@ -6313,8 +6313,8 @@ export const categories = [
   },
   {
     category: true,
-    title: "hobbies and interests ",
-    id: "hobbies_and_interests_",
+    title: "hobbies and interests",
+    id: "hobbies_and_interests",
     color: {
       background: "#19647E",
       foreground: "#FFFFFF",
@@ -6665,8 +6665,8 @@ export const categories = [
   },
   {
     category: true,
-    title: "home and garden ",
-    id: "home_and_garden_",
+    title: "home and garden",
+    id: "home_and_garden",
     color: {
       background: "#DB5A42",
       foreground: "#FFFFFF",
@@ -7014,8 +7014,8 @@ export const categories = [
   },
   {
     category: true,
-    title: "law, govt and politics ",
-    id: "law_govt_and_politics_",
+    title: "law, govt and politics",
+    id: "law_govt_and_politics",
     color: {
       background: "#499F68",
       foreground: "#FFFFFF",
@@ -7551,8 +7551,8 @@ export const categories = [
   },
   {
     category: true,
-    title: "pets ",
-    id: "pets_",
+    title: "pets",
+    id: "pets",
     color: {
       background: "#19647E",
       foreground: "#FFFFFF",
@@ -7681,8 +7681,8 @@ export const categories = [
   },
   {
     category: true,
-    title: "religion and spirituality ",
-    id: "religion_and_spirituality_",
+    title: "religion and spirituality",
+    id: "religion_and_spirituality",
     color: {
       background: "#DB5A42",
       foreground: "#FFFFFF",
@@ -8660,8 +8660,8 @@ export const categories = [
   },
   {
     category: true,
-    title: "shopping ",
-    id: "shopping_",
+    title: "shopping",
+    id: "shopping",
     color: {
       background: "#499F68",
       foreground: "#FFFFFF",
@@ -8913,8 +8913,8 @@ export const categories = [
     subcategories: [
       {
         category: true,
-        title: "crime ",
-        id: "crime_",
+        title: "crime",
+        id: "crime",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -8940,8 +8940,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "personal offense ",
-            id: "personal_offense_",
+            title: "personal offense",
+            id: "personal_offense",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -9005,8 +9005,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "property crime ",
-            id: "property_crime_",
+            title: "property crime",
+            id: "property_crime",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -9106,8 +9106,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "sexual offense ",
-            id: "sexual_offense_",
+            title: "sexual offense",
+            id: "sexual_offense",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -9211,8 +9211,8 @@ export const categories = [
       },
       {
         category: true,
-        title: "social institution ",
-        id: "social_institution_",
+        title: "social institution",
+        id: "social_institution",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -9229,8 +9229,8 @@ export const categories = [
           },
           {
             category: true,
-            title: "marriage ",
-            id: "marriage_",
+            title: "marriage",
+            id: "marriage",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -9278,8 +9278,8 @@ export const categories = [
       },
       {
         category: true,
-        title: "welfare ",
-        id: "welfare_",
+        title: "welfare",
+        id: "welfare",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",

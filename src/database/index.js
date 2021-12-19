@@ -1,29 +1,36 @@
 import { categories } from "./categories";
+import { queryPostsByLevels } from "./firebase";
 
 const colors = [
   {
+    // Yellow
     background: "#FFD275",
-    foreground: "#000000",
+    foreground: "rgb(7, 17, 46)",
   },
   {
+    // Red
     background: "#DB5A42",
-    foreground: "#FFFFFF",
+    foreground: "rgb(255, 214, 116)",
   },
   {
+    //Green
     background: "#499F68",
-    foreground: "#FFFFFF",
+    foreground: "rgb(4, 6, 37)",
   },
   {
+    // Pink
     background: "#F26DF9",
-    foreground: "#000000",
+    foreground: "rgb(18, 36, 104)",
   },
   {
+    // Orange
     background: "#EE964B",
-    foreground: "#000000",
+    foreground: "rgb(68, 4, 4)",
   },
   {
+    //Blue
     background: "#19647E",
-    foreground: "#FFFFFF",
+    foreground: "rgb(255, 236, 132)",
   },
 ];
 
@@ -38,29 +45,45 @@ const colors = [
 //          foreground:hex string
 //      }
 // }
-export const getBubbles = (category = "") => {  
+export const getBubbles = (category = "") => {
   if (category === "")
-    return [
+    return shuffle([
       ...categories.map((cat) => ({
         ...cat,
         subcategories: null,
       })),
-    ];    
+    ]);
   const path = category.split("/");
-  let current = categories;  
-  for (let section_index in path) {    
+  let current = categories;
+  for (let section_index in path) {
     let section = path[section_index];
-    current = current.find((cat) => (cat.id === section));
-    if (!current || !current.subcategories) 
-      return getAudios(category);
-    current = current.subcategories
-  }  
-  return [
-    ...current,
-    ...getAudios(category)
-  ]
-  
+    current = current.find((cat) => cat.id === section);
+    if (!current || !current.subcategories) return shuffle(getAudios(category));
+    current = current.subcategories;
+  }
+
+  return shuffle([...current, ...getAudios(category)]);
 };
+
+function shuffle(array) {
+  let currentIndex = array.length,
+    randomIndex;
+
+  // While there remain elements to shuffle...
+  while (currentIndex !== 0) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(0.9 * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+
+  return array;
+}
 
 // This method returns an JSON object for a specific audio,
 // with the following structure:
@@ -79,11 +102,24 @@ export const getAudio = (id) => {
 };
 
 export const getAudios = (category) => {
+
+  const categories = category.split("/");  
+  const levels = {}
+  let count = 1
+  for(let category_index in categories) {
+    const category = categories[category_index]
+    levels['level'+count++] = category.replaceAll("_"," ")
+  }
+
+  queryPostsByLevels().then((audios) => {
+    console.log(audios);
+  });
+
   return [...Array(100).keys()].map((i) => ({
     id: i,
     title: "A proper title, not too long " + i,
     color: colors[i % colors.length],
-    src: "/audio.wa",
+    src: "/audio.wav",
   }));
 };
 
