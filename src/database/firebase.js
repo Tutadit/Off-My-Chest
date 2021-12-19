@@ -34,7 +34,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-const db = getFirestore(firebaseAPP);
+const db = getFirestore(app);
 
 const queryAllPosts = async () => {
     const q = query(collection(db, "posts"));
@@ -127,3 +127,4 @@ const replyToComment = async (parentId, userId, fullName, avatarUrl, text) => {
     }
 }
 
+export {queryAllPosts, queryPostsByLevels, queryPostByPid, addComment, replyToComment}
