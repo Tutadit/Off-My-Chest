@@ -11,7 +11,14 @@ import AudioBubble from "../AudioBubble";
 
 import "./index.css";
 
-const Comment = ({ comment, index, sendComment, setComments }) => {
+const Comment = ({
+  comment,
+  index,
+  sendComment,
+  setComments,
+  stop,
+  setStop,
+}) => {
   const [replyWithAudio, setReplyWithAudio] = useState(false);
   const [reply, setReply] = useState(false);
   const [replyText, setReplyText] = useState("");
@@ -125,6 +132,13 @@ const Comment = ({ comment, index, sendComment, setComments }) => {
     }
   };
 
+  const resetForm = () => {
+    resetRecording();
+    setName("");
+    setReplyText("");
+    setReply(false);
+  };
+
   const sendAudio = () => {
     if (!recordedAudio) return;
 
@@ -138,6 +152,7 @@ const Comment = ({ comment, index, sendComment, setComments }) => {
       },
       index
     );
+    resetForm();
   };
 
   const sendText = () => {
@@ -153,6 +168,7 @@ const Comment = ({ comment, index, sendComment, setComments }) => {
       },
       index
     );
+    resetForm();
   };
 
   const sendReply = () => {
@@ -181,6 +197,8 @@ const Comment = ({ comment, index, sendComment, setComments }) => {
             src={comment.audio}
             background={"rgb(10, 129, 107)"}
             foreground={"rgb(8, 12, 11)"}
+            stop={stop}
+            setStop={setStop}
           />
         )}
       </div>
@@ -231,6 +249,8 @@ const Comment = ({ comment, index, sendComment, setComments }) => {
                     src={recordedAudio}
                     background={"rgb(10, 129, 107)"}
                     foreground={"rgb(8, 12, 11)"}
+                    stop={stop}
+                    setStop={setStop}
                   >
                     <button className="delete-audio" onClick={resetRecording}>
                       <BsTrashFill />
@@ -272,13 +292,18 @@ const Comment = ({ comment, index, sendComment, setComments }) => {
         </div>
       )}
       {comment.replies && (
-        <CommentSection comments={comment.replies} setComments={setComments} />
+        <CommentSection
+          comments={comment.replies}
+          setComments={setComments}
+          stop={stop}
+          setStop={setStop}
+        />
       )}
     </div>
   );
 };
 
-const CommentSection = ({ comments, setComments }) => {
+const CommentSection = ({ comments, setComments, stop, setStop }) => {
   const sendComment = (new_comment, to) => {
     if (!setComments) return;
     setComments((prev) =>
@@ -317,6 +342,8 @@ const CommentSection = ({ comments, setComments }) => {
           index={i}
           sendComment={sendComment}
           setComments={getSetComments(i)}
+          stop={stop}
+          setStop={setStop}
         />
       ))}
     </div>

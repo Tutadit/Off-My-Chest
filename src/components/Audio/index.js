@@ -13,6 +13,7 @@ const Audio = () => {
   const [comments, setComments] = useState(getComments(audioID));
   const [count, setCount] = useState(0);
   const [showTranscript, setShowTranscript] = useState(false);
+  const [stop, setStop] = useState(false);
 
   useEffect(() => {
     let total = 0;
@@ -40,6 +41,8 @@ const Audio = () => {
           src={src}
           background={"rgb(10, 129, 107)"}
           foreground={"rgb(8, 12, 11)"}
+          stop={stop}
+          setStop={setStop}
         />
       </div>
       {showTranscript && (
@@ -47,13 +50,21 @@ const Audio = () => {
           <p>{transcript}</p>
         </div>
       )}
-      <button className="icon-btn" onClick={() => setShowTranscript((prev) => !prev)}>
+      <button
+        className="icon-btn"
+        onClick={() => setShowTranscript((prev) => !prev)}
+      >
         <CgTranscript /> {showTranscript ? "Hide" : "View"} Transcript
       </button>
 
       <div className="comment-section">
         <div className="header">{count} Comments</div>
-        <CommentSection comments={comments} setComments={setComments} />
+        <CommentSection
+          comments={comments}
+          setComments={setComments}
+          stop={stop}
+          setStop={setStop}
+        />
       </div>
     </div>
   );
