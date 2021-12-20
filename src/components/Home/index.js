@@ -13,8 +13,8 @@ import { useBubbles } from "../../database";
 import "./index.css";
 
 const category_options = {
-  size: 180,
-  minSize: 30,
+  size: 130,
+  minSize: 44,
   gutter: 18,
   provideProps: true,
   numCols: 3,
@@ -28,8 +28,8 @@ const category_options = {
 };
 
 const audios_options = {
-  size: 180,
-  minSize: 24,
+  size: 130,
+  minSize: 44,
   gutter: 18,
   provideProps: true,
   numCols: 3,

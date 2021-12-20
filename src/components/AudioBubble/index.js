@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai";
 
-import Loading from "../Loading"
+import Loading from "../Loading";
 import "../Bubble/index.css";
-
 
 const AudioBubble = ({
   className,
@@ -23,7 +22,7 @@ const AudioBubble = ({
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    setLoading(false);
+    setLoading(true);
     const new_audio = new Audio(src);
     const onLoad = () => {
       setLoading(false);
@@ -53,9 +52,7 @@ const AudioBubble = ({
 
     const timeUpdated = (e) => {};
 
-    const anError = (e) => {
-      console.log(e);
-    };
+    const anError = (e) => {};
 
     audio.addEventListener("loadedmetadata", metadataLoaded);
     audio.addEventListener("ended", playbackEnded);

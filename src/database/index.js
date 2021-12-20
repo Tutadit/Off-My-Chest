@@ -7,7 +7,28 @@ import {
   addComment,
 } from "./firebase";
 
-
+const colors = {
+  anger: {
+    background: "#DB5A42",
+    foreground: "rgb(255, 214, 116)",
+  },
+  disgust: {
+    background: "#499F68",
+    foreground: "rgb(25, 43, 187)",
+  },
+  fear: {
+    background: "#2E294E",
+    foreground: "rgb(255, 236, 132)",
+  },
+  joy: {
+    background: "#FFD275",
+    foreground: "rgb(179, 24, 24)",
+  },
+  sadness: {
+    background: "#19647E",
+    foreground: "rgb(255, 236, 132)",
+  },
+};
 
 const getCategories = (posts, level) => {
   let cats = {};
@@ -36,8 +57,13 @@ export const useBubbles = (category = "") => {
   const [current, setCurrent] = useState(catBubbles);
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [ load, setLoad] = useState(true);
 
   useEffect(() => {
+
+    if (!load) return
+
+    setLoad(false)
     const categories = category.split("/");
     let levels = {};
     let count = 1;
@@ -46,25 +72,42 @@ export const useBubbles = (category = "") => {
       if (category === "") break;
       levels["level" + count++] = category.replaceAll("_", " ");
     }
-    setLoading(true)    
+    setLoading(true);
 
-    queryPostsByLevels(levels).then((posts) => {
-      setLoading(false)
-      console.log(posts)
+    queryPostsByLevels(levels).then((results) => {
+      setLoading(false);
       setPosts(
-        posts.map((post) => ({
+        results.map((post) => ({
           ...post,
-          color: {
-            background: "#EE964B",
-            foreground: "#000000",
-          },
+          color: post.nlu_analysis
+            ? colors[
+                Object.keys(
+                  post.nlu_analysis.result.emotion.document.emotion
+                ).reduce(
+                  (prev, name) => {
+                    const value =
+                      post.nlu_analysis.result.emotion.document.emotion[name];
+                    if (value > prev.value)
+                      return {
+                        value: value,
+                        name: name,
+                      };
+
+                    return prev;
+                  },
+                  { value: 0, name: "fear" }
+                ).name
+              ]
+            : colors.fear,
         }))
       );
-      if (posts.length === 0) {
+
+    
+      if (results.length === 0) {
         setCatBubbles([]);
         return;
       }
-      let cats = getCategories(posts, Object.keys(levels).length + 1);
+      let cats = getCategories(results, Object.keys(levels).length + 1);
 
       const mapCategories = (key) => {
         return {
@@ -72,16 +115,16 @@ export const useBubbles = (category = "") => {
           title: key,
           pid: key,
           color: {
-            background: "#EE964B",
-            foreground: "#000000",
-          },
+            background:"rgb(10, 129, 107)",
+            foreground:"rgb(8, 12, 11)"
+          }
         };
       };
 
       let new_cats = Object.keys(cats).map(mapCategories);
       setCatBubbles(new_cats);
     });
-  }, [category]);
+  }, [category, load, posts]);
 
   useEffect(() => {
     if (!catBubbles) return;
@@ -102,11 +145,9 @@ export const useBubbles = (category = "") => {
   return {
     categories: current,
     audios: posts,
-    loading
+    loading,
   };
 };
-
-
 
 // This method returns an JSON object for a specific audio,
 // with the following structure:
@@ -121,17 +162,17 @@ export const useAudio = (id) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true)
+    setLoading(true);
     queryPostByPid(id).then((post) => {
       if (post.length === 0) return;
       setAudio(post[0]);
-      setLoading(false)
+      setLoading(false);
     });
   }, [id]);
 
   return {
     audio,
-    loading
+    loading,
   };
 };
 
