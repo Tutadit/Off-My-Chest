@@ -1,40 +1,59 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import CommentSection from "../CommentSection"
+import CommentSection from "../CommentSection";
 import { getAudio, getComments } from "../../database";
-
+import AudioBubble from "../AudioBubble";
+import { CgTranscript } from "react-icons/cg";
+import Back from "../Back";
 import "./index.css";
 
 const Audio = () => {
   let { audioID } = useParams();
   const { title, src, transcript } = getAudio(audioID);
   const [comments, setComments] = useState(getComments(audioID));
+  const [count, setCount] = useState(0);
+  const [showTranscript, setShowTranscript] = useState(false);
 
-  let count = 0;
-  comments.map((comment) => {
-    count += 1;
-    comment.replies && comment.replies.map((i) => (count += 1));
-    return comment;
-  });
+  useEffect(() => {
+    let total = 0;
+
+    const countComments = (comments) => {
+      comments.map((comment) => {
+        total += 1;
+        comment.replies && countComments(comment.replies);
+        return comment;
+      });
+    };
+    countComments(comments);
+    setCount(total);
+  }, [comments]);
 
   return (
     <div className="audio">
-      <h1>{title}</h1>
+      <div className="header">
+        <Back />
+        <h1>{title}</h1>
+      </div>
       <div className="audio-wrapper">
-      <audio controls>
-          <source src={src} type="audio/ogg" />
-          Your browser does not support the audio element.
-        </audio>
+        <AudioBubble
+          className={"audio-bubble"}
+          src={src}
+          background={"rgb(10, 129, 107)"}
+          foreground={"rgb(8, 12, 11)"}
+        />
       </div>
-      <div className="transcript-wrapper">
+      {showTranscript && (
+        <div className="transcript-wrapper">
           <p>{transcript}</p>
-      </div>
+        </div>
+      )}
+      <button className="icon-btn" onClick={() => setShowTranscript((prev) => !prev)}>
+        <CgTranscript /> {showTranscript ? "Hide" : "View"} Transcript
+      </button>
+
       <div className="comment-section">
         <div className="header">{count} Comments</div>
-        <CommentSection
-          comments={comments}
-          setComments={setComments}
-        />
+        <CommentSection comments={comments} setComments={setComments} />
       </div>
     </div>
   );

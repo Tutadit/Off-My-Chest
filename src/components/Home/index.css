@@ -20,19 +20,11 @@
     justify-content: center;    
 }
 
-.home .header h1, .home .header a { 
+.home .header h1 { 
     margin:0;
     padding:0;
     font-size: 1.9rem;
     width:auto;
     color:rgb(31, 31, 31);
     text-transform: capitalize;    
-}
-
-.home .header a { 
-    border-right: 1px solid #000;
-    margin-right: 0.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

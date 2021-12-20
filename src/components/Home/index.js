@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 
-import { useParams, useLocation, Routes, Route, Link } from "react-router-dom";
+import { useParams, useLocation, Routes, Route } from "react-router-dom";
 
 import BubbleUI from "react-bubble-ui";
 import "react-bubble-ui/dist/index.css";
 
-import { BiArrowBack } from "react-icons/bi";
-
 import Bubble from "../Bubble";
-
+import Back from "../Back";
 import { getBubbles } from "../../database";
 
 import "./index.css";
@@ -33,6 +31,7 @@ const Home = () => {
 
   let { category } = useParams();
   let { pathname } = useLocation();
+  
 
   let back = pathname.split("/").slice(0, -1).join("/");
   if (back === "") back = "/";
@@ -61,9 +60,7 @@ const Home = () => {
                   <h1>Off My Chest</h1>
                 ) : (
                   <>
-                    <Link to={back}>
-                      <BiArrowBack />
-                    </Link>
+                    <Back />
                     <h1>{category.replaceAll("_", " ")}</h1>
                   </>
                 )}

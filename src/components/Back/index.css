@@ -1,0 +1,16 @@
+.back-btn {
+  margin: 0;
+  padding: 0;
+  font-size: 1.9rem;
+  background: none;
+  border: none;
+  width: auto;
+  color: rgb(31, 31, 31);
+  text-transform: capitalize;
+  border-right: 1px solid #000;
+  margin-right: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor:pointer;
+}
