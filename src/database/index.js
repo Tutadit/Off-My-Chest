@@ -1,5 +1,6 @@
-import { categories } from "./categories";
-import { queryPostsByLevels } from "./firebase";
+import { useState, useEffect } from "react";
+
+import { queryPostsByLevels, queryPostByPid } from "./firebase";
 
 const colors = [
   {
@@ -34,6 +35,17 @@ const colors = [
   },
 ];
 
+const getCategories = (posts, level) => {
+  let cats = {};
+  for (let post_index in posts) {
+    let post = posts[post_index];
+
+    if (!post["level" + level]) return cats;
+    if (!cats[post["level" + level]]) cats[post["level" + level]] = {};
+  }
+  return cats;
+};
+
 // This method returns an array of bubble information,
 // each bubble is a JSON object with the following structure:
 //
@@ -45,24 +57,77 @@ const colors = [
 //          foreground:hex string
 //      }
 // }
-export const getBubbles = (category = "") => {
-  if (category === "")
-    return shuffle([
-      ...categories.map((cat) => ({
-        ...cat,
-        subcategories: null,
-      })),
-    ]);
-  const path = category.split("/");
-  let current = categories;
-  for (let section_index in path) {
-    let section = path[section_index];
-    current = current.find((cat) => cat.id === section);
-    if (!current || !current.subcategories) return shuffle(getAudios(category));
-    current = current.subcategories;
-  }
+export const useBubbles = (category = "") => {
+  const [catBubbles, setCatBubbles] = useState([]);
+  const [current, setCurrent] = useState(catBubbles);
+  const [posts, setPosts] = useState([]);
 
-  return shuffle([...current, ...getAudios(category)]);
+  useEffect(() => {
+    const categories = category.split("/");
+    let levels = {};
+    let count = 1;
+    for (let category_index in categories) {
+      const category = categories[category_index];
+      if (category === "") break;
+      levels["level" + count++] = category.replaceAll("_", " ");
+    }
+
+    queryPostsByLevels(levels).then((posts) => {
+      setPosts(
+        posts.map((post) => ({
+          ...post,
+          color: {
+            background: "#EE964B",
+            foreground: "#000000",
+          },
+        }))
+      );
+      if (posts.length === 0) {
+        setCatBubbles([]);
+        return;
+      }
+      console.log(posts);
+      let cats = getCategories(posts, Object.keys(levels).length + 1);
+
+      let curr = cats;
+      const mapCategories = (key) => {
+        curr = curr[key];
+        return {
+          category: true,
+          title: key,
+          id: key,
+          color: {
+            background: "#EE964B",
+            foreground: "#000000",
+          },
+        };
+      };
+
+      let new_cats = Object.keys(cats).map(mapCategories);
+      setCatBubbles(new_cats);
+    });
+  }, [category]);
+
+  useEffect(() => {
+    if (!catBubbles) return;
+    const path = category.split("/");
+    let curr = catBubbles;
+
+    for (let section_index in path) {
+      let section = path[section_index];
+      let new_curr = curr.find((cat) => cat.id === section);
+      if (!new_curr || !new_curr.subcategories) break;
+      curr = new_curr;
+      curr = curr.subcategories;
+    }
+
+    setCurrent(curr);
+  }, [catBubbles, category]);
+
+  return {
+    categories: current,
+    audios: posts,
+  };
 };
 
 function shuffle(array) {
@@ -93,34 +158,16 @@ function shuffle(array) {
 //      src:string,
 //      transcript:string
 // }
-export const getAudio = (id) => {
-  return {
-    title: "The title of the audio #" + id,
-    src: "/audio.wav",
-    transcript: "So this one day I went to lunch and stole a coookie",
-  };
-};
+export const useAudio = (id) => {
+  const [audio, setAudio] = useState({});
+  useEffect(() => {
+    queryPostByPid(id).then((post) => {
+      if(post.length === 0) return
+      setAudio(post[0]);      
+    });
+  }, [id]);
 
-export const getAudios = (category) => {
-
-  const categories = category.split("/");  
-  const levels = {}
-  let count = 1
-  for(let category_index in categories) {
-    const category = categories[category_index]
-    levels['level'+count++] = category.replaceAll("_"," ")
-  }
-
-  queryPostsByLevels().then((audios) => {
-    console.log(audios);
-  });
-
-  return [...Array(100).keys()].map((i) => ({
-    id: i,
-    title: "A proper title, not too long " + i,
-    color: colors[i % colors.length],
-    src: "/audio.wav",
-  }));
+  return audio;
 };
 
 // This method returns an array of comment, each comment is

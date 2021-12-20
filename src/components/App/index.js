@@ -1,19 +1,41 @@
-import './index.css';
+import "./index.css";
 
-import { Routes, Route } from "react-router-dom";
-import Home from "../Home"
-import Audio from "../Audio"
+import { AiFillPlusCircle } from "react-icons/ai";
+
+import {
+  Routes,
+  Route,
+  Link,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
+import Home from "../Home";
+import Audio from "../Audio";
+import NewPost from "../NewPost";
 
 const App = () => {
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+  
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="audio_detail/:audioID" element={<Audio />} />
+        <Route path="submit" element={<NewPost />} />
         <Route path="/:category/*" element={<Home />} />
       </Routes>
+        <button
+          onClick={() => navigate(pathname === "/submit" ? -1 : '/submit')}
+          className="btn-new"
+          style={{
+            transform: pathname === "/submit" ? "rotate(45deg)" : "rotate(0)",
+          }}
+        >
+          <AiFillPlusCircle />
+        </button>
     </div>
   );
-}
+};
 
 export default App;

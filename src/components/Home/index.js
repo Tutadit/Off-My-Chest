@@ -7,13 +7,13 @@ import "react-bubble-ui/dist/index.css";
 
 import Bubble from "../Bubble";
 import Back from "../Back";
-import { getBubbles } from "../../database";
+import { useBubbles } from "../../database";
 
 import "./index.css";
 
 const options = {
   size: 180,
-  minSize:30,
+  minSize: 30,
   gutter: 18,
   provideProps: true,
   numCols: 6,
@@ -31,16 +31,17 @@ const Home = () => {
 
   let { category } = useParams();
   let { pathname } = useLocation();
-  
 
   let back = pathname.split("/").slice(0, -1).join("/");
   if (back === "") back = "/";
 
   let path = pathname === "/" ? "" : pathname.substring(1);
 
-  const bubbles = getBubbles(path).map((bubble, i) => (
+  const { categories, audios } = useBubbles(decodeURI(path));
+  console.log(audios);
+  const bubbles =  [...categories, ...audios].map((bubble, i) => (
     <Bubble
-      key={i}
+      key={bubble.pid}
       stop={stop}
       setStop={setStop}
       data={bubble}

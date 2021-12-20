@@ -1,0 +1,65 @@
+.recording-studio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.recording-studio .controls {
+  display: flex;
+  padding: 1rem;
+}
+
+.recording-studio .controls p {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recording-studio .results {
+  display: flex;
+  padding: 1rem;
+}
+
+.delete-audio {
+    position: absolute;
+    box-sizing: border-box;
+    top: -1rem;
+    right:-1rem;
+    width:2.9rem; 
+    height:2.9rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+    font-size: 1.1rem;
+    border:none;
+    background-color:rgb(206, 62, 62);
+    border-radius: 50%;
+    color:#fff;    
+    cursor:pointer;
+}
+
+.recorder-btn {
+    background-color: rgb(10, 129, 107);
+    width:3rem;
+    height:3rem;      
+    margin:0 1rem;  
+    border:none;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.audio-bubble {
+    width: 6rem;
+    height: 6rem;
+    margin:1rem;
+}

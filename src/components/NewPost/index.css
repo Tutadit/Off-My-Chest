@@ -1,0 +1,49 @@
+.new-post {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recorder {
+    width: 30vmin;
+    height: 30vmin;
+    background-color:rgb(158, 158, 158);
+    border-radius: 50%;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.recorder .controls {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.recorder .controls p {
+    width: 100%;
+    font-size: 1rem;
+    margin-top:2rem;
+}
+
+.submit {
+    margin:1rem;
+    background-color: rgb(10, 129, 107);
+    padding:0.5rem;
+    font-size: 1.2rem;
+    cursor:pointer;
+    border:none;
+    border-radius:0.2rem;    
+}
+
+.post-name {
+    padding:0.8rem;
+    font-size: 1.2rem;
+    border:none;
+    background-color:rgb(158, 158, 158);
+    border-radius: 0.3rem;
+    margin:1rem;
+}

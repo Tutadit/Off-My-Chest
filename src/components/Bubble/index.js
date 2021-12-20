@@ -50,13 +50,13 @@ const Bubble = ({
   return (
     <AudioBubble
       className={className}
-      src={data.src}      
+      src={data.audio_file}      
       background={data.color.background}
       foreground={data.color.foreground}
       stop={stop}
       setStop={setStop}
       onClick={() => { 
-        navigate(`/audio_detail/${data.id}`)
+        navigate(`/audio_detail/${data.pid}`)
       }}
     >
         {big_enough && (
