@@ -1,26 +1,21 @@
 import React, { useState } from "react";
 import Recorder from "../Recorder";
-
+import { useNavigate } from "react-router-dom";
+import { addPost } from "../../database/firebase"
 import "./index.css";
 
 const NewPost = () => {
   const [audio, setAudio] = useState(null);
-  const [title, setTitle] = useState("");
-
+  const navigate = useNavigate()
   const submit = () => {
-    if (title === "" || !audio) return
-    
+    if (!audio) return
+    addPost(audio).then(() => {
+      navigate("/")
+    })
   };
 
   return (
     <div className="new-post">
-      <input
-        placeholder="Title"
-        className="post-name"
-        type="text"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
       <Recorder className="recorder" audio={audio} setAudio={setAudio} />
       {audio && (
         <button onClick={submit} className="submit">

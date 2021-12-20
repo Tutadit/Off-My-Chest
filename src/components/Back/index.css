@@ -13,4 +13,9 @@
   align-items: center;
   justify-content: center;
   cursor:pointer;
+  padding:1.3rem;
+}
+
+.plain {
+  border:none;
 }

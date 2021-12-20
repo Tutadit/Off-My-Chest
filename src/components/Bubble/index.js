@@ -10,7 +10,7 @@ const CategoryBubble = ({ className, style, prefix, data, bigEnough }) => {
     <Link
       className={"bubble " + className}
       style={style}
-      to={`${prefix === "" ? "/" : `/${prefix}/`}${data.id}`}
+      to={`${prefix === "" ? "/" : `/${prefix}/`}${data.pid}`}
     >
       {bigEnough && data.title}
     </Link>

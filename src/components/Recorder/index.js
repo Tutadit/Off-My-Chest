@@ -6,10 +6,9 @@ import { BsFillStopCircleFill, BsTrashFill } from "react-icons/bs";
 
 import AudioBubble from "../AudioBubble";
 
-import './index.css';
+import "./index.css";
 
 const Recorder = ({ stop, setStop, audio, setAudio, className }) => {
-
   const [recording, setRecording] = useState(false);
   const [duration, setDuration] = useState(0);
   const [durationInterval, setDurationInterval] = useState(null);

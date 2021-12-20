@@ -1,6 +1,7 @@
 .home {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .bubbles {
@@ -27,4 +28,20 @@
     width:auto;
     color:rgb(31, 31, 31);
     text-transform: capitalize;    
+}
+
+.content {
+    width:100%;
+    height:90%;
+    display: flex;
+}
+
+.content .categories {
+    width:100%;
+    height:100%;    
+}
+
+.content .audios {
+    width:100%;
+    height:100%;
 }

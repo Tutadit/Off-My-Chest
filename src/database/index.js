@@ -1,39 +1,13 @@
 import { useState, useEffect } from "react";
 
-import { queryPostsByLevels, queryPostByPid } from "./firebase";
+import {
+  queryPostsByLevels,
+  queryPostByPid,
+  queryCommentsByPid,
+  addComment,
+} from "./firebase";
 
-const colors = [
-  {
-    // Yellow
-    background: "#FFD275",
-    foreground: "rgb(179, 24, 24)",
-  },
-  {
-    // Red
-    background: "#DB5A42",
-    foreground: "rgb(255, 214, 116)",
-  },
-  {
-    //Green
-    background: "#499F68",
-    foreground: "rgb(25, 43, 187)",
-  },
-  {
-    // Pink
-    background: "#F26DF9",
-    foreground: "rgb(25, 67, 77)",
-  },
-  {
-    // Orange
-    background: "#EE964B",
-    foreground: "rgb(132, 25, 25)",
-  },
-  {
-    //Blue
-    background: "#19647E",
-    foreground: "rgb(255, 236, 132)",
-  },
-];
+
 
 const getCategories = (posts, level) => {
   let cats = {};
@@ -61,6 +35,7 @@ export const useBubbles = (category = "") => {
   const [catBubbles, setCatBubbles] = useState([]);
   const [current, setCurrent] = useState(catBubbles);
   const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const categories = category.split("/");
@@ -71,8 +46,11 @@ export const useBubbles = (category = "") => {
       if (category === "") break;
       levels["level" + count++] = category.replaceAll("_", " ");
     }
+    setLoading(true)    
 
     queryPostsByLevels(levels).then((posts) => {
+      setLoading(false)
+      console.log(posts)
       setPosts(
         posts.map((post) => ({
           ...post,
@@ -86,16 +64,13 @@ export const useBubbles = (category = "") => {
         setCatBubbles([]);
         return;
       }
-      console.log(posts);
       let cats = getCategories(posts, Object.keys(levels).length + 1);
 
-      let curr = cats;
       const mapCategories = (key) => {
-        curr = curr[key];
         return {
           category: true,
           title: key,
-          id: key,
+          pid: key,
           color: {
             background: "#EE964B",
             foreground: "#000000",
@@ -127,28 +102,11 @@ export const useBubbles = (category = "") => {
   return {
     categories: current,
     audios: posts,
+    loading
   };
 };
 
-function shuffle(array) {
-  let currentIndex = array.length,
-    randomIndex;
 
-  // While there remain elements to shuffle...
-  while (currentIndex !== 0) {
-    // Pick a remaining element...
-    randomIndex = Math.floor(0.9 * currentIndex);
-    currentIndex--;
-
-    // And swap it with the current element.
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex],
-    ];
-  }
-
-  return array;
-}
 
 // This method returns an JSON object for a specific audio,
 // with the following structure:
@@ -160,14 +118,21 @@ function shuffle(array) {
 // }
 export const useAudio = (id) => {
   const [audio, setAudio] = useState({});
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
+    setLoading(true)
     queryPostByPid(id).then((post) => {
-      if(post.length === 0) return
-      setAudio(post[0]);      
+      if (post.length === 0) return;
+      setAudio(post[0]);
+      setLoading(false)
     });
   }, [id]);
 
-  return audio;
+  return {
+    audio,
+    loading
+  };
 };
 
 // This method returns an array of comment, each comment is
@@ -190,46 +155,38 @@ export const useAudio = (id) => {
 //       ...
 //     ],
 //   },
-export const getComments = (id) => {
-  return [
-    {
-      userId: "01a",
-      comId: "012",
-      fullName: "Riya Negi",
-      avatarUrl: "https://ui-avatars.com/api/name=Riya&background=random",
-      text: "Hey, Loved your blog! ",
-      replies: [
-        {
-          userId: "02a",
-          comId: "013",
+export const useComments = (id) => {
+  const [comments, setComments] = useState([]);
+  const [refresh, setRefresh] = useState(true);
 
-          fullName: "Adam Scott",
-          avatarUrl: "https://ui-avatars.com/api/name=Adam&background=random",
-          text: "Thanks! It took me 1 month to finish this project but I am glad it helped out someone!🥰",
-        },
-        {
-          userId: "01a",
-          comId: "014",
+  useEffect(() => {
+    if (!refresh) return;
 
-          fullName: "Riya Negi",
-          avatarUrl: "https://ui-avatars.com/api/name=Riya&background=random",
-          text: "thanks!😊",
-        },
-      ],
-    },
-    {
-      userId: "02b",
-      comId: "017",
-      fullName: "Lily",
-      text: "I have a doubt about the 4th point🤔",
-      avatarUrl: "https://ui-avatars.com/api/name=Lily&background=random",
-    },
-    {
-      userId: "01c",
-      comId: "018",
-      fullName: "Derek",
-      text: "Great explanation!!!",
-      avatarUrl: "https://ui-avatars.com/api/name=Derek&background=random",
-    },
-  ];
+    setRefresh(false);
+    queryCommentsByPid(id).then((results) => {
+      const mapComment = (comment) => ({
+        ...comment,
+        replies: results
+          .filter((com) => com.parentId === comment.comId)
+          .map(mapComment),
+      });
+
+      let all_comments = results
+        .filter((comment) => !comment.parentId)
+        .map(mapComment);
+
+      setComments(all_comments);
+    });
+  }, [id, refresh]);
+
+  const newComment = (comment, parentId = null) => {
+    addComment(id, comment, parentId).then((results) => {
+      setRefresh(true);
+    });
+  };
+
+  return {
+    comments,
+    newComment,
+  };
 };

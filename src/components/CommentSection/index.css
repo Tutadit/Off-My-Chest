@@ -1,22 +1,30 @@
 .comments {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 .comment {
     display: flex;
     flex-direction: column;
-    background-color: rgb(141, 150, 149);
-    border-left:2px solid rgb(4, 27, 13);
-    border-right:2px solid rgb(4, 27, 13);
-    border-top:2px solid rgb(4, 27, 13);
-    padding:1.3rem;
+    background-color: rgb(122, 134, 133);    
+    border-left:2px solid rgb(4, 27, 13);          
+    box-sizing: border-box;
 }
 
-.comment:last-child {
-    border-bottom:2px solid rgb(4, 27, 13);
+.comment .content {
+    padding:1.2rem;
 }
+
+.comment:nth-child(even) {
+    background-color: rgb(106, 121, 119);
+}
+
+.sub-comment .comment {
+    border-right: none;
+    margin-left: 1.3rem;
+}
+
 
 .comment .person {
     display: flex;
@@ -50,32 +58,32 @@
     text-align: left;
 }
 
-.comment .reply-form {
+.reply-form {
     display: flex;
     flex-direction: column;
     width:100%;    
-    margin:1rem 0;
+    margin:0;
     background-color:rgb(83, 92, 90);    
     color:rgb(208, 219, 218);
     padding:1rem;
 }
 
-.comment .reply-form label {
+.reply-form label {
     width: 100%;
     text-align: left;
 }
 
-.comment .reply-form .header {
+.reply-form .header {
     display:flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.comment .reply-form .header h2 {
+.reply-form .header h2 {
     font-size:1.2rem;
 }
 
-.comment .reply-form input, .comment .reply-form textarea {
+.reply-form input, .reply-form textarea {
     flex-grow: 1;
     background-color:rgb(2, 24, 21);
     font-size: 1rem;
@@ -85,7 +93,7 @@
     min-height: 3rem;
 }
 
-.comment .reply-form button.btn {
+.reply-form button.btn {
     border:none;    
     background-color:rgb(10, 129, 107);
     color:rgb(8, 12, 11);
@@ -95,7 +103,7 @@
     cursor:pointer;
 }
 
-.comment .reply-control {
+.reply-control {
     width: 100%;
     display:flex;
     flex-direction: column;
@@ -105,11 +113,11 @@
     text-align: left;
 }
 
-.comment .reply-control button.active {
+.reply-control button.active {
     background-color: rgb(6, 165, 125);
 }
 
-.comment .reply-control .reply-controls {
+.reply-control .reply-controls {
     display:flex;
 }
 
@@ -120,3 +128,36 @@
     margin:1rem;
 }
 
+.icon-btn {
+    margin:1rem;
+}
+
+.thread-btn {
+    width:100%;
+    border:none;
+    background:none;
+    padding:0.3rem;
+    cursor:pointer;  
+    display: flex;  
+    align-items: center;
+    color:rgb(1, 37, 33);
+}
+
+.thread-btn .line {
+    flex-grow: 1;
+    border-top:1px solid rgb(1, 37, 33);
+    height:1px;
+    margin:0 0.4rem;
+}
+
+.thread-btn:active, .thread-btn:hover {
+    color:rgb(30, 70, 82)
+}
+
+.comments-header {
+    padding:0.6rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;    
+}

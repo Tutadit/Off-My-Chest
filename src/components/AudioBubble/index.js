@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai";
 
+import Loading from "../Loading"
 import "../Bubble/index.css";
+
 
 const AudioBubble = ({
   className,
@@ -17,16 +19,32 @@ const AudioBubble = ({
   const [playNext, setPlayNext] = useState(false);
   const [audio, setAudio] = useState(null);
   const [finished, setFinished] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
-    setAudio(new Audio(src));
+    setLoading(false);
+    const new_audio = new Audio(src);
+    const onLoad = () => {
+      setLoading(false);
+    };
+    const onError = () => {
+      setLoading(false);
+      setError(true);
+    };
+    new_audio.addEventListener("loadedmetadata", onLoad);
+    new_audio.addEventListener("error", onError);
+
+    setAudio(new_audio);
+    return () => {
+      new_audio.removeEventListener("loadedmetadata", onLoad);
+      new_audio.removeEventListener("error", onError);
+    };
   }, [src]);
 
   useEffect(() => {
     if (!audio) return;
-    const metadataLoaded = (e) => {
-      
-    };
+    const metadataLoaded = (e) => {};
 
     const playbackEnded = () => {
       setPlay(false);
@@ -93,6 +111,9 @@ const AudioBubble = ({
     } else setPlay(false);
   };
 
+  if (loading) return <Loading />;
+
+  if (error) return <></>;
   return (
     <div
       className={"bubble " + className}
