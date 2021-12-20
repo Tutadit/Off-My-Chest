@@ -47,25 +47,26 @@ const queryAllPosts = async () => {
 }
 const queryPostsByLevels = async (levels = {}) => {
     let {level1, level2, level3, level4, level5} = levels;
-    let query = collection(db, "posts")
+    let col = collection(db, "posts")
+    let q = col
 
     if (level1) {
-        query = query.where("level1", "==", level1)
+        q = query(q, where("level1", "==", level1))
     }
     if (level2) {
-        query = query.where("level2", "==", level2)
+        q = query(q, where("level2", "==", level2))
     }
     if (level3) {
-        query = query.where("level3", "==", level3)
+        q = query(q, where("level3", "==", level3))
     }
     if (level4) {
-        query = query.where("level4", "==", level4)
+        q = query(q, where("level4", "==", level4))
     }
     if (level5) {
-        query = query.where("level4", "==", level5)
+        q = query(q, where("level5", "==", level5))
     }
 
-    const querySnapshot = await getDocs(query);
+    const querySnapshot = await getDocs(q);
     const posts = []
     querySnapshot.forEach((doc) => {
         posts.push(doc.data());
