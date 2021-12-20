@@ -1,0 +1,180 @@
+.comments {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(141, 150, 149);
+    border-left:2px solid rgb(4, 27, 13);
+    border-right:2px solid rgb(4, 27, 13);
+    border-top:2px solid rgb(4, 27, 13);
+    padding:1.3rem;
+}
+
+.comment:last-child {
+    border-bottom:2px solid rgb(4, 27, 13);
+}
+
+.comment .person {
+    display: flex;
+    align-items: center;    
+}
+
+.comment button.plain {
+    background: none;
+    border:none;
+    padding:0;
+    margin:0;
+    cursor:pointer;
+}
+
+.comment .person h1 {
+    font-size: 1.2rem;
+    margin:0 1rem;
+}
+.comment .person img {
+    border-radius: 100%;
+    width: 2.4rem;
+}
+
+.comment .text {
+    width: 100%;    
+}
+
+.comment .text p {
+    padding:0;
+    margin:1rem;
+    text-align: left;
+}
+
+.comment .reply-form {
+    display: flex;
+    flex-direction: column;
+    width:100%;    
+    margin:1rem 0;
+    background-color:rgb(83, 92, 90);    
+    color:rgb(208, 219, 218);
+    padding:1rem;
+}
+
+.comment .reply-form label {
+    width: 100%;
+    text-align: left;
+}
+
+.comment .reply-form .header {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.comment .reply-form .header h2 {
+    font-size:1.2rem;
+}
+
+.comment .reply-form input, .comment .reply-form textarea {
+    flex-grow: 1;
+    background-color:rgb(2, 24, 21);
+    font-size: 1rem;
+    color:#fff;
+    border:none;
+    margin:0.3rem;
+    min-height: 3rem;
+}
+
+.comment .reply-form button.btn {
+    border:none;    
+    background-color:rgb(10, 129, 107);
+    color:rgb(8, 12, 11);
+    font-weight: bold;
+    padding:0.4rem;
+    display: block;
+    cursor:pointer;
+}
+
+.comment .reply-control {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.comment .reply-control p {
+    text-align: left;
+}
+
+.comment .reply-control button.active {
+    background-color: rgb(6, 165, 125);
+}
+
+.comment .reply-control .reply-controls {
+    display:flex;
+}
+
+
+
+.comment .recording-studio {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.recording-studio .controls {
+    display:flex;
+    padding:1rem;
+}
+
+.recording-studio .controls p {
+    margin:0;
+    padding:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.recording-studio .results {
+    display:flex;
+    padding:1rem;
+}
+
+.audio-bubble {
+    width: 6rem;
+    height: 6rem;
+    margin:1rem;
+}
+
+.comment .recorder-btn {
+    background-color: rgb(10, 129, 107);
+    width:3rem;
+    height:3rem;      
+    margin:0 1rem;  
+    border:none;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.delete-audio {
+    position: absolute;
+    box-sizing: border-box;
+    top: -1rem;
+    right:-1rem;
+    width:2.9rem; 
+    height:2.9rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+    font-size: 1.1rem;
+    border:none;
+    background-color:rgb(206, 62, 62);
+    border-radius: 50%;
+    color:#fff;    
+    cursor:pointer;
+}
