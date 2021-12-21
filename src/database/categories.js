@@ -1,8 +1,8 @@
-export const categories = [
+export const AllCategories = [
   {
     category: true,
     title: "art and entertainment",
-    id: "art_and_entertainment",
+    pid: "art and entertainment",
     color: {
       background: "#DB5A42",
       foreground: "#FFFFFF",
@@ -11,7 +11,7 @@ export const categories = [
       {
         category: true,
         title: "books and literature",
-        id: "books_and_literature",
+        pid: "books and literature",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -20,7 +20,7 @@ export const categories = [
           {
             category: true,
             title: "best-sellers",
-            id: "best_sellers",
+            pid: "best sellers",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -29,7 +29,7 @@ export const categories = [
           {
             category: true,
             title: "children's books",
-            id: "children_s_books",
+            pid: "children s books",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -38,7 +38,7 @@ export const categories = [
           {
             category: true,
             title: "e-books",
-            id: "e_books",
+            pid: "e books",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -47,7 +47,7 @@ export const categories = [
           {
             category: true,
             title: "fan fiction",
-            id: "fan_fiction",
+            pid: "fan fiction",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -56,7 +56,7 @@ export const categories = [
           {
             category: true,
             title: "magazines",
-            id: "magazines",
+            pid: "magazines",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -65,7 +65,7 @@ export const categories = [
           {
             category: true,
             title: "mythology",
-            id: "mythology",
+            pid: "mythology",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -74,7 +74,7 @@ export const categories = [
           {
             category: true,
             title: "non-fiction",
-            id: "non_fiction",
+            pid: "non fiction",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -83,7 +83,7 @@ export const categories = [
           {
             category: true,
             title: "poetry",
-            id: "poetry",
+            pid: "poetry",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -92,7 +92,7 @@ export const categories = [
           {
             category: true,
             title: "reference books",
-            id: "reference_books",
+            pid: "reference books",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -101,7 +101,7 @@ export const categories = [
           {
             category: true,
             title: "romance novels",
-            id: "romance_novels",
+            pid: "romance novels",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -110,7 +110,7 @@ export const categories = [
           {
             category: true,
             title: "science fiction",
-            id: "science_fiction",
+            pid: "science fiction",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -119,7 +119,7 @@ export const categories = [
           {
             category: true,
             title: "textbooks",
-            id: "textbooks",
+            pid: "textbooks",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -130,7 +130,7 @@ export const categories = [
       {
         category: true,
         title: "celebrity fan and gossip",
-        id: "celebrity_fan_and_gossip",
+        pid: "celebrity fan and gossip",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -139,7 +139,7 @@ export const categories = [
       {
         category: true,
         title: "comics and animation",
-        id: "comics_and_animation",
+        pid: "comics and animation",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -148,7 +148,7 @@ export const categories = [
           {
             category: true,
             title: "anime and manga",
-            id: "anime_and_manga",
+            pid: "anime and manga",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -157,7 +157,7 @@ export const categories = [
           {
             category: true,
             title: "cartoons",
-            id: "cartoons",
+            pid: "cartoons",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -166,7 +166,7 @@ export const categories = [
           {
             category: true,
             title: "comics",
-            id: "comics",
+            pid: "comics",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -177,7 +177,7 @@ export const categories = [
       {
         category: true,
         title: "dance",
-        id: "dance",
+        pid: "dance",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -186,7 +186,7 @@ export const categories = [
           {
             category: true,
             title: "ballet",
-            id: "ballet",
+            pid: "ballet",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -195,7 +195,7 @@ export const categories = [
           {
             category: true,
             title: "ballroom dance",
-            id: "ballroom_dance",
+            pid: "ballroom dance",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -204,7 +204,7 @@ export const categories = [
           {
             category: true,
             title: "belly dance",
-            id: "belly_dance",
+            pid: "belly dance",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -213,7 +213,7 @@ export const categories = [
           {
             category: true,
             title: "modern dance",
-            id: "modern_dance",
+            pid: "modern dance",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -222,7 +222,7 @@ export const categories = [
           {
             category: true,
             title: "pole dancing",
-            id: "pole_dancing",
+            pid: "pole dancing",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -233,7 +233,7 @@ export const categories = [
       {
         category: true,
         title: "humor",
-        id: "humor",
+        pid: "humor",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -242,7 +242,7 @@ export const categories = [
       {
         category: true,
         title: "movies and tv",
-        id: "movies_and_tv",
+        pid: "movies and tv",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -251,7 +251,7 @@ export const categories = [
           {
             category: true,
             title: "action",
-            id: "action",
+            pid: "action",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -260,7 +260,7 @@ export const categories = [
           {
             category: true,
             title: "animated",
-            id: "animated",
+            pid: "animated",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -269,7 +269,7 @@ export const categories = [
           {
             category: true,
             title: "bollywood",
-            id: "bollywood",
+            pid: "bollywood",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -278,7 +278,7 @@ export const categories = [
           {
             category: true,
             title: "children's",
-            id: "children_s",
+            pid: "children s",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -287,7 +287,7 @@ export const categories = [
           {
             category: true,
             title: "classics",
-            id: "classics",
+            pid: "classics",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -296,7 +296,7 @@ export const categories = [
               {
                 category: true,
                 title: "silent films",
-                id: "silent_films",
+                pid: "silent films",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -307,7 +307,7 @@ export const categories = [
           {
             category: true,
             title: "comedies",
-            id: "comedies",
+            pid: "comedies",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -316,7 +316,7 @@ export const categories = [
           {
             category: true,
             title: "cult classics",
-            id: "cult_classics",
+            pid: "cult classics",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -325,7 +325,7 @@ export const categories = [
           {
             category: true,
             title: "documentaries",
-            id: "documentaries",
+            pid: "documentaries",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -334,7 +334,7 @@ export const categories = [
           {
             category: true,
             title: "dramas",
-            id: "dramas",
+            pid: "dramas",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -343,7 +343,7 @@ export const categories = [
           {
             category: true,
             title: "film festivals and awards",
-            id: "film_festivals_and_awards",
+            pid: "film festivals and awards",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -352,7 +352,7 @@ export const categories = [
           {
             category: true,
             title: "horror",
-            id: "horror",
+            pid: "horror",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -361,16 +361,16 @@ export const categories = [
           {
             category: true,
             title: "independent",
-            id: "independent",
+            pid: "independent",
             color: {
               background: "#EE964B",
               foreground: "#000000",
             },
-          },
+        },
           {
             category: true,
             title: "movie reviews",
-            id: "movie_reviews",
+            pid: "movie reviews",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -379,7 +379,7 @@ export const categories = [
           {
             category: true,
             title: "trailers",
-            id: "trailers",
+            pid: "trailers",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -388,7 +388,7 @@ export const categories = [
           {
             category: true,
             title: "movies",
-            id: "movies",
+            pid: "movies",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -397,7 +397,7 @@ export const categories = [
           {
             category: true,
             title: "reality",
-            id: "reality",
+            pid: "reality",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -406,7 +406,7 @@ export const categories = [
           {
             category: true,
             title: "romantic comedies",
-            id: "romantic_comedies",
+            pid: "romantic comedies",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -415,7 +415,7 @@ export const categories = [
           {
             category: true,
             title: "talk shows",
-            id: "talk_shows",
+            pid: "talk shows",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -424,7 +424,7 @@ export const categories = [
           {
             category: true,
             title: "television ",
-            id: "television_",
+            pid: "television ",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -433,7 +433,7 @@ export const categories = [
           {
             category: true,
             title: "thrillers ",
-            id: "thrillers_",
+            pid: "thrillers ",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -442,7 +442,7 @@ export const categories = [
           {
             category: true,
             title: "westerns ",
-            id: "westerns_",
+            pid: "westerns ",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -453,7 +453,7 @@ export const categories = [
       {
         category: true,
         title: "music",
-        id: "music",
+        pid: "music",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -462,7 +462,7 @@ export const categories = [
           {
             category: true,
             title: "music genres",
-            id: "music_genres",
+            pid: "music genres",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -471,7 +471,7 @@ export const categories = [
               {
                 category: true,
                 title: "blues",
-                id: "blues",
+                pid: "blues",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -480,7 +480,7 @@ export const categories = [
               {
                 category: true,
                 title: "classical music",
-                id: "classical_music",
+                pid: "classical music",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -489,7 +489,7 @@ export const categories = [
               {
                 category: true,
                 title: "country music",
-                id: "country_music",
+                pid: "country music",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -498,7 +498,7 @@ export const categories = [
               {
                 category: true,
                 title: "easy listening",
-                id: "easy_listening",
+                pid: "easy listening",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -507,7 +507,7 @@ export const categories = [
               {
                 category: true,
                 title: "electronic music",
-                id: "electronic_music",
+                pid: "electronic music",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -516,7 +516,7 @@ export const categories = [
               {
                 category: true,
                 title: "folk music",
-                id: "folk_music",
+                pid: "folk music",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -525,7 +525,7 @@ export const categories = [
               {
                 category: true,
                 title: "hip hop",
-                id: "hip_hop",
+                pid: "hip hop",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -534,7 +534,7 @@ export const categories = [
               {
                 category: true,
                 title: "jazz",
-                id: "jazz",
+                pid: "jazz",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -543,7 +543,7 @@ export const categories = [
               {
                 category: true,
                 title: "opera",
-                id: "opera",
+                pid: "opera",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -552,7 +552,7 @@ export const categories = [
               {
                 category: true,
                 title: "pop music",
-                id: "pop_music",
+                pid: "pop music",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -561,7 +561,7 @@ export const categories = [
               {
                 category: true,
                 title: "punk",
-                id: "punk",
+                pid: "punk",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -570,7 +570,7 @@ export const categories = [
               {
                 category: true,
                 title: "religious music",
-                id: "religious_music",
+                pid: "religious music",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -579,7 +579,7 @@ export const categories = [
               {
                 category: true,
                 title: "rock music",
-                id: "rock_music",
+                pid: "rock music",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -588,7 +588,7 @@ export const categories = [
               {
                 category: true,
                 title: "ska",
-                id: "ska",
+                pid: "ska",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -597,7 +597,7 @@ export const categories = [
               {
                 category: true,
                 title: "soul music",
-                id: "soul_music",
+                pid: "soul music",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -606,7 +606,7 @@ export const categories = [
               {
                 category: true,
                 title: "soundtracks",
-                id: "soundtracks",
+                pid: "soundtracks",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -615,7 +615,7 @@ export const categories = [
               {
                 category: true,
                 title: "world music",
-                id: "world_music",
+                pid: "world music",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -626,7 +626,7 @@ export const categories = [
           {
             category: true,
             title: "music reference ",
-            id: "music_reference_",
+            pid: "music reference ",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -635,7 +635,7 @@ export const categories = [
               {
                 category: true,
                 title: "music composition and theory",
-                id: "music_composition_and_theory",
+                pid: "music composition and theory",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -644,7 +644,7 @@ export const categories = [
               {
                 category: true,
                 title: "sheet music",
-                id: "sheet_music",
+                pid: "sheet music",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -655,7 +655,7 @@ export const categories = [
           {
             category: true,
             title: "musical instruments",
-            id: "musical_instruments",
+            pid: "musical instruments",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -664,7 +664,7 @@ export const categories = [
               {
                 category: true,
                 title: "drums",
-                id: "drums",
+                pid: "drums",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -673,7 +673,7 @@ export const categories = [
               {
                 category: true,
                 title: "guitars",
-                id: "guitars",
+                pid: "guitars",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -682,7 +682,7 @@ export const categories = [
               {
                 category: true,
                 title: "pianos",
-                id: "pianos",
+                pid: "pianos",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -693,7 +693,7 @@ export const categories = [
           {
             category: true,
             title: "recording industry",
-            id: "recording_industry",
+            pid: "recording industry",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -702,7 +702,7 @@ export const categories = [
               {
                 category: true,
                 title: "music awards",
-                id: "music_awards",
+                pid: "music awards",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -711,7 +711,7 @@ export const categories = [
               {
                 category: true,
                 title: "record labels",
-                id: "record_labels",
+                pid: "record labels",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -722,7 +722,7 @@ export const categories = [
           {
             category: true,
             title: "singing ",
-            id: "singing_",
+            pid: "singing ",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -733,7 +733,7 @@ export const categories = [
       {
         category: true,
         title: "radio",
-        id: "radio",
+        pid: "radio",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -742,7 +742,7 @@ export const categories = [
           {
             category: true,
             title: "podcasts",
-            id: "podcasts",
+            pid: "podcasts",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -751,7 +751,7 @@ export const categories = [
           {
             category: true,
             title: "radio programs",
-            id: "radio_programs",
+            pid: "radio programs",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -760,7 +760,7 @@ export const categories = [
           {
             category: true,
             title: "talk radio",
-            id: "talk_radio",
+            pid: "talk radio",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -771,7 +771,7 @@ export const categories = [
       {
         category: true,
         title: "shows and events",
-        id: "shows_and_events",
+        pid: "shows and events",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -780,7 +780,7 @@ export const categories = [
           {
             category: true,
             title: "beauty contest",
-            id: "beauty_contest",
+            pid: "beauty contest",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -789,7 +789,7 @@ export const categories = [
           {
             category: true,
             title: "circus",
-            id: "circus",
+            pid: "circus",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -798,7 +798,7 @@ export const categories = [
           {
             category: true,
             title: "classical concert",
-            id: "classical_concert",
+            pid: "classical concert",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -807,7 +807,7 @@ export const categories = [
           {
             category: true,
             title: "concert",
-            id: "concert",
+            pid: "concert",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -816,7 +816,7 @@ export const categories = [
           {
             category: true,
             title: "conference",
-            id: "conference",
+            pid: "conference",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -825,7 +825,7 @@ export const categories = [
           {
             category: true,
             title: "exhibition",
-            id: "exhibition",
+            pid: "exhibition",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -834,7 +834,7 @@ export const categories = [
           {
             category: true,
             title: "fair",
-            id: "fair",
+            pid: "fair",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -843,7 +843,7 @@ export const categories = [
           {
             category: true,
             title: "festival",
-            id: "festival",
+            pid: "festival",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -852,7 +852,7 @@ export const categories = [
           {
             category: true,
             title: "sports event",
-            id: "sports_event",
+            pid: "sports event",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -863,7 +863,7 @@ export const categories = [
       {
         category: true,
         title: "theatre",
-        id: "theatre",
+        pid: "theatre",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -872,7 +872,7 @@ export const categories = [
           {
             category: true,
             title: "theatre awards",
-            id: "theatre_awards",
+            pid: "theatre awards",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -881,7 +881,7 @@ export const categories = [
           {
             category: true,
             title: "theatre companies",
-            id: "theatre_companies",
+            pid: "theatre companies",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -892,7 +892,7 @@ export const categories = [
       {
         category: true,
         title: "visual art and design",
-        id: "visual_art_and_design",
+        pid: "visual art and design",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -901,7 +901,7 @@ export const categories = [
           {
             category: true,
             title: "architecture",
-            id: "architecture",
+            pid: "architecture",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -910,7 +910,7 @@ export const categories = [
           {
             category: true,
             title: "art and craft supplies",
-            id: "art_and_craft_supplies",
+            pid: "art and craft supplies",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -919,7 +919,7 @@ export const categories = [
           {
             category: true,
             title: "art museums and galleries",
-            id: "art_museums_and_galleries",
+            pid: "art museums and galleries",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -928,7 +928,7 @@ export const categories = [
           {
             category: true,
             title: "arts education",
-            id: "arts_education",
+            pid: "arts education",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -937,7 +937,7 @@ export const categories = [
           {
             category: true,
             title: "design",
-            id: "design",
+            pid: "design",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -946,7 +946,7 @@ export const categories = [
               {
                 category: true,
                 title: "graphic design",
-                id: "graphic_design",
+                pid: "graphic design",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -955,7 +955,7 @@ export const categories = [
               {
                 category: true,
                 title: "industrial and product design",
-                id: "industrial_and_product_design",
+                pid: "industrial and product design",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -964,7 +964,7 @@ export const categories = [
               {
                 category: true,
                 title: "interior design",
-                id: "interior_design",
+                pid: "interior design",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -975,7 +975,7 @@ export const categories = [
           {
             category: true,
             title: "digital art",
-            id: "digital_art",
+            pid: "digital art",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -984,7 +984,7 @@ export const categories = [
           {
             category: true,
             title: "drawing",
-            id: "drawing",
+            pid: "drawing",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -993,7 +993,7 @@ export const categories = [
           {
             category: true,
             title: "painting",
-            id: "painting",
+            pid: "painting",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -1002,7 +1002,7 @@ export const categories = [
           {
             category: true,
             title: "performance art",
-            id: "performance_art",
+            pid: "performance art",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -1011,7 +1011,7 @@ export const categories = [
           {
             category: true,
             title: "restoration",
-            id: "restoration",
+            pid: "restoration",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -1020,7 +1020,7 @@ export const categories = [
           {
             category: true,
             title: "sculpture",
-            id: "sculpture",
+            pid: "sculpture",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -1033,7 +1033,7 @@ export const categories = [
   {
     category: true,
     title: "style and fashion",
-    id: "style_and_fashion",
+    pid: "style and fashion",
     color: {
       background: "#EE964B",
       foreground: "#000000",
@@ -1042,7 +1042,7 @@ export const categories = [
       {
         category: true,
         title: "accessories",
-        id: "accessories",
+        pid: "accessories",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -1051,7 +1051,7 @@ export const categories = [
       {
         category: true,
         title: "backpacks",
-        id: "backpacks",
+        pid: "backpacks",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -1060,7 +1060,7 @@ export const categories = [
       {
         category: true,
         title: "gloves",
-        id: "gloves",
+        pid: "gloves",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -1069,7 +1069,7 @@ export const categories = [
       {
         category: true,
         title: "hats",
-        id: "hats",
+        pid: "hats",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -1078,7 +1078,7 @@ export const categories = [
       {
         category: true,
         title: "scarves",
-        id: "scarves",
+        pid: "scarves",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -1087,7 +1087,7 @@ export const categories = [
       {
         category: true,
         title: "socks",
-        id: "socks",
+        pid: "socks",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -1096,7 +1096,7 @@ export const categories = [
       {
         category: true,
         title: "sunglasses",
-        id: "sunglasses",
+        pid: "sunglasses",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -1105,7 +1105,7 @@ export const categories = [
       {
         category: true,
         title: "ties",
-        id: "ties",
+        pid: "ties",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -1114,7 +1114,7 @@ export const categories = [
       {
         category: true,
         title: "wallets",
-        id: "wallets",
+        pid: "wallets",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -1123,7 +1123,7 @@ export const categories = [
       {
         category: true,
         title: "watches",
-        id: "watches",
+        pid: "watches",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -1132,7 +1132,7 @@ export const categories = [
       {
         category: true,
         title: "beauty ",
-        id: "beauty_",
+        pid: "beauty ",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -1141,7 +1141,7 @@ export const categories = [
           {
             category: true,
             title: "cologne",
-            id: "cologne",
+            pid: "cologne",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -1150,7 +1150,7 @@ export const categories = [
           {
             category: true,
             title: "cosmetics ",
-            id: "cosmetics_",
+            pid: "cosmetics ",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -1159,7 +1159,7 @@ export const categories = [
               {
                 category: true,
                 title: "eyeshadow",
-                id: "eyeshadow",
+                pid: "eyeshadow",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -1168,7 +1168,7 @@ export const categories = [
               {
                 category: true,
                 title: "lipstick",
-                id: "lipstick",
+                pid: "lipstick",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -1177,7 +1177,7 @@ export const categories = [
               {
                 category: true,
                 title: "nail polish",
-                id: "nail_polish",
+                pid: "nail polish",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -1188,7 +1188,7 @@ export const categories = [
           {
             category: true,
             title: "cosmetology and beauty professionals",
-            id: "cosmetology_and_beauty_professionals",
+            pid: "cosmetology and beauty professionals",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -1197,7 +1197,7 @@ export const categories = [
           {
             category: true,
             title: "face and body care ",
-            id: "face_and_body_care_",
+            pid: "face and body care ",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -1206,7 +1206,7 @@ export const categories = [
               {
                 category: true,
                 title: "body care",
-                id: "body_care",
+                pid: "body care",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -1215,7 +1215,7 @@ export const categories = [
               {
                 category: true,
                 title: "hygiene and toiletries",
-                id: "hygiene_and_toiletries",
+                pid: "hygiene and toiletries",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -1224,7 +1224,7 @@ export const categories = [
               {
                 category: true,
                 title: "nail care",
-                id: "nail_care",
+                pid: "nail care",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -1235,7 +1235,7 @@ export const categories = [
           {
             category: true,
             title: "hair care",
-            id: "hair_care",
+            pid: "hair care",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -1244,7 +1244,7 @@ export const categories = [
           {
             category: true,
             title: "perfume",
-            id: "perfume",
+            pid: "perfume",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -1253,7 +1253,7 @@ export const categories = [
           {
             category: true,
             title: "tattoos",
-            id: "tattoos",
+            pid: "tattoos",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -1264,7 +1264,7 @@ export const categories = [
       {
         category: true,
         title: "body art",
-        id: "body_art",
+        pid: "body art",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -1273,7 +1273,7 @@ export const categories = [
       {
         category: true,
         title: "clothing ",
-        id: "clothing_",
+        pid: "clothing ",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -1282,7 +1282,7 @@ export const categories = [
           {
             category: true,
             title: "blazers",
-            id: "blazers",
+            pid: "blazers",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -1291,7 +1291,7 @@ export const categories = [
           {
             category: true,
             title: "coats",
-            id: "coats",
+            pid: "coats",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -1300,7 +1300,7 @@ export const categories = [
           {
             category: true,
             title: "hoodies",
-            id: "hoodies",
+            pid: "hoodies",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -1309,7 +1309,7 @@ export const categories = [
           {
             category: true,
             title: "jackets",
-            id: "jackets",
+            pid: "jackets",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -1318,7 +1318,7 @@ export const categories = [
           {
             category: true,
             title: "leggings",
-            id: "leggings",
+            pid: "leggings",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -1327,7 +1327,7 @@ export const categories = [
           {
             category: true,
             title: "lingerie",
-            id: "lingerie",
+            pid: "lingerie",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -1336,7 +1336,7 @@ export const categories = [
           {
             category: true,
             title: "pajamas",
-            id: "pajamas",
+            pid: "pajamas",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -1345,7 +1345,7 @@ export const categories = [
           {
             category: true,
             title: "pants ",
-            id: "pants_",
+            pid: "pants ",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -1354,7 +1354,7 @@ export const categories = [
               {
                 category: true,
                 title: "jeans",
-                id: "jeans",
+                pid: "jeans",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -1365,7 +1365,7 @@ export const categories = [
           {
             category: true,
             title: "petticoats",
-            id: "petticoats",
+            pid: "petticoats",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -1374,7 +1374,7 @@ export const categories = [
           {
             category: true,
             title: "shirts",
-            id: "shirts",
+            pid: "shirts",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -1383,7 +1383,7 @@ export const categories = [
           {
             category: true,
             title: "shorts",
-            id: "shorts",
+            pid: "shorts",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -1392,7 +1392,7 @@ export const categories = [
           {
             category: true,
             title: "skirts",
-            id: "skirts",
+            pid: "skirts",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -1401,7 +1401,7 @@ export const categories = [
           {
             category: true,
             title: "sweaters",
-            id: "sweaters",
+            pid: "sweaters",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -1410,7 +1410,7 @@ export const categories = [
           {
             category: true,
             title: "wedding dresses",
-            id: "wedding_dresses",
+            pid: "wedding dresses",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -1421,7 +1421,7 @@ export const categories = [
       {
         category: true,
         title: "fashion designers",
-        id: "fashion_designers",
+        pid: "fashion designers",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -1430,7 +1430,7 @@ export const categories = [
       {
         category: true,
         title: "footwear ",
-        id: "footwear_",
+        pid: "footwear ",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -1439,7 +1439,7 @@ export const categories = [
           {
             category: true,
             title: "boots",
-            id: "boots",
+            pid: "boots",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -1448,7 +1448,7 @@ export const categories = [
           {
             category: true,
             title: "sandals",
-            id: "sandals",
+            pid: "sandals",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -1457,7 +1457,7 @@ export const categories = [
           {
             category: true,
             title: "shoes",
-            id: "shoes",
+            pid: "shoes",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -1466,7 +1466,7 @@ export const categories = [
           {
             category: true,
             title: "slippers",
-            id: "slippers",
+            pid: "slippers",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -1475,7 +1475,7 @@ export const categories = [
           {
             category: true,
             title: "sneakers",
-            id: "sneakers",
+            pid: "sneakers",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -1486,7 +1486,7 @@ export const categories = [
       {
         category: true,
         title: "jewelry ",
-        id: "jewelry_",
+        pid: "jewelry ",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -1495,7 +1495,7 @@ export const categories = [
           {
             category: true,
             title: "bracelets",
-            id: "bracelets",
+            pid: "bracelets",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -1504,7 +1504,7 @@ export const categories = [
           {
             category: true,
             title: "earrings",
-            id: "earrings",
+            pid: "earrings",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -1513,7 +1513,7 @@ export const categories = [
           {
             category: true,
             title: "necklaces",
-            id: "necklaces",
+            pid: "necklaces",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -1522,7 +1522,7 @@ export const categories = [
           {
             category: true,
             title: "rings",
-            id: "rings",
+            pid: "rings",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -1533,7 +1533,7 @@ export const categories = [
       {
         category: true,
         title: "luxury goods",
-        id: "luxury_goods",
+        pid: "luxury goods",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -1542,7 +1542,7 @@ export const categories = [
       {
         category: true,
         title: "men's fashion",
-        id: "men_s_fashion",
+        pid: "men s fashion",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -1551,7 +1551,7 @@ export const categories = [
       {
         category: true,
         title: "swimwear",
-        id: "swimwear",
+        pid: "swimwear",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -1560,7 +1560,7 @@ export const categories = [
           {
             category: true,
             title: "bikinis",
-            id: "bikinis",
+            pid: "bikinis",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -1571,7 +1571,7 @@ export const categories = [
       {
         category: true,
         title: "underwear",
-        id: "underwear",
+        pid: "underwear",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -1582,7 +1582,7 @@ export const categories = [
   {
     category: true,
     title: "technology and computing",
-    id: "technology_and_computing",
+    pid: "technology and computing",
     color: {
       background: "#F26DF9",
       foreground: "#000000",
@@ -1591,7 +1591,7 @@ export const categories = [
       {
         category: true,
         title: "computer certification",
-        id: "computer_certification",
+        pid: "computer certification",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -1600,7 +1600,7 @@ export const categories = [
       {
         category: true,
         title: "computer crime",
-        id: "computer_crime",
+        pid: "computer crime",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -1609,7 +1609,7 @@ export const categories = [
       {
         category: true,
         title: "computer reviews",
-        id: "computer_reviews",
+        pid: "computer reviews",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -1618,7 +1618,7 @@ export const categories = [
       {
         category: true,
         title: "computer security ",
-        id: "computer_security_",
+        pid: "computer security ",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -1627,7 +1627,7 @@ export const categories = [
           {
             category: true,
             title: "antivirus and malware",
-            id: "antivirus_and_malware",
+            pid: "antivirus and malware",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -1636,7 +1636,7 @@ export const categories = [
           {
             category: true,
             title: "network security",
-            id: "network_security",
+            pid: "network security",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -1647,7 +1647,7 @@ export const categories = [
       {
         category: true,
         title: "consumer electronics ",
-        id: "consumer_electronics_",
+        pid: "consumer electronics ",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -1656,7 +1656,7 @@ export const categories = [
           {
             category: true,
             title: "audio equipment ",
-            id: "audio_equipment_",
+            pid: "audio equipment ",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -1665,7 +1665,7 @@ export const categories = [
               {
                 category: true,
                 title: "headphones",
-                id: "headphones",
+                pid: "headphones",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -1674,7 +1674,7 @@ export const categories = [
               {
                 category: true,
                 title: "speakers",
-                id: "speakers",
+                pid: "speakers",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -1683,7 +1683,7 @@ export const categories = [
               {
                 category: true,
                 title: "stereo systems and components",
-                id: "stereo_systems_and_components",
+                pid: "stereo systems and components",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -1696,7 +1696,7 @@ export const categories = [
       {
         category: true,
         title: "camera and photo equipment ",
-        id: "camera_and_photo_equipment_",
+        pid: "camera and photo equipment ",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -1705,7 +1705,7 @@ export const categories = [
           {
             category: true,
             title: "binoculars",
-            id: "binoculars",
+            pid: "binoculars",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -1714,7 +1714,7 @@ export const categories = [
           {
             category: true,
             title: "cameras and camcorders ",
-            id: "cameras_and_camcorders_",
+            pid: "cameras and camcorders ",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -1723,7 +1723,7 @@ export const categories = [
               {
                 category: true,
                 title: "camcorde",
-                id: "camcorde",
+                pid: "camcorde",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -1732,7 +1732,7 @@ export const categories = [
               {
                 category: true,
                 title: "camera ba",
-                id: "camera_ba",
+                pid: "camera ba",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -1741,7 +1741,7 @@ export const categories = [
               {
                 category: true,
                 title: "camera batteries",
-                id: "camera_batteries",
+                pid: "camera batteries",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -1750,7 +1750,7 @@ export const categories = [
               {
                 category: true,
                 title: "camera lens",
-                id: "camera_lens",
+                pid: "camera lens",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -1759,7 +1759,7 @@ export const categories = [
               {
                 category: true,
                 title: "camer",
-                id: "camer",
+                pid: "camer",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -1770,7 +1770,7 @@ export const categories = [
           {
             category: true,
             title: "telescopes",
-            id: "telescopes",
+            pid: "telescopes",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -1781,7 +1781,7 @@ export const categories = [
       {
         category: true,
         title: "e-book reader ",
-        id: "e_book_reader_",
+        pid: "e book reader ",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -1790,7 +1790,7 @@ export const categories = [
       {
         category: true,
         title: "game systems and consoles ",
-        id: "game_systems_and_consoles_",
+        pid: "game systems and consoles ",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -1799,7 +1799,7 @@ export const categories = [
           {
             category: true,
             title: "nintendo",
-            id: "nintendo",
+            pid: "nintendo",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -1808,7 +1808,7 @@ export const categories = [
           {
             category: true,
             title: "playstation",
-            id: "playstation",
+            pid: "playstation",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -1817,7 +1817,7 @@ export const categories = [
           {
             category: true,
             title: "xbox",
-            id: "xbox",
+            pid: "xbox",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -1828,7 +1828,7 @@ export const categories = [
       {
         category: true,
         title: "home video and dvd",
-        id: "home_video_and_dvd",
+        pid: "home video and dvd",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -1837,7 +1837,7 @@ export const categories = [
       {
         category: true,
         title: "portable entertainment",
-        id: "portable_entertainment",
+        pid: "portable entertainment",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -1846,7 +1846,7 @@ export const categories = [
       {
         category: true,
         title: "radios",
-        id: "radios",
+        pid: "radios",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -1855,7 +1855,7 @@ export const categories = [
       {
         category: true,
         title: "telephones ",
-        id: "telephones_",
+        pid: "telephones ",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -1864,7 +1864,7 @@ export const categories = [
           {
             category: true,
             title: "mobile phones",
-            id: "mobile_phones",
+            pid: "mobile phones",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -1873,7 +1873,7 @@ export const categories = [
               {
                 category: true,
                 title: "smart phones",
-                id: "smart_phones",
+                pid: "smart phones",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -1886,7 +1886,7 @@ export const categories = [
       {
         category: true,
         title: "tv and video equipment ",
-        id: "tv_and_video_equipment_",
+        pid: "tv and video equipment ",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -1895,7 +1895,7 @@ export const categories = [
           {
             category: true,
             title: "dvrs and set-top boxes",
-            id: "dvrs_and_set_top_boxes",
+            pid: "dvrs and set top boxes",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -1904,7 +1904,7 @@ export const categories = [
           {
             category: true,
             title: "home theater systems",
-            id: "home_theater_systems",
+            pid: "home theater systems",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -1913,7 +1913,7 @@ export const categories = [
           {
             category: true,
             title: "projectors",
-            id: "projectors",
+            pid: "projectors",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -1922,7 +1922,7 @@ export const categories = [
           {
             category: true,
             title: "televisions ",
-            id: "televisions_",
+            pid: "televisions ",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -1931,7 +1931,7 @@ export const categories = [
               {
                 category: true,
                 title: "hdt",
-                id: "hdt",
+                pid: "hdt",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -1940,7 +1940,7 @@ export const categories = [
               {
                 category: true,
                 title: "lcd tv",
-                id: "lcd_tv",
+                pid: "lcd tv",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -1949,7 +1949,7 @@ export const categories = [
               {
                 category: true,
                 title: "plasma tv",
-                id: "plasma_tv",
+                pid: "plasma tv",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -1958,7 +1958,7 @@ export const categories = [
               {
                 category: true,
                 title: "video players and recorders ",
-                id: "video_players_and_recorders_",
+                pid: "video players and recorders ",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -1967,7 +1967,7 @@ export const categories = [
                   {
                     category: true,
                     title: "blu-ray players and recorde",
-                    id: "blu_ray_players_and_recorde",
+                    pid: "blu ray players and recorde",
                     color: {
                       background: "#499F68",
                       foreground: "#FFFFFF",
@@ -1976,7 +1976,7 @@ export const categories = [
                   {
                     category: true,
                     title: "dvd players and recorders",
-                    id: "dvd_players_and_recorders",
+                    pid: "dvd players and recorders",
                     color: {
                       background: "#F26DF9",
                       foreground: "#000000",
@@ -1991,7 +1991,7 @@ export const categories = [
       {
         category: true,
         title: "data centers",
-        id: "data_centers",
+        pid: "data centers",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -2000,7 +2000,7 @@ export const categories = [
       {
         category: true,
         title: "electronic components",
-        id: "electronic_components",
+        pid: "electronic components",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -2009,7 +2009,7 @@ export const categories = [
       {
         category: true,
         title: "enterprise technology ",
-        id: "enterprise_technology_",
+        pid: "enterprise technology ",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -2018,7 +2018,7 @@ export const categories = [
           {
             category: true,
             title: "customer relationship management",
-            id: "customer_relationship_management",
+            pid: "customer relationship management",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -2027,7 +2027,7 @@ export const categories = [
           {
             category: true,
             title: "data management",
-            id: "data_management",
+            pid: "data management",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -2036,7 +2036,7 @@ export const categories = [
           {
             category: true,
             title: "enterprise resource planning",
-            id: "enterprise_resource_planning",
+            pid: "enterprise resource planning",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -2047,7 +2047,7 @@ export const categories = [
       {
         category: true,
         title: "hardware ",
-        id: "hardware_",
+        pid: "hardware ",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -2056,7 +2056,7 @@ export const categories = [
           {
             category: true,
             title: "computer ",
-            id: "computer_",
+            pid: "computer ",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -2065,7 +2065,7 @@ export const categories = [
               {
                 category: true,
                 title: "desktop computer",
-                id: "desktop_computer",
+                pid: "desktop computer",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -2074,7 +2074,7 @@ export const categories = [
               {
                 category: true,
                 title: "portable computer ",
-                id: "portable_computer_",
+                pid: "portable computer ",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -2083,7 +2083,7 @@ export const categories = [
                   {
                     category: true,
                     title: "lapt",
-                    id: "lapt",
+                    pid: "lapt",
                     color: {
                       background: "#499F68",
                       foreground: "#FFFFFF",
@@ -2092,7 +2092,7 @@ export const categories = [
                   {
                     category: true,
                     title: "palmtops and pd",
-                    id: "palmtops_and_pd",
+                    pid: "palmtops and pd",
                     color: {
                       background: "#F26DF9",
                       foreground: "#000000",
@@ -2101,7 +2101,7 @@ export const categories = [
                   {
                     category: true,
                     title: "tablets",
-                    id: "tablets",
+                    pid: "tablets",
                     color: {
                       background: "#EE964B",
                       foreground: "#000000",
@@ -2112,7 +2112,7 @@ export const categories = [
               {
                 category: true,
                 title: "servers ",
-                id: "servers_",
+                pid: "servers ",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -2123,7 +2123,7 @@ export const categories = [
           {
             category: true,
             title: "computer components ",
-            id: "computer_components_",
+            pid: "computer components ",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -2132,7 +2132,7 @@ export const categories = [
               {
                 category: true,
                 title: "chips and processors",
-                id: "chips_and_processors",
+                pid: "chips and processors",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -2141,7 +2141,7 @@ export const categories = [
               {
                 category: true,
                 title: "disks",
-                id: "disks",
+                pid: "disks",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -2150,7 +2150,7 @@ export const categories = [
               {
                 category: true,
                 title: "graphics cards",
-                id: "graphics_cards",
+                pid: "graphics cards",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -2159,7 +2159,7 @@ export const categories = [
               {
                 category: true,
                 title: "memory ",
-                id: "memory_",
+                pid: "memory ",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -2168,7 +2168,7 @@ export const categories = [
                   {
                     category: true,
                     title: "portable",
-                    id: "portable",
+                    pid: "portable",
                     color: {
                       background: "#19647E",
                       foreground: "#FFFFFF",
@@ -2179,7 +2179,7 @@ export const categories = [
               {
                 category: true,
                 title: "motherboards",
-                id: "motherboards",
+                pid: "motherboards",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -2188,7 +2188,7 @@ export const categories = [
               {
                 category: true,
                 title: "sound cards",
-                id: "sound_cards",
+                pid: "sound cards",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -2199,7 +2199,7 @@ export const categories = [
           {
             category: true,
             title: "computer networking ",
-            id: "computer_networking_",
+            pid: "computer networking ",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -2208,7 +2208,7 @@ export const categories = [
               {
                 category: true,
                 title: "router",
-                id: "router",
+                pid: "router",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -2217,7 +2217,7 @@ export const categories = [
               {
                 category: true,
                 title: "wireless technology",
-                id: "wireless_technology",
+                pid: "wireless technology",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -2228,7 +2228,7 @@ export const categories = [
           {
             category: true,
             title: "computer peripherals ",
-            id: "computer_peripherals_",
+            pid: "computer peripherals ",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -2237,7 +2237,7 @@ export const categories = [
               {
                 category: true,
                 title: "computer monitors",
-                id: "computer_monitors",
+                pid: "computer monitors",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -2246,7 +2246,7 @@ export const categories = [
               {
                 category: true,
                 title: "printers, copiers and fax ",
-                id: "printers_copiers_and_fax_",
+                pid: "printers copiers and fax ",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -2255,7 +2255,7 @@ export const categories = [
                   {
                     category: true,
                     title: "copie",
-                    id: "copie",
+                    pid: "copie",
                     color: {
                       background: "#499F68",
                       foreground: "#FFFFFF",
@@ -2264,7 +2264,7 @@ export const categories = [
                   {
                     category: true,
                     title: "fax machin",
-                    id: "fax_machin",
+                    pid: "fax machin",
                     color: {
                       background: "#F26DF9",
                       foreground: "#000000",
@@ -2273,7 +2273,7 @@ export const categories = [
                   {
                     category: true,
                     title: "printe",
-                    id: "printe",
+                    pid: "printe",
                     color: {
                       background: "#EE964B",
                       foreground: "#000000",
@@ -2282,7 +2282,7 @@ export const categories = [
                   {
                     category: true,
                     title: "scanne",
-                    id: "scanne",
+                    pid: "scanne",
                     color: {
                       background: "#19647E",
                       foreground: "#FFFFFF",
@@ -2297,7 +2297,7 @@ export const categories = [
       {
         category: true,
         title: "internet technology ",
-        id: "internet_technology_",
+        pid: "internet technology ",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -2306,7 +2306,7 @@ export const categories = [
           {
             category: true,
             title: "chat",
-            id: "chat",
+            pid: "chat",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -2315,7 +2315,7 @@ export const categories = [
           {
             category: true,
             title: "ecommerce",
-            id: "ecommerce",
+            pid: "ecommerce",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -2324,7 +2324,7 @@ export const categories = [
           {
             category: true,
             title: "email ",
-            id: "email_",
+            pid: "email ",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -2333,7 +2333,7 @@ export const categories = [
           {
             category: true,
             title: "internet cafes",
-            id: "internet_cafes",
+            pid: "internet cafes",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -2342,7 +2342,7 @@ export const categories = [
           {
             category: true,
             title: "isps ",
-            id: "isps_",
+            pid: "isps ",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -2351,7 +2351,7 @@ export const categories = [
           {
             category: true,
             title: "social network",
-            id: "social_network",
+            pid: "social network",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -2360,7 +2360,7 @@ export const categories = [
           {
             category: true,
             title: "web clip art ",
-            id: "web_clip_art_",
+            pid: "web clip art ",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -2369,7 +2369,7 @@ export const categories = [
           {
             category: true,
             title: "web design and html",
-            id: "web_design_and_html",
+            pid: "web design and html",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -2378,7 +2378,7 @@ export const categories = [
           {
             category: true,
             title: "web search ",
-            id: "web_search_",
+            pid: "web search ",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -2387,7 +2387,7 @@ export const categories = [
               {
                 category: true,
                 title: "people search",
-                id: "people_search",
+                pid: "people search",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -2400,7 +2400,7 @@ export const categories = [
       {
         category: true,
         title: "mp3 and midi",
-        id: "mp3_and_midi",
+        pid: "mp3 and midi",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -2409,7 +2409,7 @@ export const categories = [
       {
         category: true,
         title: "networking ",
-        id: "networking_",
+        pid: "networking ",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -2418,7 +2418,7 @@ export const categories = [
           {
             category: true,
             title: "network monitoring and management",
-            id: "network_monitoring_and_management",
+            pid: "network monitoring and management",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -2427,7 +2427,7 @@ export const categories = [
           {
             category: true,
             title: "vpn and remote access",
-            id: "vpn_and_remote_access",
+            pid: "vpn and remote access",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -2438,7 +2438,7 @@ export const categories = [
       {
         category: true,
         title: "operating systems",
-        id: "operating_systems",
+        pid: "operating systems",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -2447,7 +2447,7 @@ export const categories = [
           {
             category: true,
             title: "linux",
-            id: "linux",
+            pid: "linux",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -2456,7 +2456,7 @@ export const categories = [
           {
             category: true,
             title: "mac os",
-            id: "mac_os",
+            pid: "mac os",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -2465,7 +2465,7 @@ export const categories = [
           {
             category: true,
             title: "unix",
-            id: "unix",
+            pid: "unix",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -2474,7 +2474,7 @@ export const categories = [
           {
             category: true,
             title: "windows",
-            id: "windows",
+            pid: "windows",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -2485,7 +2485,7 @@ export const categories = [
       {
         category: true,
         title: "programming languages ",
-        id: "programming_languages_",
+        pid: "programming languages ",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -2494,7 +2494,7 @@ export const categories = [
           {
             category: true,
             title: "c and c++",
-            id: "c_and_c_",
+            pid: "c and c ",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -2503,7 +2503,7 @@ export const categories = [
           {
             category: true,
             title: "java",
-            id: "java",
+            pid: "java",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -2512,7 +2512,7 @@ export const categories = [
           {
             category: true,
             title: "javascript",
-            id: "javascript",
+            pid: "javascript",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -2521,7 +2521,7 @@ export const categories = [
           {
             category: true,
             title: "visual basic",
-            id: "visual_basic",
+            pid: "visual basic",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -2532,7 +2532,7 @@ export const categories = [
       {
         category: true,
         title: "software ",
-        id: "software_",
+        pid: "software ",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -2541,7 +2541,7 @@ export const categories = [
           {
             category: true,
             title: "databases",
-            id: "databases",
+            pid: "databases",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -2550,7 +2550,7 @@ export const categories = [
           {
             category: true,
             title: "desktop publishing",
-            id: "desktop_publishing",
+            pid: "desktop publishing",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -2559,7 +2559,7 @@ export const categories = [
           {
             category: true,
             title: "desktop video",
-            id: "desktop_video",
+            pid: "desktop video",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -2568,7 +2568,7 @@ export const categories = [
           {
             category: true,
             title: "graphics software animation",
-            id: "graphics_software_animation",
+            pid: "graphics software animation",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -2577,7 +2577,7 @@ export const categories = [
           {
             category: true,
             title: "graphics software",
-            id: "graphics_software",
+            pid: "graphics software",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -2586,7 +2586,7 @@ export const categories = [
           {
             category: true,
             title: "net conferencing",
-            id: "net_conferencing",
+            pid: "net conferencing",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -2595,7 +2595,7 @@ export const categories = [
           {
             category: true,
             title: "shareware and freeware",
-            id: "shareware_and_freeware",
+            pid: "shareware and freeware",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -2606,7 +2606,7 @@ export const categories = [
       {
         category: true,
         title: "tech news",
-        id: "tech_news",
+        pid: "tech news",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -2615,7 +2615,7 @@ export const categories = [
       {
         category: true,
         title: "technical support",
-        id: "technical_support",
+        pid: "technical support",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -2624,7 +2624,7 @@ export const categories = [
       {
         category: true,
         title: "technological innovation",
-        id: "technological_innovation",
+        pid: "technological innovation",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -2635,7 +2635,7 @@ export const categories = [
   {
     category: true,
     title: "travel",
-    id: "travel",
+    pid: "travel",
     color: {
       background: "#FFD275",
       foreground: "#000000",
@@ -2644,7 +2644,7 @@ export const categories = [
       {
         category: true,
         title: "budget travel",
-        id: "budget_travel",
+        pid: "budget travel",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -2653,7 +2653,7 @@ export const categories = [
       {
         category: true,
         title: "business travel",
-        id: "business_travel",
+        pid: "business travel",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -2662,7 +2662,7 @@ export const categories = [
       {
         category: true,
         title: "honeymoons and getaways",
-        id: "honeymoons_and_getaways",
+        pid: "honeymoons and getaways",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -2671,7 +2671,7 @@ export const categories = [
       {
         category: true,
         title: "hotels",
-        id: "hotels",
+        pid: "hotels",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -2680,7 +2680,7 @@ export const categories = [
       {
         category: true,
         title: "specialty travel ",
-        id: "specialty_travel_",
+        pid: "specialty travel ",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -2689,7 +2689,7 @@ export const categories = [
           {
             category: true,
             title: "adventure travel",
-            id: "adventure_travel",
+            pid: "adventure travel",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -2698,7 +2698,7 @@ export const categories = [
           {
             category: true,
             title: "ecotourism",
-            id: "ecotourism",
+            pid: "ecotourism",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -2707,7 +2707,7 @@ export const categories = [
           {
             category: true,
             title: "sightseeing tours",
-            id: "sightseeing_tours",
+            pid: "sightseeing tours",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -2716,7 +2716,7 @@ export const categories = [
           {
             category: true,
             title: "vineyards",
-            id: "vineyards",
+            pid: "vineyards",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -2727,7 +2727,7 @@ export const categories = [
       {
         category: true,
         title: "tourist destinations ",
-        id: "tourist_destinations_",
+        pid: "tourist destinations ",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -2736,7 +2736,7 @@ export const categories = [
           {
             category: true,
             title: "africa",
-            id: "africa",
+            pid: "africa",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -2745,7 +2745,7 @@ export const categories = [
           {
             category: true,
             title: "australia and new zealand ",
-            id: "australia_and_new_zealand_",
+            pid: "australia and new zealand ",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -2754,7 +2754,7 @@ export const categories = [
           {
             category: true,
             title: "canada",
-            id: "canada",
+            pid: "canada",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -2763,7 +2763,7 @@ export const categories = [
           {
             category: true,
             title: "caribbean",
-            id: "caribbean",
+            pid: "caribbean",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -2772,7 +2772,7 @@ export const categories = [
           {
             category: true,
             title: "eastern europe",
-            id: "eastern_europe",
+            pid: "eastern europe",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -2781,7 +2781,7 @@ export const categories = [
           {
             category: true,
             title: "europe",
-            id: "europe",
+            pid: "europe",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -2790,7 +2790,7 @@ export const categories = [
           {
             category: true,
             title: "france",
-            id: "france",
+            pid: "france",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -2799,7 +2799,7 @@ export const categories = [
           {
             category: true,
             title: "greece",
-            id: "greece",
+            pid: "greece",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -2808,7 +2808,7 @@ export const categories = [
           {
             category: true,
             title: "italy",
-            id: "italy",
+            pid: "italy",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -2817,7 +2817,7 @@ export const categories = [
           {
             category: true,
             title: "japan",
-            id: "japan",
+            pid: "japan",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -2826,7 +2826,7 @@ export const categories = [
           {
             category: true,
             title: "mexico and central america",
-            id: "mexico_and_central_america",
+            pid: "mexico and central america",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -2835,7 +2835,7 @@ export const categories = [
           {
             category: true,
             title: "national parks",
-            id: "national_parks",
+            pid: "national parks",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -2844,7 +2844,7 @@ export const categories = [
           {
             category: true,
             title: "seaside resort",
-            id: "seaside_resort",
+            pid: "seaside resort",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -2853,7 +2853,7 @@ export const categories = [
           {
             category: true,
             title: "ski resorts",
-            id: "ski_resorts",
+            pid: "ski resorts",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -2862,7 +2862,7 @@ export const categories = [
           {
             category: true,
             title: "south america",
-            id: "south_america",
+            pid: "south america",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -2871,7 +2871,7 @@ export const categories = [
           {
             category: true,
             title: "spas",
-            id: "spas",
+            pid: "spas",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -2880,7 +2880,7 @@ export const categories = [
           {
             category: true,
             title: "theme parks",
-            id: "theme_parks",
+            pid: "theme parks",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -2889,7 +2889,7 @@ export const categories = [
           {
             category: true,
             title: "united kingdom",
-            id: "united_kingdom",
+            pid: "united kingdom",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -2900,7 +2900,7 @@ export const categories = [
       {
         category: true,
         title: "tourist facilities ",
-        id: "tourist_facilities_",
+        pid: "tourist facilities ",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -2909,7 +2909,7 @@ export const categories = [
           {
             category: true,
             title: "bed and breakfast",
-            id: "bed_and_breakfast",
+            pid: "bed and breakfast",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -2918,7 +2918,7 @@ export const categories = [
           {
             category: true,
             title: "camping",
-            id: "camping",
+            pid: "camping",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -2927,7 +2927,7 @@ export const categories = [
           {
             category: true,
             title: "hotel",
-            id: "hotel",
+            pid: "hotel",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -2938,7 +2938,7 @@ export const categories = [
       {
         category: true,
         title: "transports ",
-        id: "transports_",
+        pid: "transports ",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -2947,7 +2947,7 @@ export const categories = [
           {
             category: true,
             title: "air travel ",
-            id: "air_travel_",
+            pid: "air travel ",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -2956,7 +2956,7 @@ export const categories = [
               {
                 category: true,
                 title: "air and space accident",
-                id: "air_and_space_accident",
+                pid: "air and space accident",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -2965,7 +2965,7 @@ export const categories = [
               {
                 category: true,
                 title: "airfare",
-                id: "airfare",
+                pid: "airfare",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -2974,7 +2974,7 @@ export const categories = [
               {
                 category: true,
                 title: "airlines",
-                id: "airlines",
+                pid: "airlines",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -2983,7 +2983,7 @@ export const categories = [
               {
                 category: true,
                 title: "airplanes",
-                id: "airplanes",
+                pid: "airplanes",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -2992,7 +2992,7 @@ export const categories = [
               {
                 category: true,
                 title: "airports",
-                id: "airports",
+                pid: "airports",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -3001,7 +3001,7 @@ export const categories = [
               {
                 category: true,
                 title: "helicopters",
-                id: "helicopters",
+                pid: "helicopters",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -3012,7 +3012,7 @@ export const categories = [
           {
             category: true,
             title: "public transport",
-            id: "public_transport",
+            pid: "public transport",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -3021,7 +3021,7 @@ export const categories = [
           {
             category: true,
             title: "road travel ",
-            id: "road_travel_",
+            pid: "road travel ",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3030,7 +3030,7 @@ export const categories = [
               {
                 category: true,
                 title: "road accident",
-                id: "road_accident",
+                pid: "road accident",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -3041,7 +3041,7 @@ export const categories = [
           {
             category: true,
             title: "sea travel",
-            id: "sea_travel",
+            pid: "sea travel",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -3050,7 +3050,7 @@ export const categories = [
               {
                 category: true,
                 title: "cruises",
-                id: "cruises",
+                pid: "cruises",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -3061,7 +3061,7 @@ export const categories = [
           {
             category: true,
             title: "train travel",
-            id: "train_travel",
+            pid: "train travel",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -3070,7 +3070,7 @@ export const categories = [
           {
             category: true,
             title: "travel agencies",
-            id: "travel_agencies",
+            pid: "travel agencies",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -3079,7 +3079,7 @@ export const categories = [
           {
             category: true,
             title: "travel guides",
-            id: "travel_guides",
+            pid: "travel guides",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3088,7 +3088,7 @@ export const categories = [
           {
             category: true,
             title: "traveling with kids",
-            id: "traveling_with_kids",
+            pid: "traveling with kids",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -3097,7 +3097,7 @@ export const categories = [
           {
             category: true,
             title: "vacation rentals",
-            id: "vacation_rentals",
+            pid: "vacation rentals",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -3110,7 +3110,7 @@ export const categories = [
   {
     category: true,
     title: "automotive and vehicles ",
-    id: "automotive_and_vehicles_",
+    pid: "automotive and vehicles ",
     color: {
       background: "#F26DF9",
       foreground: "#000000",
@@ -3119,7 +3119,7 @@ export const categories = [
       {
         category: true,
         title: "auto parts",
-        id: "auto_parts",
+        pid: "auto parts",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -3128,7 +3128,7 @@ export const categories = [
       {
         category: true,
         title: "auto repair",
-        id: "auto_repair",
+        pid: "auto repair",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -3137,7 +3137,7 @@ export const categories = [
       {
         category: true,
         title: "bicycles and accessories ",
-        id: "bicycles_and_accessories_",
+        pid: "bicycles and accessories ",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -3146,7 +3146,7 @@ export const categories = [
           {
             category: true,
             title: "mountain bikes",
-            id: "mountain_bikes",
+            pid: "mountain bikes",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -3157,7 +3157,7 @@ export const categories = [
       {
         category: true,
         title: "boats and watercraft",
-        id: "boats_and_watercraft",
+        pid: "boats and watercraft",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -3166,7 +3166,7 @@ export const categories = [
       {
         category: true,
         title: "buying and selling cars",
-        id: "buying_and_selling_cars",
+        pid: "buying and selling cars",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -3175,7 +3175,7 @@ export const categories = [
       {
         category: true,
         title: "campers and rvs",
-        id: "campers_and_rvs",
+        pid: "campers and rvs",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -3184,7 +3184,7 @@ export const categories = [
       {
         category: true,
         title: "cars",
-        id: "cars",
+        pid: "cars",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -3193,7 +3193,7 @@ export const categories = [
           {
             category: true,
             title: "car culture",
-            id: "car_culture",
+            pid: "car culture",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3202,7 +3202,7 @@ export const categories = [
           {
             category: true,
             title: "car industry",
-            id: "car_industry",
+            pid: "car industry",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -3211,7 +3211,7 @@ export const categories = [
           {
             category: true,
             title: "convertible",
-            id: "convertible",
+            pid: "convertible",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -3220,7 +3220,7 @@ export const categories = [
           {
             category: true,
             title: "coupe",
-            id: "coupe",
+            pid: "coupe",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -3229,7 +3229,7 @@ export const categories = [
           {
             category: true,
             title: "crossover",
-            id: "crossover",
+            pid: "crossover",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -3238,7 +3238,7 @@ export const categories = [
           {
             category: true,
             title: "diesel",
-            id: "diesel",
+            pid: "diesel",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -3247,7 +3247,7 @@ export const categories = [
           {
             category: true,
             title: "hatchback",
-            id: "hatchback",
+            pid: "hatchback",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3256,7 +3256,7 @@ export const categories = [
           {
             category: true,
             title: "hybrid",
-            id: "hybrid",
+            pid: "hybrid",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -3265,7 +3265,7 @@ export const categories = [
           {
             category: true,
             title: "luxury",
-            id: "luxury",
+            pid: "luxury",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -3274,7 +3274,7 @@ export const categories = [
           {
             category: true,
             title: "performance vehicles",
-            id: "performance_vehicles",
+            pid: "performance vehicles",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -3283,7 +3283,7 @@ export const categories = [
           {
             category: true,
             title: "sedan",
-            id: "sedan",
+            pid: "sedan",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -3292,7 +3292,7 @@ export const categories = [
           {
             category: true,
             title: "vintage cars",
-            id: "vintage_cars",
+            pid: "vintage cars",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -3301,7 +3301,7 @@ export const categories = [
           {
             category: true,
             title: "wagon",
-            id: "wagon",
+            pid: "wagon",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3312,7 +3312,7 @@ export const categories = [
       {
         category: true,
         title: "certified pre-owned",
-        id: "certified_pre_owned",
+        pid: "certified pre owned",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -3321,7 +3321,7 @@ export const categories = [
       {
         category: true,
         title: "commercial vehicles",
-        id: "commercial_vehicles",
+        pid: "commercial vehicles",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -3330,7 +3330,7 @@ export const categories = [
       {
         category: true,
         title: "electric vehicles",
-        id: "electric_vehicles",
+        pid: "electric vehicles",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -3339,7 +3339,7 @@ export const categories = [
       {
         category: true,
         title: "minivan",
-        id: "minivan",
+        pid: "minivan",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -3348,7 +3348,7 @@ export const categories = [
       {
         category: true,
         title: "motor shows",
-        id: "motor_shows",
+        pid: "motor shows",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -3357,7 +3357,7 @@ export const categories = [
       {
         category: true,
         title: "motorcycles",
-        id: "motorcycles",
+        pid: "motorcycles",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -3366,7 +3366,7 @@ export const categories = [
       {
         category: true,
         title: "off-road vehicles",
-        id: "off_road_vehicles",
+        pid: "off road vehicles",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -3375,7 +3375,7 @@ export const categories = [
       {
         category: true,
         title: "road-side assistance",
-        id: "road_side_assistance",
+        pid: "road side assistance",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -3384,7 +3384,7 @@ export const categories = [
       {
         category: true,
         title: "scooters and mopeds",
-        id: "scooters_and_mopeds",
+        pid: "scooters and mopeds",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -3393,7 +3393,7 @@ export const categories = [
       {
         category: true,
         title: "trucks and suvs",
-        id: "trucks_and_suvs",
+        pid: "trucks and suvs",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -3402,7 +3402,7 @@ export const categories = [
           {
             category: true,
             title: "pickup trucks",
-            id: "pickup_trucks",
+            pid: "pickup trucks",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -3411,7 +3411,7 @@ export const categories = [
           {
             category: true,
             title: "suvs",
-            id: "suvs",
+            pid: "suvs",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3420,7 +3420,7 @@ export const categories = [
           {
             category: true,
             title: "truck accessories",
-            id: "truck_accessories",
+            pid: "truck accessories",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -3431,7 +3431,7 @@ export const categories = [
       {
         category: true,
         title: "vehicle brands",
-        id: "vehicle_brands",
+        pid: "vehicle brands",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -3440,7 +3440,7 @@ export const categories = [
           {
             category: true,
             title: "acura",
-            id: "acura",
+            pid: "acura",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -3449,7 +3449,7 @@ export const categories = [
           {
             category: true,
             title: "alfa romeo",
-            id: "alfa_romeo",
+            pid: "alfa romeo",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -3458,7 +3458,7 @@ export const categories = [
           {
             category: true,
             title: "audi",
-            id: "audi",
+            pid: "audi",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -3467,7 +3467,7 @@ export const categories = [
           {
             category: true,
             title: "bentley",
-            id: "bentley",
+            pid: "bentley",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3476,7 +3476,7 @@ export const categories = [
           {
             category: true,
             title: "buick",
-            id: "buick",
+            pid: "buick",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -3485,7 +3485,7 @@ export const categories = [
           {
             category: true,
             title: "cadillac",
-            id: "cadillac",
+            pid: "cadillac",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -3494,7 +3494,7 @@ export const categories = [
           {
             category: true,
             title: "chevrolet",
-            id: "chevrolet",
+            pid: "chevrolet",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -3503,7 +3503,7 @@ export const categories = [
           {
             category: true,
             title: "chrysler",
-            id: "chrysler",
+            pid: "chrysler",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -3512,7 +3512,7 @@ export const categories = [
           {
             category: true,
             title: "ferrari",
-            id: "ferrari",
+            pid: "ferrari",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -3521,7 +3521,7 @@ export const categories = [
           {
             category: true,
             title: "fiat",
-            id: "fiat",
+            pid: "fiat",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3530,7 +3530,7 @@ export const categories = [
           {
             category: true,
             title: "ford",
-            id: "ford",
+            pid: "ford",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -3539,7 +3539,7 @@ export const categories = [
           {
             category: true,
             title: "honda",
-            id: "honda",
+            pid: "honda",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -3548,7 +3548,7 @@ export const categories = [
           {
             category: true,
             title: "hyundai",
-            id: "hyundai",
+            pid: "hyundai",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -3557,7 +3557,7 @@ export const categories = [
           {
             category: true,
             title: "isuzu",
-            id: "isuzu",
+            pid: "isuzu",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -3566,7 +3566,7 @@ export const categories = [
           {
             category: true,
             title: "jeep",
-            id: "jeep",
+            pid: "jeep",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -3575,7 +3575,7 @@ export const categories = [
           {
             category: true,
             title: "kia",
-            id: "kia",
+            pid: "kia",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3584,7 +3584,7 @@ export const categories = [
           {
             category: true,
             title: "lamborghini",
-            id: "lamborghini",
+            pid: "lamborghini",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -3593,7 +3593,7 @@ export const categories = [
           {
             category: true,
             title: "land rover",
-            id: "land_rover",
+            pid: "land rover",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -3602,7 +3602,7 @@ export const categories = [
           {
             category: true,
             title: "maserati",
-            id: "maserati",
+            pid: "maserati",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -3611,7 +3611,7 @@ export const categories = [
           {
             category: true,
             title: "mazda",
-            id: "mazda",
+            pid: "mazda",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -3620,7 +3620,7 @@ export const categories = [
           {
             category: true,
             title: "mercedes-benz",
-            id: "mercedes_benz",
+            pid: "mercedes benz",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -3629,7 +3629,7 @@ export const categories = [
           {
             category: true,
             title: "mitsubishi",
-            id: "mitsubishi",
+            pid: "mitsubishi",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3638,7 +3638,7 @@ export const categories = [
           {
             category: true,
             title: "nissan infiniti",
-            id: "nissan_infiniti",
+            pid: "nissan infiniti",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -3647,7 +3647,7 @@ export const categories = [
           {
             category: true,
             title: "nissan",
-            id: "nissan",
+            pid: "nissan",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -3656,7 +3656,7 @@ export const categories = [
           {
             category: true,
             title: "peugeot",
-            id: "peugeot",
+            pid: "peugeot",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -3665,7 +3665,7 @@ export const categories = [
           {
             category: true,
             title: "pontiac",
-            id: "pontiac",
+            pid: "pontiac",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -3674,7 +3674,7 @@ export const categories = [
           {
             category: true,
             title: "porsche",
-            id: "porsche",
+            pid: "porsche",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -3683,7 +3683,7 @@ export const categories = [
           {
             category: true,
             title: "rolls-royce",
-            id: "rolls_royce",
+            pid: "rolls royce",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3692,7 +3692,7 @@ export const categories = [
           {
             category: true,
             title: "saab",
-            id: "saab",
+            pid: "saab",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -3701,7 +3701,7 @@ export const categories = [
           {
             category: true,
             title: "scion",
-            id: "scion",
+            pid: "scion",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -3710,7 +3710,7 @@ export const categories = [
           {
             category: true,
             title: "subaru",
-            id: "subaru",
+            pid: "subaru",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -3719,7 +3719,7 @@ export const categories = [
           {
             category: true,
             title: "suzuki",
-            id: "suzuki",
+            pid: "suzuki",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -3728,7 +3728,7 @@ export const categories = [
           {
             category: true,
             title: "toyota",
-            id: "toyota",
+            pid: "toyota",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -3737,7 +3737,7 @@ export const categories = [
           {
             category: true,
             title: "volkswagen",
-            id: "volkswagen",
+            pid: "volkswagen",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3746,7 +3746,7 @@ export const categories = [
           {
             category: true,
             title: "volvo",
-            id: "volvo",
+            pid: "volvo",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -3757,7 +3757,7 @@ export const categories = [
       {
         category: true,
         title: "vehicle rental",
-        id: "vehicle_rental",
+        pid: "vehicle rental",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -3768,7 +3768,7 @@ export const categories = [
   {
     category: true,
     title: "business and industrial ",
-    id: "business_and_industrial_",
+    pid: "business and industrial ",
     color: {
       background: "#F26DF9",
       foreground: "#000000",
@@ -3777,7 +3777,7 @@ export const categories = [
       {
         category: true,
         title: "advertising and marketing",
-        id: "advertising_and_marketing",
+        pid: "advertising and marketing",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -3786,7 +3786,7 @@ export const categories = [
           {
             category: true,
             title: "advertising",
-            id: "advertising",
+            pid: "advertising",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -3795,7 +3795,7 @@ export const categories = [
           {
             category: true,
             title: "brand management",
-            id: "brand_management",
+            pid: "brand management",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3804,7 +3804,7 @@ export const categories = [
           {
             category: true,
             title: "marketing",
-            id: "marketing",
+            pid: "marketing",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -3813,7 +3813,7 @@ export const categories = [
           {
             category: true,
             title: "public relations",
-            id: "public_relations",
+            pid: "public relations",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -3822,7 +3822,7 @@ export const categories = [
           {
             category: true,
             title: "telemarketing",
-            id: "telemarketing",
+            pid: "telemarketing",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -3833,7 +3833,7 @@ export const categories = [
       {
         category: true,
         title: "aerospace and defense",
-        id: "aerospace_and_defense",
+        pid: "aerospace and defense",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -3842,7 +3842,7 @@ export const categories = [
           {
             category: true,
             title: "defense industry",
-            id: "defense_industry",
+            pid: "defense industry",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -3851,7 +3851,7 @@ export const categories = [
           {
             category: true,
             title: "space technology",
-            id: "space_technology",
+            pid: "space technology",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3862,7 +3862,7 @@ export const categories = [
       {
         category: true,
         title: "agriculture and forestry",
-        id: "agriculture_and_forestry",
+        pid: "agriculture and forestry",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -3871,7 +3871,7 @@ export const categories = [
           {
             category: true,
             title: "agriculture",
-            id: "agriculture",
+            pid: "agriculture",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -3880,7 +3880,7 @@ export const categories = [
           {
             category: true,
             title: "aquaculture",
-            id: "aquaculture",
+            pid: "aquaculture",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -3889,7 +3889,7 @@ export const categories = [
           {
             category: true,
             title: "crops and seed",
-            id: "crops_and_seed",
+            pid: "crops and seed",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -3898,7 +3898,7 @@ export const categories = [
           {
             category: true,
             title: "farms and ranches",
-            id: "farms_and_ranches",
+            pid: "farms and ranches",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -3907,7 +3907,7 @@ export const categories = [
           {
             category: true,
             title: "food production",
-            id: "food_production",
+            pid: "food production",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -3916,7 +3916,7 @@ export const categories = [
           {
             category: true,
             title: "forestry",
-            id: "forestry",
+            pid: "forestry",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -3925,7 +3925,7 @@ export const categories = [
           {
             category: true,
             title: "horticulture",
-            id: "horticulture",
+            pid: "horticulture",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -3934,7 +3934,7 @@ export const categories = [
           {
             category: true,
             title: "livestock",
-            id: "livestock",
+            pid: "livestock",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -3943,7 +3943,7 @@ export const categories = [
           {
             category: true,
             title: "organic farming",
-            id: "organic_farming",
+            pid: "organic farming",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -3954,7 +3954,7 @@ export const categories = [
       {
         category: true,
         title: "automation robotics",
-        id: "automation_robotics",
+        pid: "automation robotics",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -3963,7 +3963,7 @@ export const categories = [
       {
         category: true,
         title: "biomedical",
-        id: "biomedical",
+        pid: "biomedical",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -3972,7 +3972,7 @@ export const categories = [
       {
         category: true,
         title: "business news",
-        id: "business_news",
+        pid: "business news",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -3981,7 +3981,7 @@ export const categories = [
       {
         category: true,
         title: "business operations",
-        id: "business_operations",
+        pid: "business operations",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -3990,7 +3990,7 @@ export const categories = [
           {
             category: true,
             title: "business plans",
-            id: "business_plans",
+            pid: "business plans",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -3999,7 +3999,7 @@ export const categories = [
           {
             category: true,
             title: "human resources",
-            id: "human_resources",
+            pid: "human resources",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -4008,7 +4008,7 @@ export const categories = [
               {
                 category: true,
                 title: "compensation and benefits",
-                id: "compensation_and_benefits",
+                pid: "compensation and benefits",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -4017,7 +4017,7 @@ export const categories = [
               {
                 category: true,
                 title: "payroll services",
-                id: "payroll_services",
+                pid: "payroll services",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -4028,7 +4028,7 @@ export const categories = [
           {
             category: true,
             title: "management",
-            id: "management",
+            pid: "management",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -4037,7 +4037,7 @@ export const categories = [
               {
                 category: true,
                 title: "business process",
-                id: "business_process",
+                pid: "business process",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -4046,7 +4046,7 @@ export const categories = [
               {
                 category: true,
                 title: "project management",
-                id: "project_management",
+                pid: "project management",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -4055,7 +4055,7 @@ export const categories = [
               {
                 category: true,
                 title: "supply chain management",
-                id: "supply_chain_management",
+                pid: "supply chain management",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -4068,7 +4068,7 @@ export const categories = [
       {
         category: true,
         title: "business software",
-        id: "business_software",
+        pid: "business software",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -4077,7 +4077,7 @@ export const categories = [
       {
         category: true,
         title: "chemicals industry",
-        id: "chemicals_industry",
+        pid: "chemicals industry",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -4086,7 +4086,7 @@ export const categories = [
           {
             category: true,
             title: "adhesives",
-            id: "adhesives",
+            pid: "adhesives",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -4095,7 +4095,7 @@ export const categories = [
           {
             category: true,
             title: "cleaning agents",
-            id: "cleaning_agents",
+            pid: "cleaning agents",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -4104,7 +4104,7 @@ export const categories = [
           {
             category: true,
             title: "dyes and pigments",
-            id: "dyes_and_pigments",
+            pid: "dyes and pigments",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -4113,7 +4113,7 @@ export const categories = [
           {
             category: true,
             title: "plastics and polymers",
-            id: "plastics_and_polymers",
+            pid: "plastics and polymers",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -4124,7 +4124,7 @@ export const categories = [
       {
         category: true,
         title: "company",
-        id: "company",
+        pid: "company",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -4133,7 +4133,7 @@ export const categories = [
           {
             category: true,
             title: "annual report",
-            id: "annual_report",
+            pid: "annual report",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -4142,7 +4142,7 @@ export const categories = [
           {
             category: true,
             title: "bankruptcy",
-            id: "bankruptcy",
+            pid: "bankruptcy",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -4151,7 +4151,7 @@ export const categories = [
           {
             category: true,
             title: "earnings",
-            id: "earnings",
+            pid: "earnings",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -4160,7 +4160,7 @@ export const categories = [
           {
             category: true,
             title: "joint venture",
-            id: "joint_venture",
+            pid: "joint venture",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -4169,7 +4169,7 @@ export const categories = [
           {
             category: true,
             title: "merger and acquisition",
-            id: "merger_and_acquisition",
+            pid: "merger and acquisition",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -4180,7 +4180,7 @@ export const categories = [
       {
         category: true,
         title: "construction",
-        id: "construction",
+        pid: "construction",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -4189,7 +4189,7 @@ export const categories = [
       {
         category: true,
         title: "energy",
-        id: "energy",
+        pid: "energy",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -4198,7 +4198,7 @@ export const categories = [
           {
             category: true,
             title: "coal",
-            id: "coal",
+            pid: "coal",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -4207,7 +4207,7 @@ export const categories = [
           {
             category: true,
             title: "electricity",
-            id: "electricity",
+            pid: "electricity",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -4216,7 +4216,7 @@ export const categories = [
           {
             category: true,
             title: "natural gas",
-            id: "natural_gas",
+            pid: "natural gas",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -4225,7 +4225,7 @@ export const categories = [
           {
             category: true,
             title: "nuclear power",
-            id: "nuclear_power",
+            pid: "nuclear power",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -4234,7 +4234,7 @@ export const categories = [
               {
                 category: true,
                 title: "nuclear accident",
-                id: "nuclear_accident",
+                pid: "nuclear accident",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -4245,7 +4245,7 @@ export const categories = [
           {
             category: true,
             title: "oil",
-            id: "oil",
+            pid: "oil",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -4254,7 +4254,7 @@ export const categories = [
               {
                 category: true,
                 title: "diesel fuel",
-                id: "diesel_fuel",
+                pid: "diesel fuel",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -4263,7 +4263,7 @@ export const categories = [
               {
                 category: true,
                 title: "oil and gas prices",
-                id: "oil_and_gas_prices",
+                pid: "oil and gas prices",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -4272,7 +4272,7 @@ export const categories = [
               {
                 category: true,
                 title: "oil company",
-                id: "oil_company",
+                pid: "oil company",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -4283,7 +4283,7 @@ export const categories = [
           {
             category: true,
             title: "renewable energy",
-            id: "renewable_energy",
+            pid: "renewable energy",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -4292,7 +4292,7 @@ export const categories = [
               {
                 category: true,
                 title: "biofuel",
-                id: "biofuel",
+                pid: "biofuel",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -4301,7 +4301,7 @@ export const categories = [
               {
                 category: true,
                 title: "fuel cell",
-                id: "fuel_cell",
+                pid: "fuel cell",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -4310,7 +4310,7 @@ export const categories = [
               {
                 category: true,
                 title: "geothermal energy",
-                id: "geothermal_energy",
+                pid: "geothermal energy",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -4319,7 +4319,7 @@ export const categories = [
               {
                 category: true,
                 title: "hydroelectric energy",
-                id: "hydroelectric_energy",
+                pid: "hydroelectric energy",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -4328,7 +4328,7 @@ export const categories = [
               {
                 category: true,
                 title: "solar energy",
-                id: "solar_energy",
+                pid: "solar energy",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -4337,7 +4337,7 @@ export const categories = [
               {
                 category: true,
                 title: "wind energy",
-                id: "wind_energy",
+                pid: "wind energy",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -4350,7 +4350,7 @@ export const categories = [
       {
         category: true,
         title: "fashion industry",
-        id: "fashion_industry",
+        pid: "fashion industry",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -4359,7 +4359,7 @@ export const categories = [
       {
         category: true,
         title: "food industry",
-        id: "food_industry",
+        pid: "food industry",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -4368,7 +4368,7 @@ export const categories = [
       {
         category: true,
         title: "green solutions",
-        id: "green_solutions",
+        pid: "green solutions",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -4377,7 +4377,7 @@ export const categories = [
       {
         category: true,
         title: "hospitality industry",
-        id: "hospitality_industry",
+        pid: "hospitality industry",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -4386,7 +4386,7 @@ export const categories = [
           {
             category: true,
             title: "event planning",
-            id: "event_planning",
+            pid: "event planning",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -4395,7 +4395,7 @@ export const categories = [
           {
             category: true,
             title: "food service",
-            id: "food_service",
+            pid: "food service",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -4406,7 +4406,7 @@ export const categories = [
       {
         category: true,
         title: "iron and steel industry",
-        id: "iron_and_steel_industry",
+        pid: "iron and steel industry",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -4415,7 +4415,7 @@ export const categories = [
       {
         category: true,
         title: "logistics",
-        id: "logistics",
+        pid: "logistics",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -4424,7 +4424,7 @@ export const categories = [
           {
             category: true,
             title: "air freight",
-            id: "air_freight",
+            pid: "air freight",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -4433,7 +4433,7 @@ export const categories = [
           {
             category: true,
             title: "freight train",
-            id: "freight_train",
+            pid: "freight train",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -4444,7 +4444,7 @@ export const categories = [
       {
         category: true,
         title: "manufacturing",
-        id: "manufacturing",
+        pid: "manufacturing",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -4453,7 +4453,7 @@ export const categories = [
       {
         category: true,
         title: "metals",
-        id: "metals",
+        pid: "metals",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -4462,7 +4462,7 @@ export const categories = [
       {
         category: true,
         title: "mining industry",
-        id: "mining_industry",
+        pid: "mining industry",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -4471,7 +4471,7 @@ export const categories = [
       {
         category: true,
         title: "paper industry",
-        id: "paper_industry",
+        pid: "paper industry",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -4480,7 +4480,7 @@ export const categories = [
       {
         category: true,
         title: "pharmaceutical industry",
-        id: "pharmaceutical_industry",
+        pid: "pharmaceutical industry",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -4489,7 +4489,7 @@ export const categories = [
       {
         category: true,
         title: "publishing",
-        id: "publishing",
+        pid: "publishing",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -4498,7 +4498,7 @@ export const categories = [
       {
         category: true,
         title: "record company",
-        id: "record_company",
+        pid: "record company",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -4507,7 +4507,7 @@ export const categories = [
       {
         category: true,
         title: "shipbuilding",
-        id: "shipbuilding",
+        pid: "shipbuilding",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -4516,7 +4516,7 @@ export const categories = [
       {
         category: true,
         title: "tanning",
-        id: "tanning",
+        pid: "tanning",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -4525,7 +4525,7 @@ export const categories = [
       {
         category: true,
         title: "textile industry",
-        id: "textile_industry",
+        pid: "textile industry",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -4534,7 +4534,7 @@ export const categories = [
       {
         category: true,
         title: "war industry",
-        id: "war_industry",
+        pid: "war industry",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -4543,7 +4543,7 @@ export const categories = [
           {
             category: true,
             title: "weaponry",
-            id: "weaponry",
+            pid: "weaponry",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -4556,7 +4556,7 @@ export const categories = [
   {
     category: true,
     title: "careers ",
-    id: "careers_",
+    pid: "careers ",
     color: {
       background: "#F26DF9",
       foreground: "#000000",
@@ -4565,7 +4565,7 @@ export const categories = [
       {
         category: true,
         title: "career advice",
-        id: "career_advice",
+        pid: "career advice",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -4574,7 +4574,7 @@ export const categories = [
       {
         category: true,
         title: "career planning",
-        id: "career_planning",
+        pid: "career planning",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -4583,7 +4583,7 @@ export const categories = [
       {
         category: true,
         title: "job fairs",
-        id: "job_fairs",
+        pid: "job fairs",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -4592,7 +4592,7 @@ export const categories = [
       {
         category: true,
         title: "job search",
-        id: "job_search",
+        pid: "job search",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -4601,7 +4601,7 @@ export const categories = [
       {
         category: true,
         title: "nursing",
-        id: "nursing",
+        pid: "nursing",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -4610,7 +4610,7 @@ export const categories = [
       {
         category: true,
         title: "resume writing and advice",
-        id: "resume_writing_and_advice",
+        pid: "resume writing and advice",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -4619,7 +4619,7 @@ export const categories = [
       {
         category: true,
         title: "telecommuting",
-        id: "telecommuting",
+        pid: "telecommuting",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -4628,7 +4628,7 @@ export const categories = [
       {
         category: true,
         title: "u.s. military",
-        id: "u_s_military",
+        pid: "u s military",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -4639,7 +4639,7 @@ export const categories = [
   {
     category: true,
     title: "education",
-    id: "education",
+    pid: "education",
     color: {
       background: "#FFD275",
       foreground: "#000000",
@@ -4648,7 +4648,7 @@ export const categories = [
       {
         category: true,
         title: "adult education",
-        id: "adult_education",
+        pid: "adult education",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -4657,7 +4657,7 @@ export const categories = [
       {
         category: true,
         title: "alumni and reunions",
-        id: "alumni_and_reunions",
+        pid: "alumni and reunions",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -4666,7 +4666,7 @@ export const categories = [
       {
         category: true,
         title: "art history",
-        id: "art_history",
+        pid: "art history",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -4675,7 +4675,7 @@ export const categories = [
       {
         category: true,
         title: "distance learning",
-        id: "distance_learning",
+        pid: "distance learning",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -4684,7 +4684,7 @@ export const categories = [
       {
         category: true,
         title: "english as a second language",
-        id: "english_as_a_second_language",
+        pid: "english as a second language",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -4693,7 +4693,7 @@ export const categories = [
       {
         category: true,
         title: "grade school",
-        id: "grade_school",
+        pid: "grade school",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -4702,7 +4702,7 @@ export const categories = [
       {
         category: true,
         title: "graduate school",
-        id: "graduate_school",
+        pid: "graduate school",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -4711,7 +4711,7 @@ export const categories = [
           {
             category: true,
             title: "college",
-            id: "college",
+            pid: "college",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -4720,7 +4720,7 @@ export const categories = [
           {
             category: true,
             title: "college administration",
-            id: "college_administration",
+            pid: "college administration",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -4729,7 +4729,7 @@ export const categories = [
           {
             category: true,
             title: "college life",
-            id: "college_life",
+            pid: "college life",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -4740,7 +4740,7 @@ export const categories = [
       {
         category: true,
         title: "high school",
-        id: "high_school",
+        pid: "high school",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -4749,7 +4749,7 @@ export const categories = [
       {
         category: true,
         title: "homeschooling",
-        id: "homeschooling",
+        pid: "homeschooling",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -4758,7 +4758,7 @@ export const categories = [
       {
         category: true,
         title: "homework and study tips",
-        id: "homework_and_study_tips",
+        pid: "homework and study tips",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -4767,7 +4767,7 @@ export const categories = [
       {
         category: true,
         title: "language learning",
-        id: "language_learning",
+        pid: "language learning",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -4776,7 +4776,7 @@ export const categories = [
       {
         category: true,
         title: "school private school",
-        id: "school_private_school",
+        pid: "school private school",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -4785,7 +4785,7 @@ export const categories = [
       {
         category: true,
         title: "school",
-        id: "school",
+        pid: "school",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -4794,7 +4794,7 @@ export const categories = [
       {
         category: true,
         title: "special education",
-        id: "special_education",
+        pid: "special education",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -4803,7 +4803,7 @@ export const categories = [
       {
         category: true,
         title: "studying business",
-        id: "studying_business",
+        pid: "studying business",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -4812,7 +4812,7 @@ export const categories = [
       {
         category: true,
         title: "teaching and classroom resources",
-        id: "teaching_and_classroom_resources",
+        pid: "teaching and classroom resources",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -4821,7 +4821,7 @@ export const categories = [
           {
             category: true,
             title: "lesson plans",
-            id: "lesson_plans",
+            pid: "lesson plans",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -4830,7 +4830,7 @@ export const categories = [
           {
             category: true,
             title: "school supplies",
-            id: "school_supplies",
+            pid: "school supplies",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -4843,7 +4843,7 @@ export const categories = [
   {
     category: true,
     title: "family and parenting",
-    id: "family_and_parenting",
+    pid: "family and parenting",
     color: {
       background: "#EE964B",
       foreground: "#000000",
@@ -4852,7 +4852,7 @@ export const categories = [
       {
         category: true,
         title: "adoption",
-        id: "adoption",
+        pid: "adoption",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -4861,7 +4861,7 @@ export const categories = [
       {
         category: true,
         title: "babies and toddlers",
-        id: "babies_and_toddlers",
+        pid: "babies and toddlers",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -4870,7 +4870,7 @@ export const categories = [
           {
             category: true,
             title: "baby clothes",
-            id: "baby_clothes",
+            pid: "baby clothes",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -4879,7 +4879,7 @@ export const categories = [
           {
             category: true,
             title: "baby food",
-            id: "baby_food",
+            pid: "baby food",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -4890,7 +4890,7 @@ export const categories = [
       {
         category: true,
         title: "children",
-        id: "children",
+        pid: "children",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -4899,7 +4899,7 @@ export const categories = [
           {
             category: true,
             title: "daycare and preschool",
-            id: "daycare_and_preschool",
+            pid: "daycare and preschool",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -4910,7 +4910,7 @@ export const categories = [
       {
         category: true,
         title: "eldercare",
-        id: "eldercare",
+        pid: "eldercare",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -4919,7 +4919,7 @@ export const categories = [
       {
         category: true,
         title: "motherhood",
-        id: "motherhood",
+        pid: "motherhood",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -4928,7 +4928,7 @@ export const categories = [
           {
             category: true,
             title: "artificial insemination",
-            id: "artificial_insemination",
+            pid: "artificial insemination",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -4937,7 +4937,7 @@ export const categories = [
           {
             category: true,
             title: "pregnancy",
-            id: "pregnancy",
+            pid: "pregnancy",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -4948,7 +4948,7 @@ export const categories = [
       {
         category: true,
         title: "parenting teens",
-        id: "parenting_teens",
+        pid: "parenting teens",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -4957,7 +4957,7 @@ export const categories = [
       {
         category: true,
         title: "special needs kids",
-        id: "special_needs_kids",
+        pid: "special needs kids",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -4968,7 +4968,7 @@ export const categories = [
   {
     category: true,
     title: "finance",
-    id: "finance",
+    pid: "finance",
     color: {
       background: "#19647E",
       foreground: "#FFFFFF",
@@ -4977,7 +4977,7 @@ export const categories = [
       {
         category: true,
         title: "accounting and auditing",
-        id: "accounting_and_auditing",
+        pid: "accounting and auditing",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -4986,7 +4986,7 @@ export const categories = [
           {
             category: true,
             title: "billing and invoicing",
-            id: "billing_and_invoicing",
+            pid: "billing and invoicing",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -4995,7 +4995,7 @@ export const categories = [
           {
             category: true,
             title: "bookkeeping",
-            id: "bookkeeping",
+            pid: "bookkeeping",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -5004,7 +5004,7 @@ export const categories = [
           {
             category: true,
             title: "tax preparation and planning",
-            id: "tax_preparation_and_planning",
+            pid: "tax preparation and planning",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -5015,7 +5015,7 @@ export const categories = [
       {
         category: true,
         title: "bank",
-        id: "bank",
+        pid: "bank",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -5024,7 +5024,7 @@ export const categories = [
           {
             category: true,
             title: "atms",
-            id: "atms",
+            pid: "atms",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -5033,7 +5033,7 @@ export const categories = [
           {
             category: true,
             title: "bank account",
-            id: "bank_account",
+            pid: "bank account",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -5042,7 +5042,7 @@ export const categories = [
           {
             category: true,
             title: "checks",
-            id: "checks",
+            pid: "checks",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -5053,7 +5053,7 @@ export const categories = [
       {
         category: true,
         title: "financial news",
-        id: "financial_news",
+        pid: "financial news",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -5062,7 +5062,7 @@ export const categories = [
       {
         category: true,
         title: "grants, scholarships and financial aid",
-        id: "grants_scholarships_and_financial_aid",
+        pid: "grants scholarships and financial aid",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -5071,7 +5071,7 @@ export const categories = [
           {
             category: true,
             title: "financial aid",
-            id: "financial_aid",
+            pid: "financial aid",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -5080,7 +5080,7 @@ export const categories = [
           {
             category: true,
             title: "government grants",
-            id: "government_grants",
+            pid: "government grants",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -5089,7 +5089,7 @@ export const categories = [
           {
             category: true,
             title: "scholarships",
-            id: "scholarships",
+            pid: "scholarships",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -5100,7 +5100,7 @@ export const categories = [
       {
         category: true,
         title: "investing",
-        id: "investing",
+        pid: "investing",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -5109,7 +5109,7 @@ export const categories = [
           {
             category: true,
             title: "beginning investing",
-            id: "beginning_investing",
+            pid: "beginning investing",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -5118,7 +5118,7 @@ export const categories = [
           {
             category: true,
             title: "brokerages",
-            id: "brokerages",
+            pid: "brokerages",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -5127,7 +5127,7 @@ export const categories = [
           {
             category: true,
             title: "day trading",
-            id: "day_trading",
+            pid: "day trading",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -5136,7 +5136,7 @@ export const categories = [
           {
             category: true,
             title: "funds",
-            id: "funds",
+            pid: "funds",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -5145,7 +5145,7 @@ export const categories = [
               {
                 category: true,
                 title: "exchange traded funds",
-                id: "exchange_traded_funds",
+                pid: "exchange traded funds",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -5154,7 +5154,7 @@ export const categories = [
               {
                 category: true,
                 title: "hedge fund",
-                id: "hedge_fund",
+                pid: "hedge fund",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -5163,7 +5163,7 @@ export const categories = [
               {
                 category: true,
                 title: "mutual funds",
-                id: "mutual_funds",
+                pid: "mutual funds",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -5174,7 +5174,7 @@ export const categories = [
           {
             category: true,
             title: "futures trading",
-            id: "futures_trading",
+            pid: "futures trading",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -5183,7 +5183,7 @@ export const categories = [
           {
             category: true,
             title: "options",
-            id: "options",
+            pid: "options",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -5192,7 +5192,7 @@ export const categories = [
           {
             category: true,
             title: "portfolio",
-            id: "portfolio",
+            pid: "portfolio",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -5201,7 +5201,7 @@ export const categories = [
           {
             category: true,
             title: "stocks",
-            id: "stocks",
+            pid: "stocks",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -5210,7 +5210,7 @@ export const categories = [
           {
             category: true,
             title: "venture capital",
-            id: "venture_capital",
+            pid: "venture capital",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -5221,7 +5221,7 @@ export const categories = [
       {
         category: true,
         title: "personal finance",
-        id: "personal_finance",
+        pid: "personal finance",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -5230,7 +5230,7 @@ export const categories = [
           {
             category: true,
             title: "debt management",
-            id: "debt_management",
+            pid: "debt management",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -5239,7 +5239,7 @@ export const categories = [
               {
                 category: true,
                 title: "asset and portfolio management",
-                id: "asset_and_portfolio_management",
+                pid: "asset and portfolio management",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -5248,7 +5248,7 @@ export const categories = [
               {
                 category: true,
                 title: "estate planning",
-                id: "estate_planning",
+                pid: "estate planning",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -5257,7 +5257,7 @@ export const categories = [
               {
                 category: true,
                 title: "retirement and pension",
-                id: "retirement_and_pension",
+                pid: "retirement and pension",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -5268,7 +5268,7 @@ export const categories = [
           {
             category: true,
             title: "insurance",
-            id: "insurance",
+            pid: "insurance",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -5277,7 +5277,7 @@ export const categories = [
               {
                 category: true,
                 title: "car insurance",
-                id: "car_insurance",
+                pid: "car insurance",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -5286,7 +5286,7 @@ export const categories = [
               {
                 category: true,
                 title: "health insurance",
-                id: "health_insurance",
+                pid: "health insurance",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -5295,7 +5295,7 @@ export const categories = [
               {
                 category: true,
                 title: "homeowners insurance",
-                id: "homeowners_insurance",
+                pid: "homeowners insurance",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -5304,7 +5304,7 @@ export const categories = [
               {
                 category: true,
                 title: "life insurance",
-                id: "life_insurance",
+                pid: "life insurance",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -5313,7 +5313,7 @@ export const categories = [
               {
                 category: true,
                 title: "travel insurance",
-                id: "travel_insurance",
+                pid: "travel insurance",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -5322,7 +5322,7 @@ export const categories = [
               {
                 category: true,
                 title: "vehicle insurance",
-                id: "vehicle_insurance",
+                pid: "vehicle insurance",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -5333,7 +5333,7 @@ export const categories = [
           {
             category: true,
             title: "lending",
-            id: "lending",
+            pid: "lending",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -5342,7 +5342,7 @@ export const categories = [
               {
                 category: true,
                 title: "credit cards",
-                id: "credit_cards",
+                pid: "credit cards",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -5351,7 +5351,7 @@ export const categories = [
               {
                 category: true,
                 title: "home financing",
-                id: "home_financing",
+                pid: "home financing",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -5360,7 +5360,7 @@ export const categories = [
               {
                 category: true,
                 title: "personal loans",
-                id: "personal_loans",
+                pid: "personal loans",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -5369,7 +5369,7 @@ export const categories = [
               {
                 category: true,
                 title: "student loans",
-                id: "student_loans",
+                pid: "student loans",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -5378,7 +5378,7 @@ export const categories = [
               {
                 category: true,
                 title: "vehicle financing",
-                id: "vehicle_financing",
+                pid: "vehicle financing",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -5391,7 +5391,7 @@ export const categories = [
       {
         category: true,
         title: "saving",
-        id: "saving",
+        pid: "saving",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -5402,7 +5402,7 @@ export const categories = [
   {
     category: true,
     title: "food and drink",
-    id: "food_and_drink",
+    pid: "food and drink",
     color: {
       background: "#F26DF9",
       foreground: "#000000",
@@ -5411,7 +5411,7 @@ export const categories = [
       {
         category: true,
         title: "barbecues and grilling",
-        id: "barbecues_and_grilling",
+        pid: "barbecues and grilling",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -5420,7 +5420,7 @@ export const categories = [
       {
         category: true,
         title: "beverages",
-        id: "beverages",
+        pid: "beverages",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -5429,7 +5429,7 @@ export const categories = [
           {
             category: true,
             title: "alcoholic beverages",
-            id: "alcoholic_beverages",
+            pid: "alcoholic beverages",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -5438,7 +5438,7 @@ export const categories = [
               {
                 category: true,
                 title: "cocktails and beer",
-                id: "cocktails_and_beer",
+                pid: "cocktails and beer",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -5447,7 +5447,7 @@ export const categories = [
               {
                 category: true,
                 title: "wine",
-                id: "wine",
+                pid: "wine",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -5458,7 +5458,7 @@ export const categories = [
           {
             category: true,
             title: "non alcoholic beverages",
-            id: "non_alcoholic_beverages",
+            pid: "non alcoholic beverages",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -5467,7 +5467,7 @@ export const categories = [
               {
                 category: true,
                 title: "bottled water",
-                id: "bottled_water",
+                pid: "bottled water",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -5476,7 +5476,7 @@ export const categories = [
               {
                 category: true,
                 title: "coffee and tea",
-                id: "coffee_and_tea",
+                pid: "coffee and tea",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -5485,7 +5485,7 @@ export const categories = [
               {
                 category: true,
                 title: "soft drinks",
-                id: "soft_drinks",
+                pid: "soft drinks",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -5498,7 +5498,7 @@ export const categories = [
       {
         category: true,
         title: "cuisines",
-        id: "cuisines",
+        pid: "cuisines",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -5507,7 +5507,7 @@ export const categories = [
           {
             category: true,
             title: "american cuisine",
-            id: "american_cuisine",
+            pid: "american cuisine",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -5516,7 +5516,7 @@ export const categories = [
           {
             category: true,
             title: "chinese cuisine",
-            id: "chinese_cuisine",
+            pid: "chinese cuisine",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -5525,7 +5525,7 @@ export const categories = [
           {
             category: true,
             title: "french cuisine",
-            id: "french_cuisine",
+            pid: "french cuisine",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -5534,7 +5534,7 @@ export const categories = [
           {
             category: true,
             title: "indian cuisine",
-            id: "indian_cuisine",
+            pid: "indian cuisine",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -5543,7 +5543,7 @@ export const categories = [
           {
             category: true,
             title: "italian cuisine",
-            id: "italian_cuisine",
+            pid: "italian cuisine",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -5552,7 +5552,7 @@ export const categories = [
           {
             category: true,
             title: "japanese cuisine",
-            id: "japanese_cuisine",
+            pid: "japanese cuisine",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -5561,7 +5561,7 @@ export const categories = [
           {
             category: true,
             title: "mexican cuisine",
-            id: "mexican_cuisine",
+            pid: "mexican cuisine",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -5570,7 +5570,7 @@ export const categories = [
           {
             category: true,
             title: "regional cuisine",
-            id: "regional_cuisine",
+            pid: "regional cuisine",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -5581,7 +5581,7 @@ export const categories = [
       {
         category: true,
         title: "desserts and baking",
-        id: "desserts_and_baking",
+        pid: "desserts and baking",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -5590,7 +5590,7 @@ export const categories = [
       {
         category: true,
         title: "dining out",
-        id: "dining_out",
+        pid: "dining out",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -5599,7 +5599,7 @@ export const categories = [
       {
         category: true,
         title: "food",
-        id: "food",
+        pid: "food",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -5608,7 +5608,7 @@ export const categories = [
           {
             category: true,
             title: "baked goods",
-            id: "baked_goods",
+            pid: "baked goods",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -5617,7 +5617,7 @@ export const categories = [
           {
             category: true,
             title: "breakfast foods",
-            id: "breakfast_foods",
+            pid: "breakfast foods",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -5626,7 +5626,7 @@ export const categories = [
           {
             category: true,
             title: "candy and sweets",
-            id: "candy_and_sweets",
+            pid: "candy and sweets",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -5635,7 +5635,7 @@ export const categories = [
           {
             category: true,
             title: "condiments and dressings",
-            id: "condiments_and_dressings",
+            pid: "condiments and dressings",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -5644,7 +5644,7 @@ export const categories = [
           {
             category: true,
             title: "fast food",
-            id: "fast_food",
+            pid: "fast food",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -5653,7 +5653,7 @@ export const categories = [
           {
             category: true,
             title: "frozen food",
-            id: "frozen_food",
+            pid: "frozen food",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -5662,7 +5662,7 @@ export const categories = [
           {
             category: true,
             title: "fruits and vegetables",
-            id: "fruits_and_vegetables",
+            pid: "fruits and vegetables",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -5671,7 +5671,7 @@ export const categories = [
           {
             category: true,
             title: "grains and pasta",
-            id: "grains_and_pasta",
+            pid: "grains and pasta",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -5680,7 +5680,7 @@ export const categories = [
           {
             category: true,
             title: "herbs and spices",
-            id: "herbs_and_spices",
+            pid: "herbs and spices",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -5689,7 +5689,7 @@ export const categories = [
           {
             category: true,
             title: "salads",
-            id: "salads",
+            pid: "salads",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -5698,7 +5698,7 @@ export const categories = [
           {
             category: true,
             title: "snack foods",
-            id: "snack_foods",
+            pid: "snack foods",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -5709,7 +5709,7 @@ export const categories = [
       {
         category: true,
         title: "food allergies",
-        id: "food_allergies",
+        pid: "food allergies",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -5718,7 +5718,7 @@ export const categories = [
       {
         category: true,
         title: "food and grocery retailers",
-        id: "food_and_grocery_retailers",
+        pid: "food and grocery retailers",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -5727,7 +5727,7 @@ export const categories = [
           {
             category: true,
             title: "bakeries",
-            id: "bakeries",
+            pid: "bakeries",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -5736,7 +5736,7 @@ export const categories = [
           {
             category: true,
             title: "butchers",
-            id: "butchers",
+            pid: "butchers",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -5745,7 +5745,7 @@ export const categories = [
           {
             category: true,
             title: "convenience stores",
-            id: "convenience_stores",
+            pid: "convenience stores",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -5754,7 +5754,7 @@ export const categories = [
           {
             category: true,
             title: "grocery stores",
-            id: "grocery_stores",
+            pid: "grocery stores",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -5765,7 +5765,7 @@ export const categories = [
       {
         category: true,
         title: "gastronomy",
-        id: "gastronomy",
+        pid: "gastronomy",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -5774,7 +5774,7 @@ export const categories = [
           {
             category: true,
             title: "slow food",
-            id: "slow_food",
+            pid: "slow food",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -5785,7 +5785,7 @@ export const categories = [
       {
         category: true,
         title: "health and low-fat cooking",
-        id: "health_and_low_fat_cooking",
+        pid: "health and low fat cooking",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -5794,7 +5794,7 @@ export const categories = [
       {
         category: true,
         title: "healthy eating",
-        id: "healthy_eating",
+        pid: "healthy eating",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -5803,7 +5803,7 @@ export const categories = [
       {
         category: true,
         title: "kosher food",
-        id: "kosher_food",
+        pid: "kosher food",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -5812,7 +5812,7 @@ export const categories = [
       {
         category: true,
         title: "vegan",
-        id: "vegan",
+        pid: "vegan",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -5821,7 +5821,7 @@ export const categories = [
       {
         category: true,
         title: "vegetarian",
-        id: "vegetarian",
+        pid: "vegetarian",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -5832,7 +5832,7 @@ export const categories = [
   {
     category: true,
     title: "health and fitness",
-    id: "health_and_fitness",
+    pid: "health and fitness",
     color: {
       background: "#DB5A42",
       foreground: "#FFFFFF",
@@ -5841,7 +5841,7 @@ export const categories = [
       {
         category: true,
         title: "addiction",
-        id: "addiction",
+        pid: "addiction",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -5850,7 +5850,7 @@ export const categories = [
           {
             category: true,
             title: "alcoholism",
-            id: "alcoholism",
+            pid: "alcoholism",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -5859,7 +5859,7 @@ export const categories = [
           {
             category: true,
             title: "smoking addiction",
-            id: "smoking_addiction",
+            pid: "smoking addiction",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -5868,7 +5868,7 @@ export const categories = [
           {
             category: true,
             title: "substance abuse",
-            id: "substance_abuse",
+            pid: "substance abuse",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -5879,7 +5879,7 @@ export const categories = [
       {
         category: true,
         title: "aging",
-        id: "aging",
+        pid: "aging",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -5888,7 +5888,7 @@ export const categories = [
       {
         category: true,
         title: "alternative medicine",
-        id: "alternative_medicine",
+        pid: "alternative medicine",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -5897,7 +5897,7 @@ export const categories = [
           {
             category: true,
             title: "herbs for health",
-            id: "herbs_for_health",
+            pid: "herbs for health",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -5906,7 +5906,7 @@ export const categories = [
           {
             category: true,
             title: "holistic healing",
-            id: "holistic_healing",
+            pid: "holistic healing",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -5915,7 +5915,7 @@ export const categories = [
           {
             category: true,
             title: "homeopathy",
-            id: "homeopathy",
+            pid: "homeopathy",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -5926,7 +5926,7 @@ export const categories = [
       {
         category: true,
         title: "dental care",
-        id: "dental_care",
+        pid: "dental care",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -5935,7 +5935,7 @@ export const categories = [
       {
         category: true,
         title: "disease",
-        id: "disease",
+        pid: "disease",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -5944,7 +5944,7 @@ export const categories = [
           {
             category: true,
             title: "aids and hiv",
-            id: "aids_and_hiv",
+            pid: "aids and hiv",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -5953,7 +5953,7 @@ export const categories = [
           {
             category: true,
             title: "allergies",
-            id: "allergies",
+            pid: "allergies",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -5962,7 +5962,7 @@ export const categories = [
           {
             category: true,
             title: "arthritis",
-            id: "arthritis",
+            pid: "arthritis",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -5971,7 +5971,7 @@ export const categories = [
           {
             category: true,
             title: "asthma",
-            id: "asthma",
+            pid: "asthma",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -5980,7 +5980,7 @@ export const categories = [
           {
             category: true,
             title: "autism and pdd",
-            id: "autism_and_pdd",
+            pid: "autism and pdd",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -5989,7 +5989,7 @@ export const categories = [
           {
             category: true,
             title: "cancer brain tumor",
-            id: "cancer_brain_tumor",
+            pid: "cancer brain tumor",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -5998,7 +5998,7 @@ export const categories = [
           {
             category: true,
             title: "cancer",
-            id: "cancer",
+            pid: "cancer",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -6007,7 +6007,7 @@ export const categories = [
           {
             category: true,
             title: "cholesterol",
-            id: "cholesterol",
+            pid: "cholesterol",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -6016,7 +6016,7 @@ export const categories = [
           {
             category: true,
             title: "chronic fatigue syndrome",
-            id: "chronic_fatigue_syndrome",
+            pid: "chronic fatigue syndrome",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -6025,7 +6025,7 @@ export const categories = [
           {
             category: true,
             title: "chronic pain",
-            id: "chronic_pain",
+            pid: "chronic pain",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -6034,7 +6034,7 @@ export const categories = [
           {
             category: true,
             title: "cold and flu",
-            id: "cold_and_flu",
+            pid: "cold and flu",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -6043,7 +6043,7 @@ export const categories = [
           {
             category: true,
             title: "deafness",
-            id: "deafness",
+            pid: "deafness",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -6052,7 +6052,7 @@ export const categories = [
           {
             category: true,
             title: "diabetes",
-            id: "diabetes",
+            pid: "diabetes",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -6061,7 +6061,7 @@ export const categories = [
           {
             category: true,
             title: "epidemic",
-            id: "epidemic",
+            pid: "epidemic",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -6070,7 +6070,7 @@ export const categories = [
           {
             category: true,
             title: "epilepsy",
-            id: "epilepsy",
+            pid: "epilepsy",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -6079,7 +6079,7 @@ export const categories = [
           {
             category: true,
             title: "gerd and acid reflux",
-            id: "gerd_and_acid_reflux",
+            pid: "gerd and acid reflux",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -6088,7 +6088,7 @@ export const categories = [
           {
             category: true,
             title: "headaches and migraines",
-            id: "headaches_and_migraines",
+            pid: "headaches and migraines",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -6097,7 +6097,7 @@ export const categories = [
           {
             category: true,
             title: "heart disease",
-            id: "heart_disease",
+            pid: "heart disease",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -6106,7 +6106,7 @@ export const categories = [
           {
             category: true,
             title: "ibs and crohn's disease",
-            id: "ibs_and_crohn_s_disease",
+            pid: "ibs and crohn s disease",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -6115,7 +6115,7 @@ export const categories = [
           {
             category: true,
             title: "incontinence",
-            id: "incontinence",
+            pid: "incontinence",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -6124,7 +6124,7 @@ export const categories = [
           {
             category: true,
             title: "infertility",
-            id: "infertility",
+            pid: "infertility",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -6133,7 +6133,7 @@ export const categories = [
           {
             category: true,
             title: "thyroid disease",
-            id: "thyroid_disease",
+            pid: "thyroid disease",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -6144,7 +6144,7 @@ export const categories = [
       {
         category: true,
         title: "disorders",
-        id: "disorders",
+        pid: "disorders",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -6153,7 +6153,7 @@ export const categories = [
           {
             category: true,
             title: "mental disorder",
-            id: "mental_disorder",
+            pid: "mental disorder",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -6162,7 +6162,7 @@ export const categories = [
               {
                 category: true,
                 title: "a.d.d.",
-                id: "a_d_d_",
+                pid: "a d d ",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -6171,7 +6171,7 @@ export const categories = [
               {
                 category: true,
                 title: "bipolar disorder",
-                id: "bipolar_disorder",
+                pid: "bipolar disorder",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -6180,7 +6180,7 @@ export const categories = [
               {
                 category: true,
                 title: "depression",
-                id: "depression",
+                pid: "depression",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -6189,7 +6189,7 @@ export const categories = [
               {
                 category: true,
                 title: "panic and anxiety",
-                id: "panic_and_anxiety",
+                pid: "panic and anxiety",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -6200,7 +6200,7 @@ export const categories = [
           {
             category: true,
             title: "sleep disorders",
-            id: "sleep_disorders",
+            pid: "sleep disorders",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -6211,7 +6211,7 @@ export const categories = [
       {
         category: true,
         title: "drugs",
-        id: "drugs",
+        pid: "drugs",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -6220,7 +6220,7 @@ export const categories = [
       {
         category: true,
         title: "exercise",
-        id: "exercise",
+        pid: "exercise",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -6229,7 +6229,7 @@ export const categories = [
       {
         category: true,
         title: "incest and abuse support",
-        id: "incest_and_abuse_support",
+        pid: "incest and abuse support",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -6238,7 +6238,7 @@ export const categories = [
       {
         category: true,
         title: "men's health",
-        id: "men_s_health",
+        pid: "men s health",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -6247,7 +6247,7 @@ export const categories = [
       {
         category: true,
         title: "nutrition",
-        id: "nutrition",
+        pid: "nutrition",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -6256,7 +6256,7 @@ export const categories = [
       {
         category: true,
         title: "sexuality",
-        id: "sexuality",
+        pid: "sexuality",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -6265,7 +6265,7 @@ export const categories = [
       {
         category: true,
         title: "sports medicine",
-        id: "sports_medicine",
+        pid: "sports medicine",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -6274,7 +6274,7 @@ export const categories = [
       {
         category: true,
         title: "therapy",
-        id: "therapy",
+        pid: "therapy",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -6283,7 +6283,7 @@ export const categories = [
           {
             category: true,
             title: "physical therapy",
-            id: "physical_therapy",
+            pid: "physical therapy",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -6294,7 +6294,7 @@ export const categories = [
       {
         category: true,
         title: "weight loss",
-        id: "weight_loss",
+        pid: "weight loss",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -6303,7 +6303,7 @@ export const categories = [
       {
         category: true,
         title: "women's health",
-        id: "women_s_health",
+        pid: "women s health",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -6314,7 +6314,7 @@ export const categories = [
   {
     category: true,
     title: "hobbies and interests",
-    id: "hobbies_and_interests",
+    pid: "hobbies and interests",
     color: {
       background: "#19647E",
       foreground: "#FFFFFF",
@@ -6323,7 +6323,7 @@ export const categories = [
       {
         category: true,
         title: "art and technology",
-        id: "art_and_technology",
+        pid: "art and technology",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -6332,7 +6332,7 @@ export const categories = [
       {
         category: true,
         title: "arts and crafts",
-        id: "arts_and_crafts",
+        pid: "arts and crafts",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -6341,7 +6341,7 @@ export const categories = [
           {
             category: true,
             title: "beadwork",
-            id: "beadwork",
+            pid: "beadwork",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -6350,7 +6350,7 @@ export const categories = [
           {
             category: true,
             title: "candle and soap making",
-            id: "candle_and_soap_making",
+            pid: "candle and soap making",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -6359,7 +6359,7 @@ export const categories = [
           {
             category: true,
             title: "crochet",
-            id: "crochet",
+            pid: "crochet",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -6368,7 +6368,7 @@ export const categories = [
           {
             category: true,
             title: "jewelry making",
-            id: "jewelry_making",
+            pid: "jewelry making",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -6377,7 +6377,7 @@ export const categories = [
           {
             category: true,
             title: "knitting",
-            id: "knitting",
+            pid: "knitting",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -6386,7 +6386,7 @@ export const categories = [
           {
             category: true,
             title: "photography",
-            id: "photography",
+            pid: "photography",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -6395,7 +6395,7 @@ export const categories = [
           {
             category: true,
             title: "pottery",
-            id: "pottery",
+            pid: "pottery",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -6404,7 +6404,7 @@ export const categories = [
           {
             category: true,
             title: "watchmaking",
-            id: "watchmaking",
+            pid: "watchmaking",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -6413,7 +6413,7 @@ export const categories = [
           {
             category: true,
             title: "woodworking",
-            id: "woodworking",
+            pid: "woodworking",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -6424,7 +6424,7 @@ export const categories = [
       {
         category: true,
         title: "astrology",
-        id: "astrology",
+        pid: "astrology",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -6433,7 +6433,7 @@ export const categories = [
       {
         category: true,
         title: "birdwatching",
-        id: "birdwatching",
+        pid: "birdwatching",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -6442,7 +6442,7 @@ export const categories = [
       {
         category: true,
         title: "cigars",
-        id: "cigars",
+        pid: "cigars",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -6451,7 +6451,7 @@ export const categories = [
       {
         category: true,
         title: "collecting stamps and coins",
-        id: "collecting_stamps_and_coins",
+        pid: "collecting stamps and coins",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -6460,7 +6460,7 @@ export const categories = [
       {
         category: true,
         title: "collecting",
-        id: "collecting",
+        pid: "collecting",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -6469,7 +6469,7 @@ export const categories = [
       {
         category: true,
         title: "games",
-        id: "games",
+        pid: "games",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -6478,7 +6478,7 @@ export const categories = [
           {
             category: true,
             title: "board games and puzzles",
-            id: "board_games_and_puzzles",
+            pid: "board games and puzzles",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -6487,7 +6487,7 @@ export const categories = [
           {
             category: true,
             title: "card games",
-            id: "card_games",
+            pid: "card games",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -6496,7 +6496,7 @@ export const categories = [
           {
             category: true,
             title: "chess",
-            id: "chess",
+            pid: "chess",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -6505,7 +6505,7 @@ export const categories = [
           {
             category: true,
             title: "gambling",
-            id: "gambling",
+            pid: "gambling",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -6514,7 +6514,7 @@ export const categories = [
           {
             category: true,
             title: "lottery",
-            id: "lottery",
+            pid: "lottery",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -6523,7 +6523,7 @@ export const categories = [
           {
             category: true,
             title: "role playing games",
-            id: "role_playing_games",
+            pid: "role playing games",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -6532,7 +6532,7 @@ export const categories = [
           {
             category: true,
             title: "video and computer games",
-            id: "video_and_computer_games",
+            pid: "video and computer games",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -6543,7 +6543,7 @@ export const categories = [
       {
         category: true,
         title: "getting published",
-        id: "getting_published",
+        pid: "getting published",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -6552,7 +6552,7 @@ export const categories = [
           {
             category: true,
             title: "freelance writing",
-            id: "freelance_writing",
+            pid: "freelance writing",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -6561,7 +6561,7 @@ export const categories = [
           {
             category: true,
             title: "screenwriting",
-            id: "screenwriting",
+            pid: "screenwriting",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -6572,7 +6572,7 @@ export const categories = [
       {
         category: true,
         title: "guitar",
-        id: "guitar",
+        pid: "guitar",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -6581,7 +6581,7 @@ export const categories = [
       {
         category: true,
         title: "home recording",
-        id: "home_recording",
+        pid: "home recording",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -6590,7 +6590,7 @@ export const categories = [
       {
         category: true,
         title: "inventors and patents",
-        id: "inventors_and_patents",
+        pid: "inventors and patents",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -6599,7 +6599,7 @@ export const categories = [
       {
         category: true,
         title: "magic and illusion",
-        id: "magic_and_illusion",
+        pid: "magic and illusion",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -6608,7 +6608,7 @@ export const categories = [
       {
         category: true,
         title: "needlework",
-        id: "needlework",
+        pid: "needlework",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -6617,7 +6617,7 @@ export const categories = [
       {
         category: true,
         title: "paranormal phenomena",
-        id: "paranormal_phenomena",
+        pid: "paranormal phenomena",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -6626,7 +6626,7 @@ export const categories = [
           {
             category: true,
             title: "occult",
-            id: "occult",
+            pid: "occult",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -6635,7 +6635,7 @@ export const categories = [
           {
             category: true,
             title: "parapsychology",
-            id: "parapsychology",
+            pid: "parapsychology",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -6646,7 +6646,7 @@ export const categories = [
       {
         category: true,
         title: "reading",
-        id: "reading",
+        pid: "reading",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -6655,7 +6655,7 @@ export const categories = [
       {
         category: true,
         title: "scrapbooking",
-        id: "scrapbooking",
+        pid: "scrapbooking",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -6666,7 +6666,7 @@ export const categories = [
   {
     category: true,
     title: "home and garden",
-    id: "home_and_garden",
+    pid: "home and garden",
     color: {
       background: "#DB5A42",
       foreground: "#FFFFFF",
@@ -6675,7 +6675,7 @@ export const categories = [
       {
         category: true,
         title: "appliances dishwashers",
-        id: "appliances_dishwashers",
+        pid: "appliances dishwashers",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -6684,7 +6684,7 @@ export const categories = [
           {
             category: true,
             title: "microwaves",
-            id: "microwaves",
+            pid: "microwaves",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -6693,7 +6693,7 @@ export const categories = [
           {
             category: true,
             title: "refrigerators and freezers",
-            id: "refrigerators_and_freezers",
+            pid: "refrigerators and freezers",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -6702,7 +6702,7 @@ export const categories = [
           {
             category: true,
             title: "small appliances",
-            id: "small_appliances",
+            pid: "small appliances",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -6711,7 +6711,7 @@ export const categories = [
               {
                 category: true,
                 title: "blenders",
-                id: "blenders",
+                pid: "blenders",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -6720,7 +6720,7 @@ export const categories = [
               {
                 category: true,
                 title: "coffee maker",
-                id: "coffee_maker",
+                pid: "coffee maker",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -6729,7 +6729,7 @@ export const categories = [
               {
                 category: true,
                 title: "food processors",
-                id: "food_processors",
+                pid: "food processors",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -6738,7 +6738,7 @@ export const categories = [
               {
                 category: true,
                 title: "toasters and toaster ovens",
-                id: "toasters_and_toaster_ovens",
+                pid: "toasters and toaster ovens",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -6749,7 +6749,7 @@ export const categories = [
           {
             category: true,
             title: "stoves",
-            id: "stoves",
+            pid: "stoves",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -6760,7 +6760,7 @@ export const categories = [
       {
         category: true,
         title: "bed and bath",
-        id: "bed_and_bath",
+        pid: "bed and bath",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -6769,7 +6769,7 @@ export const categories = [
           {
             category: true,
             title: "bathroom",
-            id: "bathroom",
+            pid: "bathroom",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -6778,7 +6778,7 @@ export const categories = [
           {
             category: true,
             title: "bedroom",
-            id: "bedroom",
+            pid: "bedroom",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -6787,7 +6787,7 @@ export const categories = [
               {
                 category: true,
                 title: "bedding and bed linens",
-                id: "bedding_and_bed_linens",
+                pid: "bedding and bed linens",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -6796,7 +6796,7 @@ export const categories = [
               {
                 category: true,
                 title: "beds and headboards",
-                id: "beds_and_headboards",
+                pid: "beds and headboards",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -6805,7 +6805,7 @@ export const categories = [
               {
                 category: true,
                 title: "mattresses",
-                id: "mattresses",
+                pid: "mattresses",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -6818,7 +6818,7 @@ export const categories = [
       {
         category: true,
         title: "environmental safety",
-        id: "environmental_safety",
+        pid: "environmental safety",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -6827,7 +6827,7 @@ export const categories = [
       {
         category: true,
         title: "gardening and landscaping",
-        id: "gardening_and_landscaping",
+        pid: "gardening and landscaping",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -6836,7 +6836,7 @@ export const categories = [
           {
             category: true,
             title: "gardening",
-            id: "gardening",
+            pid: "gardening",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -6845,7 +6845,7 @@ export const categories = [
           {
             category: true,
             title: "landscaping",
-            id: "landscaping",
+            pid: "landscaping",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -6854,7 +6854,7 @@ export const categories = [
           {
             category: true,
             title: "yard and patio",
-            id: "yard_and_patio",
+            pid: "yard and patio",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -6865,7 +6865,7 @@ export const categories = [
       {
         category: true,
         title: "home furnishings",
-        id: "home_furnishings",
+        pid: "home furnishings",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -6874,7 +6874,7 @@ export const categories = [
           {
             category: true,
             title: "lamps and lighting",
-            id: "lamps_and_lighting",
+            pid: "lamps and lighting",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -6883,7 +6883,7 @@ export const categories = [
           {
             category: true,
             title: "rugs and carpets",
-            id: "rugs_and_carpets",
+            pid: "rugs and carpets",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -6892,7 +6892,7 @@ export const categories = [
           {
             category: true,
             title: "sofas and chairs",
-            id: "sofas_and_chairs",
+            pid: "sofas and chairs",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -6903,7 +6903,7 @@ export const categories = [
       {
         category: true,
         title: "home improvement and repair",
-        id: "home_improvement_and_repair",
+        pid: "home improvement and repair",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -6912,7 +6912,7 @@ export const categories = [
           {
             category: true,
             title: "house painting and finishing",
-            id: "house_painting_and_finishing",
+            pid: "house painting and finishing",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -6921,7 +6921,7 @@ export const categories = [
           {
             category: true,
             title: "locks and locksmiths",
-            id: "locks_and_locksmiths",
+            pid: "locks and locksmiths",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -6930,7 +6930,7 @@ export const categories = [
           {
             category: true,
             title: "plumbing",
-            id: "plumbing",
+            pid: "plumbing",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -6939,7 +6939,7 @@ export const categories = [
           {
             category: true,
             title: "power tools",
-            id: "power_tools",
+            pid: "power tools",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -6948,7 +6948,7 @@ export const categories = [
           {
             category: true,
             title: "roofing",
-            id: "roofing",
+            pid: "roofing",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -6959,7 +6959,7 @@ export const categories = [
       {
         category: true,
         title: "interior decorating",
-        id: "interior_decorating",
+        pid: "interior decorating",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -6968,7 +6968,7 @@ export const categories = [
       {
         category: true,
         title: "laundry",
-        id: "laundry",
+        pid: "laundry",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -6977,7 +6977,7 @@ export const categories = [
       {
         category: true,
         title: "luxury homes",
-        id: "luxury_homes",
+        pid: "luxury homes",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -6986,7 +6986,7 @@ export const categories = [
       {
         category: true,
         title: "nursery and playroom",
-        id: "nursery_and_playroom",
+        pid: "nursery and playroom",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -6995,7 +6995,7 @@ export const categories = [
       {
         category: true,
         title: "pest control",
-        id: "pest_control",
+        pid: "pest control",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -7004,7 +7004,7 @@ export const categories = [
       {
         category: true,
         title: "remodeling and construction",
-        id: "remodeling_and_construction",
+        pid: "remodeling and construction",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -7015,7 +7015,7 @@ export const categories = [
   {
     category: true,
     title: "law, govt and politics",
-    id: "law_govt_and_politics",
+    pid: "law govt and politics",
     color: {
       background: "#499F68",
       foreground: "#FFFFFF",
@@ -7024,7 +7024,7 @@ export const categories = [
       {
         category: true,
         title: "armed forces",
-        id: "armed_forces",
+        pid: "armed forces",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -7033,7 +7033,7 @@ export const categories = [
           {
             category: true,
             title: "air force",
-            id: "air_force",
+            pid: "air force",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -7042,7 +7042,7 @@ export const categories = [
           {
             category: true,
             title: "army",
-            id: "army",
+            pid: "army",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -7051,7 +7051,7 @@ export const categories = [
           {
             category: true,
             title: "marines",
-            id: "marines",
+            pid: "marines",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -7060,7 +7060,7 @@ export const categories = [
           {
             category: true,
             title: "navy",
-            id: "navy",
+            pid: "navy",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -7069,7 +7069,7 @@ export const categories = [
           {
             category: true,
             title: "veterans",
-            id: "veterans",
+            pid: "veterans",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -7080,7 +7080,7 @@ export const categories = [
       {
         category: true,
         title: "commentary",
-        id: "commentary",
+        pid: "commentary",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -7089,7 +7089,7 @@ export const categories = [
       {
         category: true,
         title: "espionage and intelligence",
-        id: "espionage_and_intelligence",
+        pid: "espionage and intelligence",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -7098,7 +7098,7 @@ export const categories = [
           {
             category: true,
             title: "secret service",
-            id: "secret_service",
+            pid: "secret service",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -7107,7 +7107,7 @@ export const categories = [
           {
             category: true,
             title: "surveillance",
-            id: "surveillance",
+            pid: "surveillance",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -7116,7 +7116,7 @@ export const categories = [
           {
             category: true,
             title: "terrorism",
-            id: "terrorism",
+            pid: "terrorism",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -7127,7 +7127,7 @@ export const categories = [
       {
         category: true,
         title: "government",
-        id: "government",
+        pid: "government",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -7136,7 +7136,7 @@ export const categories = [
           {
             category: true,
             title: "courts and judiciary",
-            id: "courts_and_judiciary",
+            pid: "courts and judiciary",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -7145,7 +7145,7 @@ export const categories = [
           {
             category: true,
             title: "embassies and consulates",
-            id: "embassies_and_consulates",
+            pid: "embassies and consulates",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -7154,7 +7154,7 @@ export const categories = [
           {
             category: true,
             title: "executive branch",
-            id: "executive_branch",
+            pid: "executive branch",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -7163,7 +7163,7 @@ export const categories = [
           {
             category: true,
             title: "government agencies",
-            id: "government_agencies",
+            pid: "government agencies",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -7172,7 +7172,7 @@ export const categories = [
           {
             category: true,
             title: "government contracting and procurement",
-            id: "government_contracting_and_procurement",
+            pid: "government contracting and procurement",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -7181,7 +7181,7 @@ export const categories = [
           {
             category: true,
             title: "heads of state",
-            id: "heads_of_state",
+            pid: "heads of state",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -7190,7 +7190,7 @@ export const categories = [
           {
             category: true,
             title: "legislative",
-            id: "legislative",
+            pid: "legislative",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -7199,7 +7199,7 @@ export const categories = [
           {
             category: true,
             title: "parliament",
-            id: "parliament",
+            pid: "parliament",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -7208,7 +7208,7 @@ export const categories = [
           {
             category: true,
             title: "state and local government",
-            id: "state_and_local_government",
+            pid: "state and local government",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -7219,7 +7219,7 @@ export const categories = [
       {
         category: true,
         title: "immigration",
-        id: "immigration",
+        pid: "immigration",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -7228,7 +7228,7 @@ export const categories = [
       {
         category: true,
         title: "law enforcement",
-        id: "law_enforcement",
+        pid: "law enforcement",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -7237,7 +7237,7 @@ export const categories = [
           {
             category: true,
             title: "coast guard",
-            id: "coast_guard",
+            pid: "coast guard",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -7246,7 +7246,7 @@ export const categories = [
           {
             category: true,
             title: "fire department",
-            id: "fire_department",
+            pid: "fire department",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -7255,7 +7255,7 @@ export const categories = [
           {
             category: true,
             title: "highway patrol",
-            id: "highway_patrol",
+            pid: "highway patrol",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -7264,7 +7264,7 @@ export const categories = [
           {
             category: true,
             title: "police",
-            id: "police",
+            pid: "police",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -7275,7 +7275,7 @@ export const categories = [
       {
         category: true,
         title: "legal issues",
-        id: "legal_issues",
+        pid: "legal issues",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -7284,7 +7284,7 @@ export const categories = [
           {
             category: true,
             title: "civil law",
-            id: "civil_law",
+            pid: "civil law",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -7293,7 +7293,7 @@ export const categories = [
               {
                 category: true,
                 title: "copyright",
-                id: "copyright",
+                pid: "copyright",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -7304,7 +7304,7 @@ export const categories = [
           {
             category: true,
             title: "civil rights",
-            id: "civil_rights",
+            pid: "civil rights",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -7313,7 +7313,7 @@ export const categories = [
               {
                 category: true,
                 title: "privacy",
-                id: "privacy",
+                pid: "privacy",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -7324,7 +7324,7 @@ export const categories = [
           {
             category: true,
             title: "criminal law",
-            id: "criminal_law",
+            pid: "criminal law",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -7333,7 +7333,7 @@ export const categories = [
           {
             category: true,
             title: "death penalty",
-            id: "death_penalty",
+            pid: "death penalty",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -7342,7 +7342,7 @@ export const categories = [
           {
             category: true,
             title: "human rights",
-            id: "human_rights",
+            pid: "human rights",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -7351,7 +7351,7 @@ export const categories = [
           {
             category: true,
             title: "international law",
-            id: "international_law",
+            pid: "international law",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -7360,7 +7360,7 @@ export const categories = [
           {
             category: true,
             title: "legislation",
-            id: "legislation",
+            pid: "legislation",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -7369,7 +7369,7 @@ export const categories = [
               {
                 category: true,
                 title: "building laws",
-                id: "building_laws",
+                pid: "building laws",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -7378,7 +7378,7 @@ export const categories = [
               {
                 category: true,
                 title: "education laws",
-                id: "education_laws",
+                pid: "education laws",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -7387,7 +7387,7 @@ export const categories = [
               {
                 category: true,
                 title: "family laws",
-                id: "family_laws",
+                pid: "family laws",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -7396,7 +7396,7 @@ export const categories = [
               {
                 category: true,
                 title: "health care laws",
-                id: "health_care_laws",
+                pid: "health care laws",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -7405,7 +7405,7 @@ export const categories = [
               {
                 category: true,
                 title: "immigration laws",
-                id: "immigration_laws",
+                pid: "immigration laws",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -7414,7 +7414,7 @@ export const categories = [
               {
                 category: true,
                 title: "tax laws",
-                id: "tax_laws",
+                pid: "tax laws",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -7427,7 +7427,7 @@ export const categories = [
       {
         category: true,
         title: "politics",
-        id: "politics",
+        pid: "politics",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -7436,7 +7436,7 @@ export const categories = [
           {
             category: true,
             title: "domestic policy",
-            id: "domestic_policy",
+            pid: "domestic policy",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -7445,7 +7445,7 @@ export const categories = [
           {
             category: true,
             title: "elections",
-            id: "elections",
+            pid: "elections",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -7454,7 +7454,7 @@ export const categories = [
               {
                 category: true,
                 title: "local elections",
-                id: "local_elections",
+                pid: "local elections",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -7463,7 +7463,7 @@ export const categories = [
               {
                 category: true,
                 title: "presidential elections",
-                id: "presidential_elections",
+                pid: "presidential elections",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -7472,7 +7472,7 @@ export const categories = [
               {
                 category: true,
                 title: "referendums",
-                id: "referendums",
+                pid: "referendums",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -7483,7 +7483,7 @@ export const categories = [
           {
             category: true,
             title: "foreign policy",
-            id: "foreign_policy",
+            pid: "foreign policy",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -7492,7 +7492,7 @@ export const categories = [
           {
             category: true,
             title: "lobbying",
-            id: "lobbying",
+            pid: "lobbying",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -7501,7 +7501,7 @@ export const categories = [
           {
             category: true,
             title: "political parties",
-            id: "political_parties",
+            pid: "political parties",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -7514,7 +7514,7 @@ export const categories = [
   {
     category: true,
     title: "news",
-    id: "news",
+    pid: "news",
     color: {
       background: "#DB5A42",
       foreground: "#FFFFFF",
@@ -7523,7 +7523,7 @@ export const categories = [
       {
         category: true,
         title: "international news",
-        id: "international_news",
+        pid: "international news",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -7532,7 +7532,7 @@ export const categories = [
       {
         category: true,
         title: "local news",
-        id: "local_news",
+        pid: "local news",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -7541,7 +7541,7 @@ export const categories = [
       {
         category: true,
         title: "national news",
-        id: "national_news",
+        pid: "national news",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -7552,7 +7552,7 @@ export const categories = [
   {
     category: true,
     title: "pets",
-    id: "pets",
+    pid: "pets",
     color: {
       background: "#19647E",
       foreground: "#FFFFFF",
@@ -7561,7 +7561,7 @@ export const categories = [
       {
         category: true,
         title: "animal welfare",
-        id: "animal_welfare",
+        pid: "animal welfare",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -7570,7 +7570,7 @@ export const categories = [
       {
         category: true,
         title: "aquariums",
-        id: "aquariums",
+        pid: "aquariums",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -7579,7 +7579,7 @@ export const categories = [
       {
         category: true,
         title: "birds",
-        id: "birds",
+        pid: "birds",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -7588,7 +7588,7 @@ export const categories = [
       {
         category: true,
         title: "cats",
-        id: "cats",
+        pid: "cats",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -7597,7 +7597,7 @@ export const categories = [
       {
         category: true,
         title: "dogs",
-        id: "dogs",
+        pid: "dogs",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -7606,7 +7606,7 @@ export const categories = [
       {
         category: true,
         title: "large animals",
-        id: "large_animals",
+        pid: "large animals",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -7615,7 +7615,7 @@ export const categories = [
       {
         category: true,
         title: "reptiles",
-        id: "reptiles",
+        pid: "reptiles",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -7624,7 +7624,7 @@ export const categories = [
       {
         category: true,
         title: "zoo",
-        id: "zoo",
+        pid: "zoo",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -7635,7 +7635,7 @@ export const categories = [
   {
     category: true,
     title: "real estate",
-    id: "real_estate",
+    pid: "real estate",
     color: {
       background: "#499F68",
       foreground: "#FFFFFF",
@@ -7644,7 +7644,7 @@ export const categories = [
       {
         category: true,
         title: "apartments",
-        id: "apartments",
+        pid: "apartments",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -7653,7 +7653,7 @@ export const categories = [
       {
         category: true,
         title: "architects",
-        id: "architects",
+        pid: "architects",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -7662,7 +7662,7 @@ export const categories = [
       {
         category: true,
         title: "buying and selling homes",
-        id: "buying_and_selling_homes",
+        pid: "buying and selling homes",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -7671,7 +7671,7 @@ export const categories = [
       {
         category: true,
         title: "low income housing",
-        id: "low_income_housing",
+        pid: "low income housing",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -7682,7 +7682,7 @@ export const categories = [
   {
     category: true,
     title: "religion and spirituality",
-    id: "religion_and_spirituality",
+    pid: "religion and spirituality",
     color: {
       background: "#DB5A42",
       foreground: "#FFFFFF",
@@ -7691,7 +7691,7 @@ export const categories = [
       {
         category: true,
         title: "alternative religions",
-        id: "alternative_religions",
+        pid: "alternative religions",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -7700,7 +7700,7 @@ export const categories = [
           {
             category: true,
             title: "pagan and wiccan",
-            id: "pagan_and_wiccan",
+            pid: "pagan and wiccan",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -7711,7 +7711,7 @@ export const categories = [
       {
         category: true,
         title: "atheism and agnosticism",
-        id: "atheism_and_agnosticism",
+        pid: "atheism and agnosticism",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -7720,7 +7720,7 @@ export const categories = [
       {
         category: true,
         title: "buddhism",
-        id: "buddhism",
+        pid: "buddhism",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -7729,7 +7729,7 @@ export const categories = [
       {
         category: true,
         title: "christianity",
-        id: "christianity",
+        pid: "christianity",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -7738,7 +7738,7 @@ export const categories = [
           {
             category: true,
             title: "catholicism",
-            id: "catholicism",
+            pid: "catholicism",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -7747,7 +7747,7 @@ export const categories = [
           {
             category: true,
             title: "latter-day saints",
-            id: "latter_day_saints",
+            pid: "latter day saints",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -7756,7 +7756,7 @@ export const categories = [
           {
             category: true,
             title: "orthodoxy",
-            id: "orthodoxy",
+            pid: "orthodoxy",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -7765,7 +7765,7 @@ export const categories = [
           {
             category: true,
             title: "protestantism",
-            id: "protestantism",
+            pid: "protestantism",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -7776,7 +7776,7 @@ export const categories = [
       {
         category: true,
         title: "hinduism",
-        id: "hinduism",
+        pid: "hinduism",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -7785,7 +7785,7 @@ export const categories = [
       {
         category: true,
         title: "islam",
-        id: "islam",
+        pid: "islam",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -7794,7 +7794,7 @@ export const categories = [
           {
             category: true,
             title: "islamic fundamentalism",
-            id: "islamic_fundamentalism",
+            pid: "islamic fundamentalism",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -7805,7 +7805,7 @@ export const categories = [
       {
         category: true,
         title: "judaism",
-        id: "judaism",
+        pid: "judaism",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -7816,7 +7816,7 @@ export const categories = [
   {
     category: true,
     title: "science",
-    id: "science",
+    pid: "science",
     color: {
       background: "#F26DF9",
       foreground: "#000000",
@@ -7825,7 +7825,7 @@ export const categories = [
       {
         category: true,
         title: "biology",
-        id: "biology",
+        pid: "biology",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -7834,7 +7834,7 @@ export const categories = [
           {
             category: true,
             title: "biotechnology",
-            id: "biotechnology",
+            pid: "biotechnology",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -7843,7 +7843,7 @@ export const categories = [
           {
             category: true,
             title: "botany",
-            id: "botany",
+            pid: "botany",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -7852,7 +7852,7 @@ export const categories = [
           {
             category: true,
             title: "breeding",
-            id: "breeding",
+            pid: "breeding",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -7861,7 +7861,7 @@ export const categories = [
           {
             category: true,
             title: "cytology",
-            id: "cytology",
+            pid: "cytology",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -7870,7 +7870,7 @@ export const categories = [
           {
             category: true,
             title: "marine biology",
-            id: "marine_biology",
+            pid: "marine biology",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -7879,7 +7879,7 @@ export const categories = [
           {
             category: true,
             title: "molecular biology",
-            id: "molecular_biology",
+            pid: "molecular biology",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -7888,7 +7888,7 @@ export const categories = [
           {
             category: true,
             title: "zoology",
-            id: "zoology",
+            pid: "zoology",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -7897,7 +7897,7 @@ export const categories = [
               {
                 category: true,
                 title: "endangered species",
-                id: "endangered_species",
+                pid: "endangered species",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -7906,7 +7906,7 @@ export const categories = [
               {
                 category: true,
                 title: "entomology",
-                id: "entomology",
+                pid: "entomology",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -7915,7 +7915,7 @@ export const categories = [
               {
                 category: true,
                 title: "ornithology",
-                id: "ornithology",
+                pid: "ornithology",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -7928,7 +7928,7 @@ export const categories = [
       {
         category: true,
         title: "chemistry",
-        id: "chemistry",
+        pid: "chemistry",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -7937,7 +7937,7 @@ export const categories = [
           {
             category: true,
             title: "organic chemistry",
-            id: "organic_chemistry",
+            pid: "organic chemistry",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -7948,7 +7948,7 @@ export const categories = [
       {
         category: true,
         title: "computer science",
-        id: "computer_science",
+        pid: "computer science",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -7957,7 +7957,7 @@ export const categories = [
           {
             category: true,
             title: "artificial intelligence",
-            id: "artificial_intelligence",
+            pid: "artificial intelligence",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -7966,7 +7966,7 @@ export const categories = [
           {
             category: true,
             title: "cryptography",
-            id: "cryptography",
+            pid: "cryptography",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -7975,7 +7975,7 @@ export const categories = [
           {
             category: true,
             title: "distributed systems",
-            id: "distributed_systems",
+            pid: "distributed systems",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -7984,7 +7984,7 @@ export const categories = [
           {
             category: true,
             title: "information science",
-            id: "information_science",
+            pid: "information science",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -7993,7 +7993,7 @@ export const categories = [
           {
             category: true,
             title: "software engineering",
-            id: "software_engineering",
+            pid: "software engineering",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -8004,7 +8004,7 @@ export const categories = [
       {
         category: true,
         title: "ecology",
-        id: "ecology",
+        pid: "ecology",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -8013,7 +8013,7 @@ export const categories = [
           {
             category: true,
             title: "environmental disaster",
-            id: "environmental_disaster",
+            pid: "environmental disaster",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -8022,7 +8022,7 @@ export const categories = [
           {
             category: true,
             title: "pollution",
-            id: "pollution",
+            pid: "pollution",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -8031,7 +8031,7 @@ export const categories = [
           {
             category: true,
             title: "waste management",
-            id: "waste_management",
+            pid: "waste management",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -8040,7 +8040,7 @@ export const categories = [
               {
                 category: true,
                 title: "recycling",
-                id: "recycling",
+                pid: "recycling",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -8049,7 +8049,7 @@ export const categories = [
               {
                 category: true,
                 title: "waste disposal",
-                id: "waste_disposal",
+                pid: "waste disposal",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -8062,7 +8062,7 @@ export const categories = [
       {
         category: true,
         title: "engineering",
-        id: "engineering",
+        pid: "engineering",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -8071,7 +8071,7 @@ export const categories = [
       {
         category: true,
         title: "geography",
-        id: "geography",
+        pid: "geography",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -8080,7 +8080,7 @@ export const categories = [
           {
             category: true,
             title: "cartography",
-            id: "cartography",
+            pid: "cartography",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -8089,7 +8089,7 @@ export const categories = [
           {
             category: true,
             title: "topography",
-            id: "topography",
+            pid: "topography",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -8100,7 +8100,7 @@ export const categories = [
       {
         category: true,
         title: "geology",
-        id: "geology",
+        pid: "geology",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -8109,7 +8109,7 @@ export const categories = [
           {
             category: true,
             title: "mineralogy",
-            id: "mineralogy",
+            pid: "mineralogy",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -8118,7 +8118,7 @@ export const categories = [
           {
             category: true,
             title: "seismology",
-            id: "seismology",
+            pid: "seismology",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -8127,7 +8127,7 @@ export const categories = [
               {
                 category: true,
                 title: "earthquakes",
-                id: "earthquakes",
+                pid: "earthquakes",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -8140,7 +8140,7 @@ export const categories = [
       {
         category: true,
         title: "volcanology",
-        id: "volcanology",
+        pid: "volcanology",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -8149,7 +8149,7 @@ export const categories = [
           {
             category: true,
             title: "volcanic eruptions",
-            id: "volcanic_eruptions",
+            pid: "volcanic eruptions",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -8160,7 +8160,7 @@ export const categories = [
       {
         category: true,
         title: "mathematics",
-        id: "mathematics",
+        pid: "mathematics",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -8169,7 +8169,7 @@ export const categories = [
           {
             category: true,
             title: "algebra",
-            id: "algebra",
+            pid: "algebra",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -8178,7 +8178,7 @@ export const categories = [
           {
             category: true,
             title: "arithmetic",
-            id: "arithmetic",
+            pid: "arithmetic",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -8187,7 +8187,7 @@ export const categories = [
           {
             category: true,
             title: "geometry",
-            id: "geometry",
+            pid: "geometry",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -8196,7 +8196,7 @@ export const categories = [
           {
             category: true,
             title: "statistics",
-            id: "statistics",
+            pid: "statistics",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -8207,7 +8207,7 @@ export const categories = [
       {
         category: true,
         title: "medicine",
-        id: "medicine",
+        pid: "medicine",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -8216,7 +8216,7 @@ export const categories = [
           {
             category: true,
             title: "cardiology",
-            id: "cardiology",
+            pid: "cardiology",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -8225,7 +8225,7 @@ export const categories = [
           {
             category: true,
             title: "dermatology",
-            id: "dermatology",
+            pid: "dermatology",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -8234,7 +8234,7 @@ export const categories = [
           {
             category: true,
             title: "embryology",
-            id: "embryology",
+            pid: "embryology",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -8243,7 +8243,7 @@ export const categories = [
           {
             category: true,
             title: "genetics",
-            id: "genetics",
+            pid: "genetics",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -8252,7 +8252,7 @@ export const categories = [
           {
             category: true,
             title: "immunology",
-            id: "immunology",
+            pid: "immunology",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -8261,7 +8261,7 @@ export const categories = [
           {
             category: true,
             title: "medical research",
-            id: "medical_research",
+            pid: "medical research",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -8270,7 +8270,7 @@ export const categories = [
           {
             category: true,
             title: "oncology",
-            id: "oncology",
+            pid: "oncology",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -8279,7 +8279,7 @@ export const categories = [
           {
             category: true,
             title: "orthopedics",
-            id: "orthopedics",
+            pid: "orthopedics",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -8288,7 +8288,7 @@ export const categories = [
           {
             category: true,
             title: "pediatrics",
-            id: "pediatrics",
+            pid: "pediatrics",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -8297,7 +8297,7 @@ export const categories = [
           {
             category: true,
             title: "pharmacology",
-            id: "pharmacology",
+            pid: "pharmacology",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -8306,7 +8306,7 @@ export const categories = [
           {
             category: true,
             title: "physiology",
-            id: "physiology",
+            pid: "physiology",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -8315,7 +8315,7 @@ export const categories = [
           {
             category: true,
             title: "psychology and psychiatry",
-            id: "psychology_and_psychiatry",
+            pid: "psychology and psychiatry",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -8324,7 +8324,7 @@ export const categories = [
               {
                 category: true,
                 title: "psychoanalysis",
-                id: "psychoanalysis",
+                pid: "psychoanalysis",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -8335,7 +8335,7 @@ export const categories = [
           {
             category: true,
             title: "surgery",
-            id: "surgery",
+            pid: "surgery",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -8344,7 +8344,7 @@ export const categories = [
               {
                 category: true,
                 title: "cosmetic surgery",
-                id: "cosmetic_surgery",
+                pid: "cosmetic surgery",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -8353,7 +8353,7 @@ export const categories = [
               {
                 category: true,
                 title: "transplants",
-                id: "transplants",
+                pid: "transplants",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -8364,7 +8364,7 @@ export const categories = [
           {
             category: true,
             title: "veterinary medicine",
-            id: "veterinary_medicine",
+            pid: "veterinary medicine",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -8375,7 +8375,7 @@ export const categories = [
       {
         category: true,
         title: "physics",
-        id: "physics",
+        pid: "physics",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -8384,7 +8384,7 @@ export const categories = [
           {
             category: true,
             title: "atomic physics",
-            id: "atomic_physics",
+            pid: "atomic physics",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -8393,7 +8393,7 @@ export const categories = [
           {
             category: true,
             title: "astrophysics",
-            id: "astrophysics",
+            pid: "astrophysics",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -8402,7 +8402,7 @@ export const categories = [
           {
             category: true,
             title: "electromagnetism",
-            id: "electromagnetism",
+            pid: "electromagnetism",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -8411,7 +8411,7 @@ export const categories = [
           {
             category: true,
             title: "hydraulics",
-            id: "hydraulics",
+            pid: "hydraulics",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -8420,7 +8420,7 @@ export const categories = [
           {
             category: true,
             title: "nanotechnology",
-            id: "nanotechnology",
+            pid: "nanotechnology",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -8429,7 +8429,7 @@ export const categories = [
           {
             category: true,
             title: "optics",
-            id: "optics",
+            pid: "optics",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -8438,7 +8438,7 @@ export const categories = [
           {
             category: true,
             title: "space and astronomy",
-            id: "space_and_astronomy",
+            pid: "space and astronomy",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -8447,7 +8447,7 @@ export const categories = [
           {
             category: true,
             title: "thermodynamics",
-            id: "thermodynamics",
+            pid: "thermodynamics",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -8458,7 +8458,7 @@ export const categories = [
       {
         category: true,
         title: "social science",
-        id: "social_science",
+        pid: "social science",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -8467,7 +8467,7 @@ export const categories = [
           {
             category: true,
             title: "anthropology",
-            id: "anthropology",
+            pid: "anthropology",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -8476,7 +8476,7 @@ export const categories = [
           {
             category: true,
             title: "history",
-            id: "history",
+            pid: "history",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -8485,7 +8485,7 @@ export const categories = [
               {
                 category: true,
                 title: "ancient history",
-                id: "ancient_history",
+                pid: "ancient history",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -8494,7 +8494,7 @@ export const categories = [
               {
                 category: true,
                 title: "archaeology",
-                id: "archaeology",
+                pid: "archaeology",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -8503,7 +8503,7 @@ export const categories = [
               {
                 category: true,
                 title: "genealogy",
-                id: "genealogy",
+                pid: "genealogy",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -8512,7 +8512,7 @@ export const categories = [
               {
                 category: true,
                 title: "heraldry",
-                id: "heraldry",
+                pid: "heraldry",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -8521,7 +8521,7 @@ export const categories = [
               {
                 category: true,
                 title: "medieval history",
-                id: "medieval_history",
+                pid: "medieval history",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -8530,7 +8530,7 @@ export const categories = [
               {
                 category: true,
                 title: "modern history",
-                id: "modern_history",
+                pid: "modern history",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -8539,7 +8539,7 @@ export const categories = [
               {
                 category: true,
                 title: "prehistory",
-                id: "prehistory",
+                pid: "prehistory",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -8550,7 +8550,7 @@ export const categories = [
           {
             category: true,
             title: "linguistics",
-            id: "linguistics",
+            pid: "linguistics",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -8559,7 +8559,7 @@ export const categories = [
               {
                 category: true,
                 title: "translation",
-                id: "translation",
+                pid: "translation",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -8570,7 +8570,7 @@ export const categories = [
           {
             category: true,
             title: "pedagogy",
-            id: "pedagogy",
+            pid: "pedagogy",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -8579,7 +8579,7 @@ export const categories = [
           {
             category: true,
             title: "philosophy",
-            id: "philosophy",
+            pid: "philosophy",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -8588,7 +8588,7 @@ export const categories = [
               {
                 category: true,
                 title: "ethics",
-                id: "ethics",
+                pid: "ethics",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -8599,7 +8599,7 @@ export const categories = [
           {
             category: true,
             title: "sociology",
-            id: "sociology",
+            pid: "sociology",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -8610,7 +8610,7 @@ export const categories = [
       {
         category: true,
         title: "weather",
-        id: "weather",
+        pid: "weather",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -8619,7 +8619,7 @@ export const categories = [
           {
             category: true,
             title: "meteorological disaster",
-            id: "meteorological_disaster",
+            pid: "meteorological disaster",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -8628,7 +8628,7 @@ export const categories = [
               {
                 category: true,
                 title: "flood",
-                id: "flood",
+                pid: "flood",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -8637,7 +8637,7 @@ export const categories = [
               {
                 category: true,
                 title: "hurricane",
-                id: "hurricane",
+                pid: "hurricane",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -8646,7 +8646,7 @@ export const categories = [
               {
                 category: true,
                 title: "tornado",
-                id: "tornado",
+                pid: "tornado",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -8661,7 +8661,7 @@ export const categories = [
   {
     category: true,
     title: "shopping",
-    id: "shopping",
+    pid: "shopping",
     color: {
       background: "#499F68",
       foreground: "#FFFFFF",
@@ -8670,7 +8670,7 @@ export const categories = [
       {
         category: true,
         title: "auctions",
-        id: "auctions",
+        pid: "auctions",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -8679,7 +8679,7 @@ export const categories = [
       {
         category: true,
         title: "classifieds",
-        id: "classifieds",
+        pid: "classifieds",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -8688,7 +8688,7 @@ export const categories = [
       {
         category: true,
         title: "gifts",
-        id: "gifts",
+        pid: "gifts",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -8697,7 +8697,7 @@ export const categories = [
           {
             category: true,
             title: "flowers",
-            id: "flowers",
+            pid: "flowers",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -8706,7 +8706,7 @@ export const categories = [
           {
             category: true,
             title: "greeting cards",
-            id: "greeting_cards",
+            pid: "greeting cards",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -8715,7 +8715,7 @@ export const categories = [
           {
             category: true,
             title: "party supplies",
-            id: "party_supplies",
+            pid: "party supplies",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -8726,7 +8726,7 @@ export const categories = [
       {
         category: true,
         title: "resources",
-        id: "resources",
+        pid: "resources",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -8735,7 +8735,7 @@ export const categories = [
           {
             category: true,
             title: "comparisons engines",
-            id: "comparisons_engines",
+            pid: "comparisons engines",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -8744,7 +8744,7 @@ export const categories = [
           {
             category: true,
             title: "consumer protection",
-            id: "consumer_protection",
+            pid: "consumer protection",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -8753,7 +8753,7 @@ export const categories = [
           {
             category: true,
             title: "contests and freebies",
-            id: "contests_and_freebies",
+            pid: "contests and freebies",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -8762,7 +8762,7 @@ export const categories = [
           {
             category: true,
             title: "coupons",
-            id: "coupons",
+            pid: "coupons",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -8771,7 +8771,7 @@ export const categories = [
           {
             category: true,
             title: "loyalty programs",
-            id: "loyalty_programs",
+            pid: "loyalty programs",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -8780,7 +8780,7 @@ export const categories = [
           {
             category: true,
             title: "product reviews",
-            id: "product_reviews",
+            pid: "product reviews",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -8789,7 +8789,7 @@ export const categories = [
           {
             category: true,
             title: "warranties and service contracts",
-            id: "warranties_and_service_contracts",
+            pid: "warranties and service contracts",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -8800,7 +8800,7 @@ export const categories = [
       {
         category: true,
         title: "retail",
-        id: "retail",
+        pid: "retail",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -8809,7 +8809,7 @@ export const categories = [
           {
             category: true,
             title: "department stores",
-            id: "department_stores",
+            pid: "department stores",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -8818,7 +8818,7 @@ export const categories = [
           {
             category: true,
             title: "online stores",
-            id: "online_stores",
+            pid: "online stores",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -8827,7 +8827,7 @@ export const categories = [
           {
             category: true,
             title: "outlet stores",
-            id: "outlet_stores",
+            pid: "outlet stores",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -8836,7 +8836,7 @@ export const categories = [
           {
             category: true,
             title: "second-hand market",
-            id: "second_hand_market",
+            pid: "second hand market",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -8845,7 +8845,7 @@ export const categories = [
           {
             category: true,
             title: "wholesalers",
-            id: "wholesalers",
+            pid: "wholesalers",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -8856,7 +8856,7 @@ export const categories = [
       {
         category: true,
         title: "toys",
-        id: "toys",
+        pid: "toys",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -8865,7 +8865,7 @@ export const categories = [
           {
             category: true,
             title: "action figures",
-            id: "action_figures",
+            pid: "action figures",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -8874,7 +8874,7 @@ export const categories = [
           {
             category: true,
             title: "dolls",
-            id: "dolls",
+            pid: "dolls",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -8883,7 +8883,7 @@ export const categories = [
           {
             category: true,
             title: "puppets",
-            id: "puppets",
+            pid: "puppets",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -8892,7 +8892,7 @@ export const categories = [
           {
             category: true,
             title: "stuffed animals",
-            id: "stuffed_animals",
+            pid: "stuffed animals",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -8905,7 +8905,7 @@ export const categories = [
   {
     category: true,
     title: "society",
-    id: "society",
+    pid: "society",
     color: {
       background: "#EE964B",
       foreground: "#000000",
@@ -8914,7 +8914,7 @@ export const categories = [
       {
         category: true,
         title: "crime",
-        id: "crime",
+        pid: "crime",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -8923,7 +8923,7 @@ export const categories = [
           {
             category: true,
             title: "drug trafficking",
-            id: "drug_trafficking",
+            pid: "drug trafficking",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -8932,7 +8932,7 @@ export const categories = [
           {
             category: true,
             title: "organized crime",
-            id: "organized_crime",
+            pid: "organized crime",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -8941,7 +8941,7 @@ export const categories = [
           {
             category: true,
             title: "personal offense",
-            id: "personal_offense",
+            pid: "personal offense",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -8950,7 +8950,7 @@ export const categories = [
               {
                 category: true,
                 title: "assault",
-                id: "assault",
+                pid: "assault",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -8959,7 +8959,7 @@ export const categories = [
               {
                 category: true,
                 title: "hate crime",
-                id: "hate_crime",
+                pid: "hate crime",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -8968,7 +8968,7 @@ export const categories = [
               {
                 category: true,
                 title: "homicide",
-                id: "homicide",
+                pid: "homicide",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -8977,7 +8977,7 @@ export const categories = [
               {
                 category: true,
                 title: "human trafficking",
-                id: "human_trafficking",
+                pid: "human trafficking",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -8986,7 +8986,7 @@ export const categories = [
               {
                 category: true,
                 title: "kidnapping",
-                id: "kidnapping",
+                pid: "kidnapping",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -8995,7 +8995,7 @@ export const categories = [
               {
                 category: true,
                 title: "torture",
-                id: "torture",
+                pid: "torture",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -9006,7 +9006,7 @@ export const categories = [
           {
             category: true,
             title: "property crime",
-            id: "property_crime",
+            pid: "property crime",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -9015,7 +9015,7 @@ export const categories = [
               {
                 category: true,
                 title: "arson",
-                id: "arson",
+                pid: "arson",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -9024,7 +9024,7 @@ export const categories = [
               {
                 category: true,
                 title: "bribery",
-                id: "bribery",
+                pid: "bribery",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -9033,7 +9033,7 @@ export const categories = [
               {
                 category: true,
                 title: "burglary",
-                id: "burglary",
+                pid: "burglary",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -9042,7 +9042,7 @@ export const categories = [
               {
                 category: true,
                 title: "embezzlement",
-                id: "embezzlement",
+                pid: "embezzlement",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -9051,7 +9051,7 @@ export const categories = [
               {
                 category: true,
                 title: "fraud",
-                id: "fraud",
+                pid: "fraud",
                 color: {
                   background: "#499F68",
                   foreground: "#FFFFFF",
@@ -9060,7 +9060,7 @@ export const categories = [
               {
                 category: true,
                 title: "larceny",
-                id: "larceny",
+                pid: "larceny",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -9069,7 +9069,7 @@ export const categories = [
               {
                 category: true,
                 title: "piracy",
-                id: "piracy",
+                pid: "piracy",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -9078,7 +9078,7 @@ export const categories = [
               {
                 category: true,
                 title: "robbery",
-                id: "robbery",
+                pid: "robbery",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -9087,7 +9087,7 @@ export const categories = [
               {
                 category: true,
                 title: "smuggling",
-                id: "smuggling",
+                pid: "smuggling",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -9096,7 +9096,7 @@ export const categories = [
               {
                 category: true,
                 title: "usury",
-                id: "usury",
+                pid: "usury",
                 color: {
                   background: "#DB5A42",
                   foreground: "#FFFFFF",
@@ -9107,7 +9107,7 @@ export const categories = [
           {
             category: true,
             title: "sexual offense",
-            id: "sexual_offense",
+            pid: "sexual offense",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -9116,7 +9116,7 @@ export const categories = [
               {
                 category: true,
                 title: "pedophilia",
-                id: "pedophilia",
+                pid: "pedophilia",
                 color: {
                   background: "#F26DF9",
                   foreground: "#000000",
@@ -9125,7 +9125,7 @@ export const categories = [
               {
                 category: true,
                 title: "prostitution",
-                id: "prostitution",
+                pid: "prostitution",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -9134,7 +9134,7 @@ export const categories = [
               {
                 category: true,
                 title: "rape",
-                id: "rape",
+                pid: "rape",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -9147,7 +9147,7 @@ export const categories = [
       {
         category: true,
         title: "dating",
-        id: "dating",
+        pid: "dating",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -9156,7 +9156,7 @@ export const categories = [
       {
         category: true,
         title: "gay life",
-        id: "gay_life",
+        pid: "gay life",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -9165,7 +9165,7 @@ export const categories = [
       {
         category: true,
         title: "racism",
-        id: "racism",
+        pid: "racism",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -9174,7 +9174,7 @@ export const categories = [
       {
         category: true,
         title: "senior living",
-        id: "senior_living",
+        pid: "senior living",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -9183,7 +9183,7 @@ export const categories = [
       {
         category: true,
         title: "sex",
-        id: "sex",
+        pid: "sex",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -9192,7 +9192,7 @@ export const categories = [
           {
             category: true,
             title: "pornography",
-            id: "pornography",
+            pid: "pornography",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -9201,7 +9201,7 @@ export const categories = [
           {
             category: true,
             title: "sex education",
-            id: "sex_education",
+            pid: "sex education",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -9212,7 +9212,7 @@ export const categories = [
       {
         category: true,
         title: "social institution",
-        id: "social_institution",
+        pid: "social institution",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -9221,7 +9221,7 @@ export const categories = [
           {
             category: true,
             title: "divorce",
-            id: "divorce",
+            pid: "divorce",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -9230,7 +9230,7 @@ export const categories = [
           {
             category: true,
             title: "marriage",
-            id: "marriage",
+            pid: "marriage",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -9239,7 +9239,7 @@ export const categories = [
               {
                 category: true,
                 title: "common law marriage",
-                id: "common_law_marriage",
+                pid: "common law marriage",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -9248,7 +9248,7 @@ export const categories = [
               {
                 category: true,
                 title: "weddings",
-                id: "weddings",
+                pid: "weddings",
                 color: {
                   background: "#19647E",
                   foreground: "#FFFFFF",
@@ -9261,7 +9261,7 @@ export const categories = [
       {
         category: true,
         title: "teens",
-        id: "teens",
+        pid: "teens",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -9270,7 +9270,7 @@ export const categories = [
       {
         category: true,
         title: "unrest and war",
-        id: "unrest_and_war",
+        pid: "unrest and war",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -9279,7 +9279,7 @@ export const categories = [
       {
         category: true,
         title: "welfare",
-        id: "welfare",
+        pid: "welfare",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -9288,7 +9288,7 @@ export const categories = [
           {
             category: true,
             title: "healthcare",
-            id: "healthcare",
+            pid: "healthcare",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -9297,7 +9297,7 @@ export const categories = [
               {
                 category: true,
                 title: "hospital",
-                id: "hospital",
+                pid: "hospital",
                 color: {
                   background: "#EE964B",
                   foreground: "#000000",
@@ -9308,7 +9308,7 @@ export const categories = [
           {
             category: true,
             title: "social services",
-            id: "social_services",
+            pid: "social services",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -9317,7 +9317,7 @@ export const categories = [
               {
                 category: true,
                 title: "volunteering",
-                id: "volunteering",
+                pid: "volunteering",
                 color: {
                   background: "#FFD275",
                   foreground: "#000000",
@@ -9330,7 +9330,7 @@ export const categories = [
       {
         category: true,
         title: "work",
-        id: "work",
+        pid: "work",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -9339,7 +9339,7 @@ export const categories = [
           {
             category: true,
             title: "contracts",
-            id: "contracts",
+            pid: "contracts",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -9348,7 +9348,7 @@ export const categories = [
           {
             category: true,
             title: "retirement",
-            id: "retirement",
+            pid: "retirement",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -9357,7 +9357,7 @@ export const categories = [
           {
             category: true,
             title: "unemployment",
-            id: "unemployment",
+            pid: "unemployment",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -9366,7 +9366,7 @@ export const categories = [
           {
             category: true,
             title: "unions",
-            id: "unions",
+            pid: "unions",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -9379,7 +9379,7 @@ export const categories = [
   {
     category: true,
     title: "sports",
-    id: "sports",
+    pid: "sports",
     color: {
       background: "#FFD275",
       foreground: "#000000",
@@ -9388,7 +9388,7 @@ export const categories = [
       {
         category: true,
         title: "archery",
-        id: "archery",
+        pid: "archery",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -9397,7 +9397,7 @@ export const categories = [
       {
         category: true,
         title: "auto racing",
-        id: "auto_racing",
+        pid: "auto racing",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -9406,7 +9406,7 @@ export const categories = [
           {
             category: true,
             title: "nascar",
-            id: "nascar",
+            pid: "nascar",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -9415,7 +9415,7 @@ export const categories = [
           {
             category: true,
             title: "rally",
-            id: "rally",
+            pid: "rally",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -9426,7 +9426,7 @@ export const categories = [
       {
         category: true,
         title: "badminton",
-        id: "badminton",
+        pid: "badminton",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -9435,7 +9435,7 @@ export const categories = [
       {
         category: true,
         title: "baseball",
-        id: "baseball",
+        pid: "baseball",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -9444,7 +9444,7 @@ export const categories = [
       {
         category: true,
         title: "basketball",
-        id: "basketball",
+        pid: "basketball",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -9453,7 +9453,7 @@ export const categories = [
       {
         category: true,
         title: "bicycling",
-        id: "bicycling",
+        pid: "bicycling",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -9462,7 +9462,7 @@ export const categories = [
           {
             category: true,
             title: "mountain biking",
-            id: "mountain_biking",
+            pid: "mountain biking",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -9473,7 +9473,7 @@ export const categories = [
       {
         category: true,
         title: "billiards",
-        id: "billiards",
+        pid: "billiards",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -9482,7 +9482,7 @@ export const categories = [
       {
         category: true,
         title: "boat racing",
-        id: "boat_racing",
+        pid: "boat racing",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -9491,7 +9491,7 @@ export const categories = [
       {
         category: true,
         title: "bobsled",
-        id: "bobsled",
+        pid: "bobsled",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -9500,7 +9500,7 @@ export const categories = [
       {
         category: true,
         title: "bodybuilding",
-        id: "bodybuilding",
+        pid: "bodybuilding",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -9509,7 +9509,7 @@ export const categories = [
       {
         category: true,
         title: "bowling",
-        id: "bowling",
+        pid: "bowling",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -9518,7 +9518,7 @@ export const categories = [
       {
         category: true,
         title: "boxing",
-        id: "boxing",
+        pid: "boxing",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -9527,7 +9527,7 @@ export const categories = [
       {
         category: true,
         title: "canoeing and kayaking",
-        id: "canoeing_and_kayaking",
+        pid: "canoeing and kayaking",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -9536,7 +9536,7 @@ export const categories = [
       {
         category: true,
         title: "cheerleading",
-        id: "cheerleading",
+        pid: "cheerleading",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -9545,7 +9545,7 @@ export const categories = [
       {
         category: true,
         title: "climbing",
-        id: "climbing",
+        pid: "climbing",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -9554,7 +9554,7 @@ export const categories = [
           {
             category: true,
             title: "mountain climbing",
-            id: "mountain_climbing",
+            pid: "mountain climbing",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -9563,7 +9563,7 @@ export const categories = [
           {
             category: true,
             title: "rock climbing",
-            id: "rock_climbing",
+            pid: "rock climbing",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -9574,7 +9574,7 @@ export const categories = [
       {
         category: true,
         title: "cricket",
-        id: "cricket",
+        pid: "cricket",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -9583,7 +9583,7 @@ export const categories = [
       {
         category: true,
         title: "curling",
-        id: "curling",
+        pid: "curling",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -9592,7 +9592,7 @@ export const categories = [
       {
         category: true,
         title: "diving",
-        id: "diving",
+        pid: "diving",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -9601,7 +9601,7 @@ export const categories = [
       {
         category: true,
         title: "dog sled",
-        id: "dog_sled",
+        pid: "dog sled",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -9610,7 +9610,7 @@ export const categories = [
       {
         category: true,
         title: "fencing",
-        id: "fencing",
+        pid: "fencing",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -9619,7 +9619,7 @@ export const categories = [
       {
         category: true,
         title: "fishing",
-        id: "fishing",
+        pid: "fishing",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -9628,7 +9628,7 @@ export const categories = [
           {
             category: true,
             title: "fly fishing",
-            id: "fly_fishing",
+            pid: "fly fishing",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -9637,7 +9637,7 @@ export const categories = [
           {
             category: true,
             title: "freshwater fishing",
-            id: "freshwater_fishing",
+            pid: "freshwater fishing",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -9646,7 +9646,7 @@ export const categories = [
           {
             category: true,
             title: "saltwater fishing",
-            id: "saltwater_fishing",
+            pid: "saltwater fishing",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -9655,7 +9655,7 @@ export const categories = [
           {
             category: true,
             title: "sport fishing",
-            id: "sport_fishing",
+            pid: "sport fishing",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -9666,7 +9666,7 @@ export const categories = [
       {
         category: true,
         title: "football",
-        id: "football",
+        pid: "football",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -9675,7 +9675,7 @@ export const categories = [
       {
         category: true,
         title: "go kart",
-        id: "go_kart",
+        pid: "go kart",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -9684,7 +9684,7 @@ export const categories = [
       {
         category: true,
         title: "golf",
-        id: "golf",
+        pid: "golf",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -9693,7 +9693,7 @@ export const categories = [
       {
         category: true,
         title: "gymnastics",
-        id: "gymnastics",
+        pid: "gymnastics",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -9702,7 +9702,7 @@ export const categories = [
           {
             category: true,
             title: "calisthenics",
-            id: "calisthenics",
+            pid: "calisthenics",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -9713,7 +9713,7 @@ export const categories = [
       {
         category: true,
         title: "handball",
-        id: "handball",
+        pid: "handball",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -9722,7 +9722,7 @@ export const categories = [
       {
         category: true,
         title: "hockey",
-        id: "hockey",
+        pid: "hockey",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -9731,7 +9731,7 @@ export const categories = [
           {
             category: true,
             title: "field hockey",
-            id: "field_hockey",
+            pid: "field hockey",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -9742,7 +9742,7 @@ export const categories = [
       {
         category: true,
         title: "horse racing",
-        id: "horse_racing",
+        pid: "horse racing",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -9751,7 +9751,7 @@ export const categories = [
       {
         category: true,
         title: "horses",
-        id: "horses",
+        pid: "horses",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -9760,7 +9760,7 @@ export const categories = [
       {
         category: true,
         title: "hunting and shooting",
-        id: "hunting_and_shooting",
+        pid: "hunting and shooting",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -9769,7 +9769,7 @@ export const categories = [
           {
             category: true,
             title: "skeet shooting",
-            id: "skeet_shooting",
+            pid: "skeet shooting",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -9778,7 +9778,7 @@ export const categories = [
           {
             category: true,
             title: "target shooting",
-            id: "target_shooting",
+            pid: "target shooting",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -9789,7 +9789,7 @@ export const categories = [
       {
         category: true,
         title: "martial arts",
-        id: "martial_arts",
+        pid: "martial arts",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -9798,7 +9798,7 @@ export const categories = [
           {
             category: true,
             title: "judo",
-            id: "judo",
+            pid: "judo",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -9807,7 +9807,7 @@ export const categories = [
           {
             category: true,
             title: "karate",
-            id: "karate",
+            pid: "karate",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -9816,7 +9816,7 @@ export const categories = [
           {
             category: true,
             title: "sumo",
-            id: "sumo",
+            pid: "sumo",
             color: {
               background: "#19647E",
               foreground: "#FFFFFF",
@@ -9827,7 +9827,7 @@ export const categories = [
       {
         category: true,
         title: "motorcycling",
-        id: "motorcycling",
+        pid: "motorcycling",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -9836,7 +9836,7 @@ export const categories = [
       {
         category: true,
         title: "olympics",
-        id: "olympics",
+        pid: "olympics",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -9845,7 +9845,7 @@ export const categories = [
           {
             category: true,
             title: "paralympic games",
-            id: "paralympic_games",
+            pid: "paralympic games",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -9856,7 +9856,7 @@ export const categories = [
       {
         category: true,
         title: "paintball",
-        id: "paintball",
+        pid: "paintball",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -9865,7 +9865,7 @@ export const categories = [
       {
         category: true,
         title: "parachuting",
-        id: "parachuting",
+        pid: "parachuting",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -9874,7 +9874,7 @@ export const categories = [
       {
         category: true,
         title: "polo",
-        id: "polo",
+        pid: "polo",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -9883,7 +9883,7 @@ export const categories = [
       {
         category: true,
         title: "rodeo",
-        id: "rodeo",
+        pid: "rodeo",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -9892,7 +9892,7 @@ export const categories = [
       {
         category: true,
         title: "rowing",
-        id: "rowing",
+        pid: "rowing",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -9901,7 +9901,7 @@ export const categories = [
       {
         category: true,
         title: "rugby",
-        id: "rugby",
+        pid: "rugby",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -9910,7 +9910,7 @@ export const categories = [
       {
         category: true,
         title: "running and jogging",
-        id: "running_and_jogging",
+        pid: "running and jogging",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -9919,7 +9919,7 @@ export const categories = [
       {
         category: true,
         title: "sailing",
-        id: "sailing",
+        pid: "sailing",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -9928,7 +9928,7 @@ export const categories = [
       {
         category: true,
         title: "scuba diving",
-        id: "scuba_diving",
+        pid: "scuba diving",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -9937,7 +9937,7 @@ export const categories = [
       {
         category: true,
         title: "skateboarding",
-        id: "skateboarding",
+        pid: "skateboarding",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -9946,7 +9946,7 @@ export const categories = [
       {
         category: true,
         title: "skating",
-        id: "skating",
+        pid: "skating",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -9955,7 +9955,7 @@ export const categories = [
           {
             category: true,
             title: "figure skating",
-            id: "figure_skating",
+            pid: "figure skating",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -9964,7 +9964,7 @@ export const categories = [
           {
             category: true,
             title: "ice skating",
-            id: "ice_skating",
+            pid: "ice skating",
             color: {
               background: "#F26DF9",
               foreground: "#000000",
@@ -9973,7 +9973,7 @@ export const categories = [
           {
             category: true,
             title: "roller skating",
-            id: "roller_skating",
+            pid: "roller skating",
             color: {
               background: "#EE964B",
               foreground: "#000000",
@@ -9984,7 +9984,7 @@ export const categories = [
       {
         category: true,
         title: "skiing",
-        id: "skiing",
+        pid: "skiing",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -9993,7 +9993,7 @@ export const categories = [
           {
             category: true,
             title: "downhill skiing",
-            id: "downhill_skiing",
+            pid: "downhill skiing",
             color: {
               background: "#FFD275",
               foreground: "#000000",
@@ -10002,7 +10002,7 @@ export const categories = [
           {
             category: true,
             title: "nordic skiing",
-            id: "nordic_skiing",
+            pid: "nordic skiing",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -10011,7 +10011,7 @@ export const categories = [
           {
             category: true,
             title: "waterskiing",
-            id: "waterskiing",
+            pid: "waterskiing",
             color: {
               background: "#499F68",
               foreground: "#FFFFFF",
@@ -10022,7 +10022,7 @@ export const categories = [
       {
         category: true,
         title: "snowboarding",
-        id: "snowboarding",
+        pid: "snowboarding",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -10031,7 +10031,7 @@ export const categories = [
       {
         category: true,
         title: "soccer",
-        id: "soccer",
+        pid: "soccer",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -10040,7 +10040,7 @@ export const categories = [
       {
         category: true,
         title: "softball",
-        id: "softball",
+        pid: "softball",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -10049,7 +10049,7 @@ export const categories = [
       {
         category: true,
         title: "sports news",
-        id: "sports_news",
+        pid: "sports news",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -10058,7 +10058,7 @@ export const categories = [
       {
         category: true,
         title: "surfing and bodyboarding",
-        id: "surfing_and_bodyboarding",
+        pid: "surfing and bodyboarding",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",
@@ -10067,7 +10067,7 @@ export const categories = [
       {
         category: true,
         title: "swimming",
-        id: "swimming",
+        pid: "swimming",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -10076,7 +10076,7 @@ export const categories = [
       {
         category: true,
         title: "table tennis and ping-pong",
-        id: "table_tennis_and_ping_pong",
+        pid: "table tennis and ping pong",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -10085,7 +10085,7 @@ export const categories = [
       {
         category: true,
         title: "tennis",
-        id: "tennis",
+        pid: "tennis",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -10094,7 +10094,7 @@ export const categories = [
       {
         category: true,
         title: "trekking",
-        id: "trekking",
+        pid: "trekking",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -10103,7 +10103,7 @@ export const categories = [
       {
         category: true,
         title: "volleyball",
-        id: "volleyball",
+        pid: "volleyball",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -10112,7 +10112,7 @@ export const categories = [
           {
             category: true,
             title: "beach volleyball",
-            id: "beach_volleyball",
+            pid: "beach volleyball",
             color: {
               background: "#DB5A42",
               foreground: "#FFFFFF",
@@ -10123,7 +10123,7 @@ export const categories = [
       {
         category: true,
         title: "wakeboarding",
-        id: "wakeboarding",
+        pid: "wakeboarding",
         color: {
           background: "#499F68",
           foreground: "#FFFFFF",
@@ -10132,7 +10132,7 @@ export const categories = [
       {
         category: true,
         title: "walking",
-        id: "walking",
+        pid: "walking",
         color: {
           background: "#F26DF9",
           foreground: "#000000",
@@ -10141,7 +10141,7 @@ export const categories = [
       {
         category: true,
         title: "water polo",
-        id: "water_polo",
+        pid: "water polo",
         color: {
           background: "#EE964B",
           foreground: "#000000",
@@ -10150,7 +10150,7 @@ export const categories = [
       {
         category: true,
         title: "weightlifting",
-        id: "weightlifting",
+        pid: "weightlifting",
         color: {
           background: "#19647E",
           foreground: "#FFFFFF",
@@ -10159,7 +10159,7 @@ export const categories = [
       {
         category: true,
         title: "windsurfing",
-        id: "windsurfing",
+        pid: "windsurfing",
         color: {
           background: "#FFD275",
           foreground: "#000000",
@@ -10168,7 +10168,7 @@ export const categories = [
       {
         category: true,
         title: "wrestling",
-        id: "wrestling",
+        pid: "wrestling",
         color: {
           background: "#DB5A42",
           foreground: "#FFFFFF",

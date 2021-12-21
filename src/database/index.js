@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+import { AllCategories } from "../database/categories";
 import {
   queryPostsByLevels,
   queryPostByPid,
@@ -41,6 +42,28 @@ const getCategories = (posts, level) => {
   return cats;
 };
 
+const getAllCategories = (category) => {
+  console.log(category);
+  if (category === "")
+    return [
+      ...AllCategories.map((cat) => ({
+        ...cat,
+        subcategories: null,
+      })),
+    ];
+  const path = category.split("/");
+  
+  let current = AllCategories;
+  for (let section_index in path) {
+    let section = path[section_index];    
+    current = current.find((cat) => cat.pid === section);
+    if (!current || !current.subcategories) return [];
+    current = current.subcategories;
+  }
+
+  return current;
+};
+
 // This method returns an array of bubble information,
 // each bubble is a JSON object with the following structure:
 //
@@ -52,32 +75,36 @@ const getCategories = (posts, level) => {
 //          foreground:hex string
 //      }
 // }
-export const useBubbles = (category = "") => {
+export const useBubbles = (category = "", allCategories = false) => {
   const [catBubbles, setCatBubbles] = useState([]);
   const [current, setCurrent] = useState(catBubbles);
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [ load, setLoad] = useState(true);
+  const [load, setLoad] = useState(true);
 
   useEffect(() => {
-    setLoad(true)
-  },[category])
+    setLoad(true);
+  }, [category]);
+
   useEffect(() => {
+    setLoad(true);
+  }, [allCategories]);
 
-    if (!load) return
+  useEffect(() => {
+    if (!load) return;
 
-    setLoad(false)
+    setLoad(false);
     const categories = category.split("/");
     let levels = {};
     let count = 1;
     for (let category_index in categories) {
-      const category = categories[category_index];
-      if (category === "") break;
-      levels["level" + count++] = category;
+      const cat = categories[category_index];
+      if (cat === "") break;
+      levels["level" + count++] = cat;
     }
     setLoading(true);
 
-    queryPostsByLevels(levels).then((results) => {
+    queryPostsByLevels(levels).then((results) => {      
       setLoading(false);
       setPosts(
         results.map((post) => ({
@@ -105,12 +132,20 @@ export const useBubbles = (category = "") => {
         }))
       );
 
-    
+      let cats = allCategories
+        ? getAllCategories(category)
+        : getCategories(results, Object.keys(levels).length + 1);
+
+      if(allCategories) {
+        setCatBubbles(cats)
+        return 
+      }
+
       if (results.length === 0) {
         setCatBubbles([]);
         return;
       }
-      let cats = getCategories(results, Object.keys(levels).length + 1);
+
 
       const mapCategories = (key) => {
         return {
@@ -118,16 +153,16 @@ export const useBubbles = (category = "") => {
           title: key,
           pid: key,
           color: {
-            background:"rgb(10, 129, 107)",
-            foreground:"rgb(8, 12, 11)"
-          }
+            background: "rgb(10, 129, 107)",
+            foreground: "rgb(8, 12, 11)",
+          },
         };
       };
 
       let new_cats = Object.keys(cats).map(mapCategories);
       setCatBubbles(new_cats);
     });
-  }, [category, load, posts]);
+  }, [allCategories, category, load, posts]);
 
   useEffect(() => {
     if (!catBubbles) return;

@@ -54,11 +54,7 @@ const Bubbles = ({ children, prefix, options }) => {
         data={bubble}
         prefix={prefix}
       />
-    ))
-    .filter((bubble) => {
-      console.log(bubble);
-      return true;
-    });
+    ));
 
   return (
     <BubbleUI options={options} className="bubbles">
@@ -69,16 +65,25 @@ const Bubbles = ({ children, prefix, options }) => {
 
 const HomePage = () => {
   let { pathname } = useLocation();
+  const [showAllCategories, setShowAllCategories] = useState(false);
 
   let back = pathname.split("/").slice(0, -1).join("/");
   if (back === "") back = "/";
 
   let path = pathname === "/" ? "" : pathname.substring(1);
   let { category } = useParams();
-  const { categories, audios, loading } = useBubbles(decodeURI(path));
+  const { categories, audios, loading } = useBubbles(decodeURI(path), showAllCategories);
 
   return (
     <>
+      <button
+        className="switch"
+        onClick={() => setShowAllCategories((prev) => !prev)}
+      >
+        {showAllCategories
+          ? "Show categories with audios"
+          : "Show all categories"}
+      </button>
       <div className="header">
         {!category ? (
           <h1>Off My Chest</h1>
