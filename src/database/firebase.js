@@ -22,7 +22,7 @@ const db = getFirestore(app);
 const storage = getStorage(app);
 
 
-const addPost = async (pid, audio_link, transcript, level1, level2, level3, level4, level5, nlu_analysis) => {
+const addPost = async (pid, audio_link, transcript, level1, level2, level3, level4, level5) => {
   try {
     await setDoc(doc(db, "posts", pid), {
       pid: pid,
@@ -33,7 +33,7 @@ const addPost = async (pid, audio_link, transcript, level1, level2, level3, leve
       level3: level3 ? level3 : '',
       level4: level4 ? level4 : '',
       level5: level5 ? level5 : '',
-      nlu_analysis: nlu_analysis ? nlu_analysis : null
+      // nlu_analysis: nlu_analysis ? nlu_analysis : null
     })
     return pid
   } catch (err) {
