@@ -17,7 +17,7 @@ const category_options = {
   minSize: 44,
   gutter: 18,
   provideProps: true,
-  numCols: 3,
+  numCols: 2,
   fringeWidth: 100,
   yRadius: 190,
   xRadius: 100,
@@ -35,7 +35,7 @@ const audios_options = {
   numCols: 3,
   fringeWidth: 100,
   yRadius: 190,
-  xRadius: 100,
+  xRadius: "50%",
   cornerRadius: 100,
   showGuides: false,
   compact: true,
@@ -45,15 +45,20 @@ const audios_options = {
 const Bubbles = ({ children, prefix, options }) => {
   const [stop, setStop] = useState(false);
 
-  const bubbles = children.map((bubble, i) => (
-    <Bubble
-      key={bubble.pid}
-      stop={stop}
-      setStop={setStop}
-      data={bubble}
-      prefix={prefix}
-    />
-  ));
+  const bubbles = children
+    .map((bubble, i) => (
+      <Bubble
+        key={bubble.pid}
+        stop={stop}
+        setStop={setStop}
+        data={bubble}
+        prefix={prefix}
+      />
+    ))
+    .filter((bubble) => {
+      console.log(bubble);
+      return true;
+    });
 
   return (
     <BubbleUI options={options} className="bubbles">
@@ -72,8 +77,6 @@ const HomePage = () => {
   let { category } = useParams();
   const { categories, audios, loading } = useBubbles(decodeURI(path));
 
-  if (loading) return <Loading />;
-
   return (
     <>
       <div className="header">
@@ -87,19 +90,29 @@ const HomePage = () => {
         )}
       </div>
       <div className="content">
-        {categories.length > 0 && (
-          <div className="categories">
-            <Bubbles
-              children={categories}
-              prefix={path}
-              options={category_options}
-            />
-          </div>
-        )}
-        {audios.length > 0 && (
-          <div className="audios">
-            <Bubbles children={audios} prefix={path} options={audios_options} />
-          </div>
+        {loading ? (
+          <Loading />
+        ) : (
+          <>
+            {categories.length > 0 && (
+              <div className="categories">
+                <Bubbles
+                  children={categories}
+                  prefix={path}
+                  options={category_options}
+                />
+              </div>
+            )}
+            {audios.length > 0 && (
+              <div className="audios">
+                <Bubbles
+                  children={audios}
+                  prefix={path}
+                  options={audios_options}
+                />
+              </div>
+            )}
+          </>
         )}
       </div>
     </>

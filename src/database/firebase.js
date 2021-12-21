@@ -21,26 +21,6 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const storage = getStorage(app);
 
-
-const addPost = async (pid, audio_link, transcript, level1, level2, level3, level4, level5) => {
-  try {
-    await setDoc(doc(db, "posts", pid), {
-      pid: pid,
-      audio_file: audio_link ? audio_link : '',
-      transcript: transcript,
-      level1: level1 ? level1 : '',
-      level2: level2 ? level2 : '',
-      level3: level3 ? level3 : '',
-      level4: level4 ? level4 : '',
-      level5: level5 ? level5 : '',
-      // nlu_analysis: nlu_analysis ? nlu_analysis : null
-    })
-    return pid
-  } catch (err) {
-    throw err
-  }
-}
-
 const queryAllPosts = async () => {
   const q = query(collection(db, "posts"));
   const querySnapshot = await getDocs(q);

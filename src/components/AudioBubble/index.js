@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai";
-
+import { RiFileDamageFill } from "react-icons/ri"
 import Loading from "../Loading";
 import "../Bubble/index.css";
 
@@ -110,7 +110,11 @@ const AudioBubble = ({
 
   if (loading) return <Loading />;
 
-  if (error) return <></>;
+  if (error) return <div className={"bubble " + className} style={{
+    fontSize:'2.3rem'
+  }}>
+    <RiFileDamageFill />
+  </div>;
   return (
     <div
       className={"bubble " + className}

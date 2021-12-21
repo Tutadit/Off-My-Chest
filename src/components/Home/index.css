@@ -6,7 +6,7 @@
 
 .bubbles {
 	width: 100%; 
-    height: 90%;   
+    height: 100%;   
 	border-radius: 50px;   
     display:flex;
     align-items: center;
@@ -15,7 +15,7 @@
 
 .home .header {
     width: 100%;
-    height:10%;
+    height:10%;    
     display:flex;
     align-items: center;
     justify-content: center;    
@@ -37,11 +37,11 @@
 }
 
 .content .categories {
-    width:100%;
-    height:100%;    
+    width:50%;
+    height:100%;        
 }
 
 .content .audios {
     width:100%;
-    height:100%;
+    height:100%;    
 }
