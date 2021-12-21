@@ -19,6 +19,7 @@ const NewComment = ({
   const [replyText, setReplyText] = useState("");
   const [name, setName] = useState("");
   const [audio, setAudio] = useState(null);
+  const [transcript, setTranscript] = useState("");
 
   const resetForm = () => {
     setName("");
@@ -33,6 +34,7 @@ const NewComment = ({
       {
         fullName: name,
         audio: audio,
+        transcript:transcript
       },
       parent
     );
@@ -98,6 +100,8 @@ const NewComment = ({
           setStop={setStop}
           audio={audio}
           setAudio={setAudio}
+          transcript={transcript}
+          setTranscript={setTranscript}
         />
       ) : (
         <textarea

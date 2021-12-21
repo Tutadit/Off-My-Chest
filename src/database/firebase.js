@@ -12,8 +12,7 @@ import {
 } from "firebase/firestore";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { nanoid } from "nanoid";
-import { firebaseConfig } from "../env"
-
+import { firebaseConfig } from "../env";
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -120,21 +119,27 @@ const uploadPostAudio = async (pid, file) => {
   return downloadURL;
 };
 
-const addPost = async (audio) => {
+const addPost = async (audio, transcript) => {
   try {
     let pid = nanoid();
     await setDoc(doc(db, "posts", pid), {
       pid: pid,
       audio_file: await uploadPostAudio(pid, audio),
-      transcript:'No',
-      level1: "art and entertainment",
-      level2: "comics and animation",
-      level3: "comics"      
+      transcript: transcript,
+      ...transcriptAnalysis(transcript),
     });
     return pid;
   } catch (err) {
     throw err;
   }
+};
+
+const transcriptAnalysis = (transcript) => {
+  return {
+    level1: "art and entertainment",
+    level2: "comics and animation",
+    level3: "comics",
+  };
 };
 
 export {
