@@ -70,7 +70,6 @@ const HomePage = () => {
 
   let path = pathname === "/" ? "" : pathname.substring(1);
   let { category } = useParams();
-
   const { categories, audios, loading } = useBubbles(decodeURI(path));
 
   if (loading) return <Loading />;

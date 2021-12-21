@@ -60,6 +60,9 @@ export const useBubbles = (category = "") => {
   const [ load, setLoad] = useState(true);
 
   useEffect(() => {
+    setLoad(true)
+  },[category])
+  useEffect(() => {
 
     if (!load) return
 
@@ -70,7 +73,7 @@ export const useBubbles = (category = "") => {
     for (let category_index in categories) {
       const category = categories[category_index];
       if (category === "") break;
-      levels["level" + count++] = category.replaceAll("_", " ");
+      levels["level" + count++] = category;
     }
     setLoading(true);
 

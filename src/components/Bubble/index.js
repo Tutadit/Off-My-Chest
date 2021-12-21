@@ -12,7 +12,7 @@ const CategoryBubble = ({ className, style, prefix, data, bigEnough }) => {
       style={style}
       to={`${prefix === "" ? "/" : `/${prefix}/`}${data.pid}`}
     >
-      {bigEnough && data.title}
+      {data.title}
     </Link>
   );
 };
@@ -27,7 +27,7 @@ const Bubble = ({
   setStop = null,
   ...props
 }) => {
-  const big_enough = bubbleSize > minSize + 30;
+  const big_enough = bubbleSize > minSize + 2;
   const category = data.category;
   const style = {
     backgroundColor: data.color.background,

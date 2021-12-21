@@ -18,10 +18,10 @@ const App = () => {
   
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
+      <Routes>        
         <Route path="audio_detail/:audioID" element={<Audio />} />
         <Route path="submit" element={<NewPost />} />
+        <Route path="/*" element={<Home />} />
         <Route path="/:category/*" element={<Home />} />
       </Routes>
         <button
