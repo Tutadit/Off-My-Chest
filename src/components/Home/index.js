@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { useParams, useLocation, Routes, Route } from "react-router-dom";
 
@@ -42,19 +42,17 @@ const audios_options = {
   gravitation: 3,
 };
 
-const Bubbles = ({ children, prefix, options }) => {
-  const [stop, setStop] = useState(false);
+const Bubbles = ({ children, prefix, options, stop, setStop }) => {
 
-  const bubbles = children
-    .map((bubble, i) => (
-      <Bubble
-        key={bubble.pid}
-        stop={stop}
-        setStop={setStop}
-        data={bubble}
-        prefix={prefix}
-      />
-    ));
+  const bubbles = children.map((bubble, i) => (
+    <Bubble
+      key={bubble.pid}
+      stop={stop}
+      setStop={setStop}
+      data={bubble}
+      prefix={prefix}
+    />
+  ));
 
   return (
     <BubbleUI options={options} className="bubbles">
@@ -64,6 +62,9 @@ const Bubbles = ({ children, prefix, options }) => {
 };
 
 const HomePage = () => {
+
+  const [stop, setStop] = useState(false);
+
   let { pathname } = useLocation();
   const [showAllCategories, setShowAllCategories] = useState(false);
 
@@ -72,7 +73,10 @@ const HomePage = () => {
 
   let path = pathname === "/" ? "" : pathname.substring(1);
   let { category } = useParams();
-  const { categories, audios, loading } = useBubbles(decodeURI(path), showAllCategories);
+  const { categories, audios, loading } = useBubbles(
+    decodeURI(path),
+    showAllCategories
+  );
 
   return (
     <>
@@ -105,6 +109,8 @@ const HomePage = () => {
                   children={categories}
                   prefix={path}
                   options={category_options}
+                  stop={stop}
+                  setStop={setStop}
                 />
               </div>
             )}
@@ -114,6 +120,8 @@ const HomePage = () => {
                   children={audios}
                   prefix={path}
                   options={audios_options}
+                  stop={stop}
+                  setStop={setStop}
                 />
               </div>
             )}

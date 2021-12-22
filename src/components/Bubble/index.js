@@ -1,19 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { Link, useNavigate } from "react-router-dom";
 
 import AudioBubble from "../AudioBubble";
 import "./index.css";
 
-const CategoryBubble = ({ className, style, prefix, data, bigEnough }) => {
+const CategoryBubble = ({ className, style, onClick, data }) => {
   return (
-    <Link
-      className={"bubble " + className}
-      style={style}
-      to={`${prefix === "" ? "/" : `/${prefix}/`}${data.pid}`}
-    >
+    <button className={"bubble " + className} style={style} onClick={onClick}>
       {data.title}
-    </Link>
+    </button>
   );
 };
 
@@ -27,6 +23,9 @@ const Bubble = ({
   setStop = null,
   ...props
 }) => {
+  const [go, setGo] = useState(false);
+  let navigate = useNavigate();
+
   const big_enough = bubbleSize > minSize + 2;
   const category = data.category;
   const style = {
@@ -34,34 +33,43 @@ const Bubble = ({
     color: data.color.foreground,
   };
 
-  let navigate = useNavigate()
+  useEffect(() => {
+    const to = category
+      ? `${prefix === "" ? "/" : `/${prefix}/`}${data.pid}`
+      : `/audio_detail/${data.pid}`;
+
+    if (!stop && go) {
+      setGo(false);
+      navigate(to);
+    }
+  }, [category, data.pid, go, navigate, prefix, stop]);
+
+  const travel = () => {
+    setGo(true);
+    setStop(true);
+  };
 
   if (category)
     return (
       <CategoryBubble
         className={className}
-        bigEnough={big_enough}
-        prefix={prefix}
         data={data}
         style={style}
+        onClick={travel}
       />
     );
 
   return (
     <AudioBubble
       className={className}
-      src={data.audio_file}      
+      src={data.audio_file}
       background={data.color.background}
       foreground={data.color.foreground}
       stop={stop}
       setStop={setStop}
-      onClick={() => { 
-        navigate(`/audio_detail/${data.pid}`)
-      }}
+      onClick={travel}
     >
-        {big_enough && (
-          <p>{data.title}</p>
-        )}
+      {big_enough && <p>{data.title}</p>}
     </AudioBubble>
   );
 };

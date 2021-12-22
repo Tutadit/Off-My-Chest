@@ -79,8 +79,9 @@ const AudioBubble = ({
   }, [finished]);
 
   useEffect(() => {
-    if (!stop || !setStop) return;
 
+    if (!stop || !setStop) return;
+    
     setStop(false);
     if (!play) return;
     setPlay(false);

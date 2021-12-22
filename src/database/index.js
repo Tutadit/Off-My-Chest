@@ -52,10 +52,10 @@ const getAllCategories = (category) => {
       })),
     ];
   const path = category.split("/");
-  
+
   let current = AllCategories;
   for (let section_index in path) {
-    let section = path[section_index];    
+    let section = path[section_index];
     current = current.find((cat) => cat.pid === section);
     if (!current || !current.subcategories) return [];
     current = current.subcategories;
@@ -104,12 +104,13 @@ export const useBubbles = (category = "", allCategories = false) => {
     }
     setLoading(true);
 
-    queryPostsByLevels(levels).then((results) => {      
+    queryPostsByLevels(levels).then((results) => {
       setLoading(false);
+      console.log(posts)
       setPosts(
         results.map((post) => ({
           ...post,
-          color: post.nlu_analysis
+          color: ( post.nlu_analysis?.result?.emotion?.document?.emotion )
             ? colors[
                 Object.keys(
                   post.nlu_analysis.result.emotion.document.emotion
@@ -136,16 +137,15 @@ export const useBubbles = (category = "", allCategories = false) => {
         ? getAllCategories(category)
         : getCategories(results, Object.keys(levels).length + 1);
 
-      if(allCategories) {
-        setCatBubbles(cats)
-        return 
+      if (allCategories) {
+        setCatBubbles(cats);
+        return;
       }
 
       if (results.length === 0) {
         setCatBubbles([]);
         return;
       }
-
 
       const mapCategories = (key) => {
         return {

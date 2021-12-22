@@ -8,7 +8,15 @@ import AudioBubble from "../AudioBubble";
 
 import "./index.css";
 
-const Recorder = ({ stop, setStop, audio, setAudio, className, transcript, setTranscript }) => {
+const Recorder = ({
+  stop,
+  setStop,
+  audio,
+  setAudio,
+  className,
+  transcript,
+  setTranscript,
+}) => {
   const [recording, setRecording] = useState(false);
   const [duration, setDuration] = useState(0);
   const [durationInterval, setDurationInterval] = useState(null);
@@ -17,6 +25,28 @@ const Recorder = ({ stop, setStop, audio, setAudio, className, transcript, setTr
   const [mediaStream, setMediaStream] = useState(null);
   const [mediaRecorder, setMediaRecorder] = useState(null);
   const [paused, setPaused] = useState(false);
+
+  useEffect(() => {
+    const transcriptAvailable = (event) => {
+      for (let i = event.resultIndex; i < event.results.length; ++i) {
+        if (event.results[i].isFinal)
+          setTranscript(prev => prev + event.results[i][0].transcript + ".");
+      }
+    };
+
+    if (recognition) return;
+    let SpeechRecognition =
+      window.webkitSpeechRecognition || window.SpeechRecognition;
+
+    if (!SpeechRecognition) return;
+    const recognizer = new SpeechRecognition();
+    recognizer.lang = "en-US";
+    recognizer.continuous = true;
+    recognizer.interimResults = true;
+
+    recognizer.onresult = transcriptAvailable;
+    setRecognition(recognizer);
+  }, [recognition, setTranscript]);
 
   useEffect(() => {
     if (!mediaStream) return;
@@ -34,28 +64,10 @@ const Recorder = ({ stop, setStop, audio, setAudio, className, transcript, setTr
       chunks.push(e.data);
     };
 
-    const transcriptAvailable = (event) => {
-      for (let i = event.resultIndex; i < event.results.length; ++i) {
-        if (event.results[i].isFinal) {
-        setTranscript(event.results[i][0].transcript + '.')
-      }
-    };
-
     const recorder = new MediaRecorder(mediaStream);
-    let SpeechRecognition =
-      window.webkitSpeechRecognition || window.SpeechRecognition;
-
-    if (SpeechRecognition) {
-      const recognizer = new SpeechRecognition();
-      recognizer.lang = "en-US";
-      recognizer.continuous = true;
-      recognizer.interimResults = true;
-
-      recognizer.onresult = transcriptAvailable;
-      setRecognition(recognizer);
-    }
     recorder.ondataavailable = dataAvalibale;
     recorder.onstop = mediaStopped;
+
     setMediaRecorder(recorder);
   }, [mediaStream, setAudio]);
 

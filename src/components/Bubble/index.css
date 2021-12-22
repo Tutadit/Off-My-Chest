@@ -15,6 +15,11 @@
   text-transform: capitalize;
   position: relative;
   text-align: center;
+  border:none;
+}
+
+button.bubble {
+  cursor: pointer;
 }
 
 .bubble .content {
