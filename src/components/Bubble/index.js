@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import AudioBubble from "../AudioBubble";
 import "./index.css";
@@ -26,7 +26,6 @@ const Bubble = ({
   const [go, setGo] = useState(false);
   let navigate = useNavigate();
 
-  const big_enough = bubbleSize > minSize + 2;
   const category = data.category;
   const style = {
     backgroundColor: data.color.background,
@@ -49,6 +48,13 @@ const Bubble = ({
     setStop(true);
   };
 
+
+  const keywords = data?.nlu_analysis?.result?.keywords
+    ? data.nlu_analysis.result.keywords.slice(0,2).map((keyword) => (
+        <span className="keyword">{keyword.text.substring(0,10)}</span>
+      ))
+    : [];
+
   if (category)
     return (
       <CategoryBubble
@@ -68,9 +74,8 @@ const Bubble = ({
       stop={stop}
       setStop={setStop}
       onClick={travel}
-    >
-      {big_enough && <p>{data.title}</p>}
-    </AudioBubble>
+      children={<div className="keywords">{keywords}</div>}
+    />
   );
 };
 

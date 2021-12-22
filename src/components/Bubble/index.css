@@ -22,6 +22,20 @@ button.bubble {
   cursor: pointer;
 }
 
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.keyword {
+  padding:0.4rem;
+  background-color:rgb(15, 8, 34);
+  color:#fff;
+  margin:0.1rem;
+  display:block;
+  border-radius: 10%;
+}
 .bubble .content {
   position: relative;
   display: flex;

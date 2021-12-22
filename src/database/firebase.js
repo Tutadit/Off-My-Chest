@@ -215,14 +215,6 @@ const nlu = async (params) => {
     .catch((e) => console.log(e));
 };
 
-const transcriptAnalysis = (transcript) => {
-  return {
-    level1: "art and entertainment",
-    level2: "comics and animation",
-    level3: "comics",
-  };
-};
-
 export {
   queryAllPosts,
   queryPostsByLevels,

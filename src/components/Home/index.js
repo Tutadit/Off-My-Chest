@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import { useParams, useLocation, Routes, Route } from "react-router-dom";
 
@@ -28,14 +28,14 @@ const category_options = {
 };
 
 const audios_options = {
-  size: 130,
+  size: 180,
   minSize: 44,
   gutter: 18,
   provideProps: true,
   numCols: 3,
   fringeWidth: 100,
   yRadius: 190,
-  xRadius: "50%",
+  xRadius: 100,
   cornerRadius: 100,
   showGuides: false,
   compact: true,
