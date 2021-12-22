@@ -43,7 +43,6 @@ const audios_options = {
 };
 
 const Bubbles = ({ children, prefix, options, stop, setStop }) => {
-
   const bubbles = children.map((bubble, i) => (
     <Bubble
       key={bubble.pid}
@@ -62,7 +61,6 @@ const Bubbles = ({ children, prefix, options, stop, setStop }) => {
 };
 
 const HomePage = () => {
-
   const [stop, setStop] = useState(false);
 
   let { pathname } = useLocation();
@@ -104,25 +102,31 @@ const HomePage = () => {
         ) : (
           <>
             {categories.length > 0 && (
-              <div className="categories">
-                <Bubbles
-                  children={categories}
-                  prefix={path}
-                  options={category_options}
-                  stop={stop}
-                  setStop={setStop}
-                />
+              <div class="bubbles-wrapper">
+                <h1>Categories</h1>
+                <div className="categories">
+                  <Bubbles
+                    children={categories}
+                    prefix={path}
+                    options={category_options}
+                    stop={stop}
+                    setStop={setStop}
+                  />
+                </div>
               </div>
             )}
             {audios.length > 0 && (
-              <div className="audios">
-                <Bubbles
-                  children={audios}
-                  prefix={path}
-                  options={audios_options}
-                  stop={stop}
-                  setStop={setStop}
-                />
+              <div class="bubbles-wrapper">
+                <h1>Posts</h1>
+                <div className="audios">
+                  <Bubbles
+                    children={audios}
+                    prefix={path}
+                    options={audios_options}
+                    stop={stop}
+                    setStop={setStop}
+                  />
+                </div>
               </div>
             )}
           </>

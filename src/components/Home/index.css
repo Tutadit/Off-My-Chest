@@ -38,6 +38,17 @@
     align-items:center;
     padding:2rem;    
 }
+.content .bubbles-wrapper {
+    width:100%;
+    height:100%;     
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.content .bubbles-wrapper h1 {
+    font-size: 1.2rem;
+}
 
 .content .categories {
     width:100%;
