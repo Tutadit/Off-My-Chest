@@ -51,7 +51,7 @@ const Bubble = ({
 
   const keywords = data?.nlu_analysis?.result?.keywords
     ? data.nlu_analysis.result.keywords.slice(0,2).map((keyword) => (
-        <span className="keyword">{keyword.text.substring(0,10)}</span>
+        <span className="keyword">{keyword.text.substring(0,20)}</span>
       ))
     : [];
 

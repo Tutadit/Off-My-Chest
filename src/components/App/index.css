@@ -14,3 +14,8 @@
   font-size: 2.3rem;
   transition: transform 100ms ease-in-out;
 }
+
+.gradient {
+  background-color: #FFFFFF;
+  /*background-image: linear-gradient(43deg, #FF58D0 0%, #C850C0 46%, #FFCC70 100%)*/
+}

@@ -17,22 +17,29 @@ const App = () => {
   const { pathname } = useLocation();
   
   return (
+
     <div className="App">
-      <Routes>        
-        <Route path="audio_detail/:audioID" element={<Audio />} />
-        <Route path="submit" element={<NewPost />} />
-        <Route path="/*" element={<Home />} />
-        <Route path="/:category/*" element={<Home />} />
-      </Routes>
-        <button
-          onClick={() => navigate(pathname === "/submit" ? -1 : '/submit')}
-          className="btn-new"
-          style={{
-            transform: pathname === "/submit" ? "rotate(45deg)" : "rotate(0)",
-          }}
-        >
-          <AiFillPlusCircle />
-        </button>
+            <div
+                height={"100%"}
+                width={"100%"}
+                className="gradient"
+            >
+                <Routes>
+                    <Route path="audio_detail/:audioID" element={<Audio />} />
+                    <Route path="submit" element={<NewPost />} />
+                    <Route path="/*" element={<Home />} />
+                    <Route path="/:category/*" element={<Home />} />
+                </Routes>
+                <button
+                    onClick={() => navigate(pathname === "/submit" ? -1 : '/submit')}
+                    className="btn-new"
+                    style={{
+                        transform: pathname === "/submit" ? "rotate(45deg)" : "rotate(0)",
+                    }}
+                >
+                    <AiFillPlusCircle />
+                </button>
+            </div>
     </div>
   );
 };

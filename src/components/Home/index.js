@@ -13,33 +13,33 @@ import { useBubbles } from "../../database";
 import "./index.css";
 
 const category_options = {
-  size: 130,
-  minSize: 44,
-  gutter: 18,
+  size: 180,
+  minSize: 20,
+  gutter: 8,
   provideProps: true,
-  numCols: 2,
-  fringeWidth: 100,
-  yRadius: 190,
-  xRadius: 100,
-  cornerRadius: 100,
+  numCols: 5,
+  fringeWidth: 160,
+  yRadius: 130,
+  xRadius: 220,
+  cornerRadius: 50,
   showGuides: false,
   compact: true,
-  gravitation: 3,
+  gravitation: 5
 };
 
 const audios_options = {
   size: 180,
-  minSize: 44,
-  gutter: 18,
+  minSize: 20,
+  gutter: 8,
   provideProps: true,
-  numCols: 3,
-  fringeWidth: 100,
-  yRadius: 190,
-  xRadius: 100,
-  cornerRadius: 100,
+  numCols: 5,
+  fringeWidth: 160,
+  yRadius: 130,
+  xRadius: 220,
+  cornerRadius: 50,
   showGuides: false,
   compact: true,
-  gravitation: 3,
+  gravitation: 5
 };
 
 const Bubbles = ({ children, prefix, options, stop, setStop }) => {
